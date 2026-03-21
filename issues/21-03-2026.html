@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Brief · 9:30 PM · 20 March 2026</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Brief · 21 Mar 2026 — Rare earth magnets, AI layoffs, India oil imports down 23%">
+  <meta property="og:description" content="Saturday edition: India's rare earth magnet RFP goes live, The Ken on Oracle/Amazon/Meta using workers as budget for AI capex, Hormuz shock hits India's oil supply, Finshots weekly wrap.">
+  <meta property="og:url" content="https://nischaykhannanws.github.io/-thebrief.ai/issues/21-03-2026.html">
+  <meta property="og:site_name" content="The Brief">
+  <meta property="og:image" content="https://nischaykhannanws.github.io/-thebrief.ai/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Brief · 21 Mar 2026 — Rare earth magnets, AI layoffs, India oil imports down 23%">
+  <meta name="twitter:description" content="Saturday edition: India's rare earth magnet RFP goes live, The Ken on Oracle/Amazon/Meta using workers as budget for AI capex, Hormuz shock hits India's oil supply, Finshots weekly wrap.">
+  <meta name="description" content="Saturday edition: India's rare earth magnet RFP goes live, The Ken on Oracle/Amazon/Meta using workers as budget for AI capex, Hormuz shock hits India's oil supply, Finshots weekly wrap.">
+  <meta name="author" content="Nischay Khanna">
+  <meta name="date" content="2026-03-21">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -163,10 +175,13 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 .nav-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0.25rem 1rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
+  align-items: center;
 }
 .nav-inner::-webkit-scrollbar { display: none; }
 .ntab {
@@ -174,18 +189,33 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 0.85rem 1rem;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0.25rem;
   color: var(--ink-60);
-  border: none;
-  background: none;
+  border: 1.5px solid var(--border);
+  background: var(--white);
   cursor: pointer;
   white-space: nowrap;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  transition: color 0.15s, border-color 0.15s;
+  border-radius: 20px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s;
+  position: relative;
+  user-select: none;
 }
-.ntab:hover { color: var(--ink); }
-.ntab.on { color: var(--red); border-bottom-color: var(--red); }
+.ntab:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+  background: var(--off-white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.ntab:active { transform: translateY(0); box-shadow: none; }
+.ntab.on {
+  color: var(--white);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 2px 8px rgba(192,41,46,0.3);
+}
+.ntab.on:hover { background: var(--red); opacity: 0.9; transform: translateY(-1px); }
 
 /* ── LAYOUT ── */
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
@@ -1629,105 +1659,105 @@ const M = {
     tag:'ETAuto · Fuel',
     hl:'Premium petrol raised by up to ₹2.35/litre — regular held flat',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/oil-and-lubes/petrol-price-hike-indian-oil-companies-raise-premium-petrol-rates-by-up-to-rs-2-35-per-litre',
     body:`<p>Indian oil marketing companies raised prices on premium petrol variants (Speed, Power, Hi-Speed) by up to ₹2.35 per litre. Regular petrol and diesel remain flat to contain CPI inflation — but this means OMCs (HPCL, BPCL, Indian Oil) absorb the crude shock as under-recoveries on every litre sold. Due to this, ETAuto published an analysis titled "The inevitability of a fuel price hike" — arguing a generalised retail price increase is a matter of when, not if. Full story on ETAuto.</p>`
   },
   hydrogen: {
     tag:'ETAuto · Future Fuels',
     hl:'Hydrogen could scale faster than expected in India — Toyota Kirloskar Motor',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/hydrogen-could-scale-faster-than-expected-in-india-tkms-vikram-gulati',
     body:`<p>TKM\'s Vikram Gulati told ETAuto that India\'s hydrogen ecosystem could develop more rapidly than current projections. The key insight: India\'s existing industrial hydrogen demand — for refineries, fertilisers, and steel production — provides a commercial demand anchor that can fund refuelling infrastructure before passenger vehicles need it. Put simply, India doesn\'t have to wait for hydrogen cars to justify building the ecosystem. Policy certainty and production cost reductions remain the two gating factors. Full interview on ETAuto.</p>`
   },
   'luxury-ev': {
     tag:'ETAuto · Luxury EVs',
     hl:'Luxury EV demand outpacing expectations — BMW India and Lexus both signal the same shift',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/passenger-vehicle/cars/luxury-ev-market-outpaces-expectations-fueled-by-tech-savvy-buyers-bmw-indias-hardeep-brar',
     body:`<p>BMW India\'s Hardeep Singh Brar told ETAuto the luxury EV segment is growing faster than planned — driven by buyers who prioritise software, OTA updates, and technology over traditional luxury markers. Not only BMW — Lexus launched the ES 500e at ₹89.99 lakh the same week, its first full BEV in India, shelving its hybrid strategy entirely. In addition to this, both moves together signal that the ₹50 lakh+ EV segment has crossed from early adopter to early majority in India\'s premium market. Full coverage on ETAuto.</p>`
   },
   'ola-ipo': {
     tag:'ETAuto · EV',
     hl:'Ola Electric diverts ₹575 crore of IPO funds to pay debt',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/two-wheelers/scooters/ola-electric-diverts-rs-575-crore-from-ipo-funds-to-pare-debt-push-growth',
     body:`<p>Ola Electric has diverted ₹575 crore from its IPO proceeds to debt repayment. The company\'s IPO prospectus stated proceeds would go toward product development, R&D, and expansion. Due to this diversion — the third such cycle in recent quarters — investors and analysts are scrutinising the company\'s cash position and whether the turnaround narrative is credible. That said, India\'s broader EV two-wheeler market is not slowing. TVS iQube, Bajaj Chetak, and Ather are the beneficiaries of Ola\'s difficulties. Full story on ETAuto.</p>`
   },
   'hormuz-oil': {
     tag:'ETAuto · Oil',
     hl:"India's oil imports down 23% in March — the Hormuz disruption is in the data",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/hormuz-shock-hits-indias-oil-lifeline-imports-down-23-so-far-in-march',
     body:`<p>India\'s oil import volumes through March are 23% below the equivalent period last year. This is the clearest data confirmation yet that the Strait of Hormuz disruption is having a direct, measurable impact — not just theoretical pricing pressure. Put simply, a 23% import decline means refineries managing inventory harder, alternative routes adding weeks of transit time and cost, and every barrel that does arrive is more expensive because of the rupee\'s all-time low. Full story on ETAuto.</p>`
   },
   'tyre-stocks': {
     tag:'ETAuto · Markets',
     hl:'Tyre stocks down 18% in March — analysts warn of 24% more downside',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/tyre-stocks-skid-up-to-18-in-march-can-slip-another-24-cautions-analyst',
     body:`<p>Indian tyre manufacturers have seen their stocks fall 18% in March. Crude oil at $96 raises both natural rubber prices (synthetic rubber is petroleum-derived) and manufacturing energy costs simultaneously. Due to this, margin compression is arriving exactly when commercial vehicle volume support — the biggest tyre segment — is weakening from economic uncertainty. Analyst coverage ETAuto reports suggests a further 24% downside if crude stays elevated. Full analysis on ETAuto.</p>`
   },
   'tesla-india': {
     tag:'ETAuto · Tesla',
     hl:'Tesla exploring India energy storage as standalone business — job ads show intent',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/tesla-plans-india-push-into-energy-storage-as-it-expands-beyond-cars-job-ad-shows',
     body:`<p>A Tesla job listing points to Powerwall and Megapack deployments as an India business line separate from EV sales. This is significant because it gives Tesla an India market entry path that bypasses the vehicle import duty debate entirely. Not only this — Tesla faces a wider NHTSA probe of its self-driving feature as it prepares to sell steering-wheel-free vehicles. Both stories on ETAuto.</p>`
   },
   skoda: {
     tag:'ETAuto · Passenger Vehicles',
     hl:'Skoda targets volume growth with Kushaq facelift and 200-city reach',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/passenger-vehicle/cars/skoda-targets-volume-growth-with-kushaq-facelift-plans-200-city-reach',
     body:`<p>Skoda India is expanding to 200 cities with the updated Kushaq. The competitive context is tough — Hyundai launched the updated Exter at ₹5.79 lakh the same week, Maruti is under margin pressure, and macro headwinds are making entry-level buyers more cautious. Skoda\'s direction is right; the timing is challenging. Full story on ETAuto.</p>`
   },
   xpeng: {
     tag:'ETAuto · Global EV',
     hl:"China's Xpeng posts first-ever profit on high-margin EV sales",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/chinas-xpeng-posts-first-profit-on-high-margin-ev-sales',
     body:`<p>Xpeng — which was burning cash aggressively as recently as 2023 — posted its first-ever quarterly profit, driven by a shift to higher-margin models and improved manufacturing efficiency. The contrast with Ola Electric is instructive: both are EV startups that went public with ambitious roadmaps. Xpeng hit profitability through discipline and product mix. Ola is still diverting IPO funds to service debt. Full coverage on ETAuto.</p>`
   },
   'delhi-ev-buses': {
     tag:'ETAuto · EV Policy',
     hl:'Delhi flags off 300 EV buses · Centre clears EV charger licensing in MP',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/evs/delhi-cm-rekha-gupta-flags-off-300-new-ev-buses',
     body:`<p>Delhi CM Rekha Gupta flagged off 300 new electric buses — a meaningful addition to the city\'s public transport fleet. Not only does this expand EV bus coverage; it generates real operational data on range, charging turnaround, and grid load. In addition to this, the Centre clarified that EV chargers in Madhya Pradesh don\'t require separate licensing — removing friction that had been slowing private charger deployment. Both stories on ETAuto.</p>`
   },
   'mineral-blocks': {
     tag:'ETAuto · Policy',
     hl:'India auctioned a record 200 mineral blocks in FY26',
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/centre-auctions-record-200-mineral-blocks-in-fy26-highest-ever',
     body:`<p>The Centre auctioned 200 mineral blocks in FY26 — the highest in any single fiscal year. Blocks cover lithium, cobalt, nickel, and rare earth elements essential for battery manufacturing, EV motors, and renewable infrastructure. Put simply, this is the government\'s broadest single-year push to reduce critical mineral import dependence — directly connected to the rare earth magnet RFP story. Both are part of the same industrial policy arc being accelerated by China supply chain risk. Full story on ETAuto.</p>`
   },
   'finshots-wrap': {
     tag:'Finshots · Saturday Weekly Wrap',
     hl:'Five Finshots stories this week in one email',
     src:'Finshots',
-    url:'https://finshots.in',
+    url:'https://finshots.in/archive/rising-plastic-prices-the-lpg-crisis-and-more/',
     body:`<p>Finshots wraps the week into one Saturday email: LPG black market (Monday), why cargo ships slow down deliberately (Tuesday), the Cavendish banana existential threat (Wednesday), whether G-Secs are truly risk-free (Thursday), and the Supreme Court\'s 48-year revisit of what counts as an "industry" under Indian labour law (Friday). In addition to this, the Saturday Markets edition covers rising polymer prices from the West Asia war. All originals link from finshots.in.</p>`
   },
   lpg: {
     tag:'Finshots · Monday',
     hl:"India's LPG success created a black market for subsidised cylinders",
     src:'Finshots',
-    url:'https://finshots.in',
+    url:'https://finshots.in/archive/the-lpg-crisis-india-lpg-subsidies-black-market/',
     body:`<p>India\'s PMUY programme moved millions of households from firewood to gas — one of the country\'s biggest clean energy wins. But it created a distortion: domestic cylinders are priced significantly lower than commercial ones. Due to this price gap, subsidised cylinders are being diverted to restaurants and businesses. The very system designed to expand access is also distorting incentives. Can India fix the subsidy design without making cooking gas less affordable for the households it was built to serve? Full story on Finshots.</p>`
   },
   banana: {
     tag:'Finshots · Wednesday',
     hl:'Bananas could go extinct — and the exact same thing happened once before',
     src:'Finshots',
-    url:'https://finshots.in',
+    url:'https://finshots.in/archive/bananas-could-go-extinct/',
     body:`<p>Almost all commercially traded bananas come from one variety: the Cavendish. A deadly fungal disease called Tropical Race 4 (TR4) is spreading through Cavendish plantations globally. This has happened before — the Gros Michel (the dominant banana before the 1950s) was wiped out by Panama Disease. The Cavendish replaced it. Now the Cavendish faces the same threat. India is the world\'s largest banana producer but exports almost none — Indian farmers grow dozens of varieties. A global supply shock would hit exported Cavendish markets hardest. Full story on Finshots.</p>`
   },
   polymer: {
     tag:'Finshots · Saturday Markets',
     hl:'Polymer prices rising due to the war in West Asia — structural or cyclical?',
     src:'Finshots',
-    url:'https://finshots.in',
+    url:'https://finshots.in/markets/rising-plastic-prices-polymer-iran-war/',
     body:`<p>The Iran conflict is disrupting petrochemical supply chains, pushing up prices for plastics used across packaging, auto components, FMCG goods, and electronics simultaneously. Finshots\' Markets edition asks: is this a temporary price spike, or a structural shift? The case for structural: the geopolitical realignment of energy supply chains makes "cheap hydrocarbons" a less reliable assumption for manufacturers. Worth reading for anyone with portfolio exposure to FMCG, auto ancillaries, or packaging companies. Full story on Finshots.</p>`
   },
   'indiamart-openai': {
@@ -1741,14 +1771,14 @@ const M = {
     tag:'ETAuto · Aftermarket Report',
     hl:"The Iran war's India impact this week: imports -23%, rupee ATL, crude $96",
     src:'ETAuto · Aftermarket Report',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/hormuz-shock-hits-indias-oil-lifeline-imports-down-23-so-far-in-march',
     body:`<p>Three data points tell the week\'s Iran conflict story for India. First, oil imports through the Strait of Hormuz are down 23% in March — a direct supply disruption. Second, the rupee hit ₹93.49, an all-time low, partly driven by the crude-widened current account deficit. Third, crude at $96 is feeding input cost increases across manufacturing, logistics, and chemicals simultaneously. Due to this convergence, the government faces a difficult policy choice: hold fuel prices flat (protecting CPI but destroying OMC finances) or raise them (protecting OMC finances but adding to inflation). Sources: ETAuto and Aftermarket Report.</p>`
   },
   'china-magnets': {
     tag:'ETAuto · China',
     hl:"China's rare earth magnet exports jumped ahead of Trump-Xi meeting",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/chinas-exports-of-rare-earth-magnets-jump-ahead-of-trump-xi-meeting',
     body:`<p>China accelerated rare earth magnet exports in the weeks leading up to US-China diplomatic contact — a pattern that reads as using supply availability as geopolitical leverage before a negotiation. This is not the first time; China did the same with Japan in 2010 during a territorial dispute. Put simply, India\'s ₹7,280 crore domestic rare earth magnet manufacturing RFP — bids opened yesterday — is directly connected to this pattern. Building domestic capability removes a single-source dependency that China has demonstrated it is willing to exploit. Full story on ETAuto.</p>`
   },
   lenskart: {

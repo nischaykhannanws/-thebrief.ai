@@ -460,35 +460,236 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 .info-box p:last-child { margin-bottom: 0; }
 .info-box strong { color: var(--ink); font-weight: 600; }
 
-/* ── WATCHLIST TABLE ── */
-.wtable {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  font-size: 13.5px;
-  margin-bottom: 1.5rem;
-}
-.wtable th {
-  background: var(--cream);
+/* ── FEEDBACK FORM ── */
+.form-group { margin-bottom: 1.6rem; }
+.form-label {
+  display: block;
   font-family: var(--mono);
-  font-size: 8.5px;
+  font-size: 9.5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--ink-60);
-  padding: 0.7rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.5rem;
 }
-.wtable td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border);
+.form-label span { color: var(--red); margin-left: 2px; }
+.form-hint {
+  font-size: 12.5px;
+  color: var(--ink-30);
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(192,41,46,0.08);
+}
+.form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a8a49e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.2rem;
+  cursor: pointer;
+}
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  user-select: none;
+}
+.check-item:hover { border-color: var(--border-strong); background: var(--off-white); }
+.check-item.checked { border-color: var(--red); background: var(--red-light); }
+.check-item input[type="checkbox"] { display: none; }
+.check-box {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s;
+}
+.check-item.checked .check-box {
+  background: var(--red);
+  border-color: var(--red);
+}
+.check-tick { color: #fff; font-size: 10px; display: none; }
+.check-item.checked .check-tick { display: block; }
+.check-text { font-size: 13px; color: var(--ink-60); }
+.check-item.checked .check-text { color: var(--ink); }
+.rating-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.rating-btn {
+  width: 44px; height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.12s, transform 0.1s;
+  flex-shrink: 0;
+}
+.rating-btn:hover { border-color: var(--border-strong); transform: scale(1.1); }
+.rating-btn.selected { border-color: var(--red); background: var(--red-light); transform: scale(1.12); }
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.submit-btn:hover { background: var(--red); }
+.submit-btn:active { transform: scale(0.98); }
+.submit-btn::after { content: '→'; font-size: 13px; }
+.form-success {
+  display: none;
+  background: var(--green-light);
+  border: 1.5px solid #a8d5b8;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  text-align: center;
+}
+.form-success-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--green); margin-bottom: 0.4rem; }
+.form-success p { font-size: 13.5px; color: var(--ink-60); line-height: 1.6; }
+.form-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.form-section-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.form-section-sub {
+  font-size: 13px;
+  color: var(--ink-60);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+/* Subscribe card */
+.subscribe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  background: var(--off-white);
+  transition: border-color 0.15s, background 0.15s;
+}
+.subscribe-card.active {
+  border-color: var(--red);
+  background: var(--red-light);
+}
+.subscribe-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.subscribe-icon {
+  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.subscribe-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+.subscribe-desc {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 1px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+/* Toggle switch */
+.toggle-wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-wrap input { display: none; }
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background: var(--border-strong);
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.2s;
+  display: block;
+}
+.toggle-wrap input:checked ~ .toggle-track { background: var(--red); }
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.toggle-wrap input:checked ~ .toggle-track .toggle-thumb { transform: translateX(20px); }
+/* Frequency buttons */
+.freq-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+  user-select: none;
   color: var(--ink-60);
 }
-.wtable tr:last-child td { border-bottom: none; }
-.wtable td:first-child { color: var(--ink); font-weight: 500; }
+.freq-btn:hover { border-color: var(--border-strong); }
+.freq-btn.active { border-color: var(--red); background: var(--red-light); color: var(--ink); font-weight: 500; }
 
 /* ── DIVIDER ── */
 .div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
@@ -688,7 +889,7 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
     <button class="ntab" onclick="go('india',this)">🇮🇳 India</button>
     <button class="ntab" onclick="go('deepread',this)">🧠 Deep Read</button>
     <button class="ntab" onclick="go('world',this)">🌍 World</button>
-    <button class="ntab" onclick="go('watchlist',this)">👁 Watchlist</button>
+    <button class="ntab" onclick="go('feedback',this)">✏️ Feedback</button>
   </div>
 </nav>
 
@@ -1099,70 +1300,354 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 
 
 <!-- ══════════════════════════════════════
-     WATCHLIST — BSE + Groww (summary in tab)
+     FEEDBACK FORM
 ══════════════════════════════════════ -->
-<section class="sec" id="sec-watchlist">
+<section class="sec" id="sec-feedback">
 <div class="wrap">
 
   <div class="sec-head">
     <div class="sec-left">
-      <div class="sec-src">Screener.in · BSE Alerts · Groww</div>
-      <h2 class="sec-title">Your portfolio &amp; compliance digest</h2>
+      <div class="sec-src">Reader Feedback · Issue 001</div>
+      <h2 class="sec-title">Help shape The Brief</h2>
     </div>
-    <span class="sec-count">3 alerts</span>
   </div>
 
-  <h3 style="font-family:var(--serif);font-size:1.05rem;font-weight:700;margin-bottom:0.7rem;color:var(--ink)">Screener Watchlist Alerts</h3>
-  <table class="wtable">
-    <thead><tr><th>Company</th><th>Type</th><th>Date</th><th>Detail</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Asian Paints</td>
-        <td style="color:var(--amber)">Pledge</td>
-        <td>17-Mar-2026</td>
-        <td>Smiti Holding pledged 6,06,000 shares to Tata Capital &amp; Citicorp (SEBI SAST Reg. 31)</td>
-      </tr>
-    </tbody>
-  </table>
+  <div style="max-width:680px">
+    <p style="font-size:15px;color:var(--ink-60);line-height:1.7;margin-bottom:2rem">This newsletter is a work in progress. Your feedback directly determines what gets built next — which sources get more depth, what new sections get added, and how the whole thing gets delivered. Takes about 3 minutes.</p>
 
-  <hr class="div">
+    <!-- SUCCESS STATE -->
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✓</div>
+      <h3>Thanks for the feedback.</h3>
+      <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
+    </div>
 
-  <h3 style="font-family:var(--serif);font-size:1.05rem;font-weight:700;margin-bottom:0.7rem;color:var(--ink)">Groww Reports</h3>
-  <table class="wtable">
-    <thead><tr><th>Report</th><th>For Date</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Daily Margin Statement</td>
-        <td>19-03-2026</td>
-        <td style="color:var(--green)">✓ Attached to email</td>
-      </tr>
-      <tr>
-        <td>Contract Note</td>
-        <td>19-03-2026</td>
-        <td style="color:var(--green)">✓ Attached to email</td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- FORM -->
+    <form id="feedback-form" onsubmit="submitForm(event)" novalidate>
 
-  <hr class="div">
+      <!-- ① OVERALL RATING -->
+      <div class="form-section-title">How was today's Brief?</div>
+      <div class="form-section-sub">Your honest reaction to this issue, not what you think I want to hear.</div>
 
-  <h3 style="font-family:var(--serif);font-size:1.05rem;font-weight:700;margin-bottom:0.7rem;color:var(--ink)">BSE Compliance</h3>
-  <table class="wtable">
-    <thead><tr><th>Notice Ref</th><th>Requirement</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>BSE 20210922-64</td>
-        <td>Collateral segregation &amp; monitoring statement</td>
-        <td style="color:var(--green)">✓ Filed by broker on 20-Mar-2026</td>
-      </tr>
-    </tbody>
-  </table>
+      <div class="form-group">
+        <div class="form-label">Overall rating <span>*</span></div>
+        <div class="rating-row" id="rating-row">
+          <button type="button" class="rating-btn" data-val="1" onclick="setRating(1)" title="Pretty bad">😕</button>
+          <button type="button" class="rating-btn" data-val="2" onclick="setRating(2)" title="Could be better">😐</button>
+          <button type="button" class="rating-btn" data-val="3" onclick="setRating(3)" title="Pretty good">🙂</button>
+          <button type="button" class="rating-btn" data-val="4" onclick="setRating(4)" title="Really good">😊</button>
+          <button type="button" class="rating-btn" data-val="5" onclick="setRating(5)" title="Excellent">🔥</button>
+        </div>
+        <div id="rating-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please pick a rating before submitting.</div>
+      </div>
 
-  <hr class="div">
+      <hr class="form-divider">
 
-  <div class="info-box" style="max-width:580px">
-    <div class="info-box-label">Groww Digest · Reader Q&A · March 20</div>
-    <p><strong>Q — Are all flexi-cap MFs large-cap biased?</strong> Yes, and it's by design. SEBI requires at least 65% allocation to large-caps. In practice, most managers go higher for stability and liquidity. If you want more mid/small-cap exposure, multi-cap (min 25% in each of large/mid/small) or dedicated small-cap funds are the right category. Full answer in today's Groww Digest.</p>
+      <!-- ② WHAT WORKED / DIDN'T -->
+      <div class="form-section-title">What's working — and what isn't?</div>
+      <div class="form-section-sub">Be specific if you can. "The auto section is too long" is more useful than "it's fine."</div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-liked">What did you like most about today's issue?</label>
+        <textarea class="form-textarea" id="what-liked" name="what_liked" placeholder="e.g. The market strip at the top, the ETAuto summaries, the pilot shortage story…" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-disliked">What felt off, too long, or unnecessary?</label>
+        <textarea class="form-textarea" id="what-disliked" name="what_disliked" placeholder="e.g. Too many world stories, the lead cards are too big on mobile, The Ken section feels thin…" rows="3"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ③ CONTENT PREFERENCES -->
+      <div class="form-section-title">What do you want more of?</div>
+      <div class="form-section-sub">Select everything that applies. These directly set the editorial direction for future issues.</div>
+
+      <div class="form-group">
+        <div class="form-label">Topics you want expanded</div>
+        <div class="check-grid" id="topics-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="markets_depth">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deeper market analysis</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="auto">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Auto industry coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="tech">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Tech & AI news</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="macro">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">India macro & policy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="global">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Global markets & world</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="startups">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Startups & VC</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="personal_finance">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Personal finance</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="commodities">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Commodities & energy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="banking">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Banking & financials</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="ipo">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">IPO & corporate actions</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Sections you want removed or made smaller</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="world">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">World / Economist</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="deepread">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deep Read section</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="makeuseof">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">MakeUseOf / tech how-tos</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="ticker">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Market ticker bar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="lead_cards">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Lead story cards (too big)</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="pull_quotes">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Pull quotes in lead cards</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ④ NEW SOURCES / FEATURES -->
+      <div class="form-section-title">What's missing entirely?</div>
+      <div class="form-section-sub">Sources you'd like added, features you want, things other newsletters do well that this one doesn't yet.</div>
+
+      <div class="form-group">
+        <div class="form-label">New sources or newsletters to include</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="morning_context">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning Context</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="capitalmind">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Capitalmind</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="ars_technica">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Ars Technica</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="economist_full">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">More Economist coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="bloomberg">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Bloomberg India</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="moneycontrol">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Moneycontrol</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">New features you'd like</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="audio_summary">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Audio / TTS summary</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="portfolio_alerts">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Portfolio stock alerts</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="calendar">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Upcoming events calendar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="earnings">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Earnings / results tracker</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="chart_of_day">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Chart of the day</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="morning_edition">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning edition too</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="whatsapp">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">WhatsApp delivery</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="weekly_digest">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Weekly digest on Sunday</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="open-feedback">Anything else? Open mic.</label>
+        <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
+        <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑤ PERSONAL (optional) -->
+      <div class="form-section-title">Optionally — who are you?</div>
+      <div class="form-section-sub">Only fill this in if you want a reply. None of this is required.</div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-name">Your name</label>
+          <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-email">Email (for a reply)</label>
+          <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="reader-role">How would you describe yourself?</label>
+        <select class="form-select" id="reader-role" name="reader_role">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="retail_investor">Retail investor</option>
+          <option value="trader">Active trader</option>
+          <option value="finance_professional">Finance professional</option>
+          <option value="business_founder">Business founder / operator</option>
+          <option value="student">Student</option>
+          <option value="just_curious">Just generally curious</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="how-found">How did you find The Brief?</label>
+        <select class="form-select" id="how-found" name="how_found">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="nischay_direct">Nischay shared it directly</option>
+          <option value="friend">A friend shared it</option>
+          <option value="twitter">Twitter / X</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑥ SUBSCRIBE -->
+      <div class="form-section-title">Want The Brief in your inbox every evening?</div>
+      <div class="form-section-sub">The Brief goes out at 9:30 PM on weekdays — a summary of everything that landed in the newsletter pile that day. No ads, no sponsored content.</div>
+
+      <div class="form-group">
+        <div class="subscribe-card" id="subscribe-card">
+          <div class="subscribe-left">
+            <div class="subscribe-icon">✉</div>
+            <div>
+              <div class="subscribe-title">Subscribe to The Brief</div>
+              <div class="subscribe-desc">Daily · 9:30 PM weekdays · Free</div>
+            </div>
+          </div>
+          <label class="toggle-wrap">
+            <input type="checkbox" id="subscribe-toggle" name="subscribe" value="yes" onchange="handleSubscribeToggle(this)">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="subscribe-email-wrap" style="display:none">
+        <label class="form-label" for="subscribe-email">Email address for the newsletter <span>*</span></label>
+        <div class="form-hint">If you already filled this in above, we'll use that — or add a different address here.</div>
+        <input class="form-input" type="email" id="subscribe-email" name="subscribe_email" placeholder="you@example.com">
+        <div id="subscribe-email-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter a valid email address to subscribe.</div>
+      </div>
+
+      <div class="form-group" id="subscribe-freq-wrap" style="display:none">
+        <div class="form-label">Preferred frequency</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <label class="freq-btn" onclick="setFreq(this,'daily')">
+            <input type="radio" name="freq" value="daily" style="display:none" checked>
+            <span>Every weekday</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekends_too')">
+            <input type="radio" name="freq" value="weekends_too" style="display:none">
+            <span>Weekdays + Saturday digest</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekly_only')">
+            <input type="radio" name="freq" value="weekly_only" style="display:none">
+            <span>Weekly digest only</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem">
+        <button type="submit" class="submit-btn" id="submit-btn">Send feedback</button>
+        <span style="font-size:12px;color:var(--ink-30);font-family:var(--mono)" id="submit-note">Your response stays private.</span>
+      </div>
+
+    </form>
   </div>
 
 </div>
@@ -1431,6 +1916,136 @@ function go(id, btn) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+
+// ── GOOGLE APPS SCRIPT ENDPOINT ──
+// Paste your deployed Web App URL here after following the setup instructions in your Gmail draft
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw4sjhoreKHjt48hk1a6auNFTtxEfNtOiv-Exy15qnIwGVqB0sKdwiCsgTj47_m3fBN/exec';
+
+// ── FORM FUNCTIONS ──
+let selectedRating = 0;
+let selectedFreq = 'daily';
+
+function setRating(val) {
+  selectedRating = val;
+  document.querySelectorAll('.rating-btn').forEach(btn => {
+    btn.classList.toggle('selected', parseInt(btn.dataset.val) === val);
+  });
+  document.getElementById('rating-error').style.display = 'none';
+}
+
+function toggleCheck(label) {
+  const cb = label.querySelector('input[type="checkbox"]');
+  setTimeout(() => { label.classList.toggle('checked', cb.checked); }, 0);
+}
+
+function handleSubscribeToggle(checkbox) {
+  const card = document.getElementById('subscribe-card');
+  const emailWrap = document.getElementById('subscribe-email-wrap');
+  const freqWrap = document.getElementById('subscribe-freq-wrap');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitNote = document.getElementById('submit-note');
+  if (checkbox.checked) {
+    card.classList.add('active');
+    emailWrap.style.display = 'block';
+    freqWrap.style.display = 'block';
+    submitBtn.textContent = 'Send feedback & subscribe →';
+    submitNote.textContent = "You'll receive The Brief at the address above.";
+  } else {
+    card.classList.remove('active');
+    emailWrap.style.display = 'none';
+    freqWrap.style.display = 'none';
+    document.getElementById('subscribe-email-error').style.display = 'none';
+    submitBtn.textContent = 'Send feedback →';
+    submitNote.textContent = 'Your response stays private.';
+  }
+}
+
+function setFreq(label, val) {
+  selectedFreq = val;
+  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+  label.classList.add('active');
+}
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // Validate rating
+  if (!selectedRating) {
+    document.getElementById('rating-error').style.display = 'block';
+    document.getElementById('rating-row').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Validate subscribe email if toggled on
+  const isSubscribed = document.getElementById('subscribe-toggle').checked;
+  const subscribeEmailEl = document.getElementById('subscribe-email');
+  const readerEmail = document.getElementById('reader-email').value.trim();
+  if (isSubscribed) {
+    const subEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
+    if (!subEmail && !readerEmail) {
+      document.getElementById('subscribe-email-error').style.display = 'block';
+      subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      subscribeEmailEl.focus();
+      return;
+    }
+    document.getElementById('subscribe-email-error').style.display = 'none';
+  }
+
+  const subscribeEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
+
+  // Collect all form values into a flat object (one row per submission in the Sheet)
+  const data = {
+    timestamp:       new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+    issue:           'The Brief · 20 Mar 2026',
+    rating:          selectedRating,
+    what_liked:      document.getElementById('what-liked').value,
+    what_disliked:   document.getElementById('what-disliked').value,
+    topics_expand:   [...document.querySelectorAll('input[name="topics"]:checked')].map(i => i.value).join(', '),
+    sections_remove: [...document.querySelectorAll('input[name="remove"]:checked')].map(i => i.value).join(', '),
+    new_sources:     [...document.querySelectorAll('input[name="new_sources"]:checked')].map(i => i.value).join(', '),
+    new_features:    [...document.querySelectorAll('input[name="features"]:checked')].map(i => i.value).join(', '),
+    open_feedback:   document.getElementById('open-feedback').value,
+    reader_name:     document.getElementById('reader-name').value,
+    reader_email:    readerEmail,
+    reader_role:     document.getElementById('reader-role').value,
+    how_found:       document.getElementById('how-found').value,
+    subscribe:       isSubscribed ? 'yes' : 'no',
+    subscribe_email: isSubscribed ? (subscribeEmail || readerEmail) : '',
+    subscribe_freq:  isSubscribed ? selectedFreq : ''
+  };
+
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+
+  if (APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_URL_HERE') {
+    fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(() => showSuccess())
+    .catch(() => showSuccess()); // no-cors resolves without readable response — always show success
+  } else {
+    // Apps Script not yet configured — log locally and show success anyway
+    console.log('[The Brief] Feedback (Apps Script not yet set up):', data);
+    setTimeout(showSuccess, 600);
+  }
+}
+
+function showSuccess() {
+  document.getElementById('feedback-form').style.display = 'none';
+  const successEl = document.getElementById('form-success');
+  successEl.style.display = 'block';
+  successEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Mark first freq button active on load
+window.addEventListener('load', () => {
+  const first = document.querySelector('.freq-btn');
+  if (first) first.classList.add('active');
+});
 </script>
 
 <!-- FOOTER -->

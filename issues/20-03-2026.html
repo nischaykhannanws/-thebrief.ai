@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Brief · 9:30 PM · 20 March 2026</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Brief · 20 Mar 2026 — Nifty near 23,100, rupee at all-time low, Tata Steel green steel">
+  <meta property="og:description" content="Markets volatile, rupee hits ₹93.49, Tata Steel's first electric arc furnace, The Ken on Razorpay's AI bet, Finshots on the Supreme Court's definition of 'industry', and Zerodha on India's pilot shortage.">
+  <meta property="og:url" content="https://nischaykhannanws.github.io/-thebrief.ai/issues/20-03-2026.html">
+  <meta property="og:site_name" content="The Brief">
+  <meta property="og:image" content="https://nischaykhannanws.github.io/-thebrief.ai/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Brief · 20 Mar 2026 — Nifty near 23,100, rupee at all-time low, Tata Steel green steel">
+  <meta name="twitter:description" content="Markets volatile, rupee hits ₹93.49, Tata Steel's first electric arc furnace, The Ken on Razorpay's AI bet, Finshots on the Supreme Court's definition of 'industry', and Zerodha on India's pilot shortage.">
+  <meta name="description" content="Markets volatile, rupee hits ₹93.49, Tata Steel's first electric arc furnace, The Ken on Razorpay's AI bet, Finshots on the Supreme Court's definition of 'industry', and Zerodha on India's pilot shortage.">
+  <meta name="author" content="Nischay Khanna">
+  <meta name="date" content="2026-03-20">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -163,10 +175,13 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 .nav-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0.25rem 1rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
+  align-items: center;
 }
 .nav-inner::-webkit-scrollbar { display: none; }
 .ntab {
@@ -174,18 +189,33 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 0.85rem 1rem;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0.25rem;
   color: var(--ink-60);
-  border: none;
-  background: none;
+  border: 1.5px solid var(--border);
+  background: var(--white);
   cursor: pointer;
   white-space: nowrap;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  transition: color 0.15s, border-color 0.15s;
+  border-radius: 20px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s;
+  position: relative;
+  user-select: none;
 }
-.ntab:hover { color: var(--ink); }
-.ntab.on { color: var(--red); border-bottom-color: var(--red); }
+.ntab:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+  background: var(--off-white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.ntab:active { transform: translateY(0); box-shadow: none; }
+.ntab.on {
+  color: var(--white);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 2px 8px rgba(192,41,46,0.3);
+}
+.ntab.on:hover { background: var(--red); opacity: 0.9; transform: translateY(-1px); }
 
 /* ── LAYOUT ── */
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
@@ -1738,7 +1768,7 @@ const M = {
     tag:'ETAuto · Two-Wheelers',
     hl:"HMSI investing ₹1,500 crore to add a third production line at Tapukara",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/two-wheelers/motorcycles/hmsi-invests-rs-1500-crore-to-expand-rajasthan-plant',
     body:`<p>Honda Motorcycle and Scooter India will add a third production line at its Tapukara plant in Rajasthan, investing ₹1,500 crore. The line will add 6.7 lakh units of annual capacity and is expected to be operational by 2028, creating over 2,000 direct jobs.</p>
     <p>Not only is this a vote of confidence in India's two-wheeler demand — it signals HMSI's intent to grow share in the ₹1–2 lakh commuter segment, where competition from Ola Electric and TVS Motor is intensifying. Read the full story on ETAuto.</p>`
   },
@@ -1746,7 +1776,7 @@ const M = {
     tag:'ETAuto · Safety',
     hl:"Tata Motors Sierra secures a 5-star BNCAP safety rating",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/passenger-vehicle/tata-motors-sierra-gets-5-star-bncap-safety-rating',
     body:`<p>The Tata Sierra has secured a 5-star rating from BNCAP — India's domestic vehicle safety testing programme. It joins the Nexon, Punch, and Harrier in Tata's growing portfolio of 5-star NCAP-rated vehicles.</p>
     <p>This goes to show that Tata's consistent safety performance is becoming a genuine competitive moat — hard to replicate quickly, and increasingly valued by Indian car buyers. Full story on ETAuto.</p>`
   },
@@ -1754,7 +1784,7 @@ const M = {
     tag:'ETAuto · EV',
     hl:"Ola Electric cutting R&D funds again to service debt as sales and revenue fall",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/two-wheelers/scooters/falling-sales-revenue-prompts-ola-electric-to-cut-rd-funds-to-pay-debt-again',
     body:`<p>Ola Electric is cutting R&D spending to pay debt — the second such cycle in recent quarters. Falling sales and revenue leave the company with fewer resources for the product improvements that could improve sales. Due to this, the cycle becomes self-reinforcing.</p>
     <p>In addition to this, the incumbents — TVS Motor, Hero MotoCorp, Bajaj Auto — are the direct beneficiaries. Delhi's new EV policy (₹1 lakh incentive + 100% road tax exemption) is likely to benefit whoever offers the most reliable product, not the most hyped. Full story on ETAuto.</p>`
   },
@@ -1762,7 +1792,7 @@ const M = {
     tag:'ETAuto · Robotaxi',
     hl:"Uber to invest up to $1.25 billion in Rivian for a robotaxi fleet",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/uber-to-buy-rivian-vehicles-for-use-as-driverless-taxis',
     body:`<p>Uber will invest up to $1.25 billion in Rivian as part of a robotaxi partnership. Rivian manufactures the vehicles; Uber deploys them. The deal is structured with milestone-based disbursements, so Rivian must hit delivery targets to unlock the full investment.</p>
     <p>Not only does this validate Rivian's manufacturing capability — it gives Rivian a guaranteed demand anchor at a time when EV demand has been softer than expected. For Uber, it represents a credible long-term path to lower per-trip costs that doesn't rely on human drivers. Full story on ETAuto.</p>`
   },
@@ -1770,7 +1800,7 @@ const M = {
     tag:'ETAuto · EV Policy',
     hl:"Delhi EV policy: ₹1 lakh incentive + 100% road tax exemption till 2030",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/evs/delhi-ev-policy-up-to-rs-1-lakh-incentive-100-road-tax-exemption-till-2030',
     body:`<p>Delhi has formalised its EV policy with hard numbers: up to ₹1 lakh in purchase incentive and a full road tax exemption for EVs purchased before 2030. Combined with long-pending central subsidies finally being released, the total incentive stack can reduce the effective purchase price of a small EV by 20–25%.</p>
     <p>That said, infrastructure remains the real bottleneck. FADA is pushing for more charging stations, and the Indore EV charging station fire that killed eight people is a reminder that safety standards need to keep pace with adoption. Full policy breakdown on ETAuto.</p>`
   },
@@ -1778,7 +1808,7 @@ const M = {
     tag:'ETAuto · Supply Chain',
     hl:"Government floated ₹7,280 crore RFP for rare earth magnet manufacturing — bids opened today",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/centre-invites-global-bids-to-set-up-6000-mtpa-rare-earth-magnet-manufacturing-capacity',
     body:`<p>India currently imports 100% of its rare earth magnets — the Neodymium Iron Boron (NdFeB) magnets that power every EV motor, wind turbine, and hard drive. China controls roughly 60% of global rare earth production. This RFP is the government's direct attempt to build domestic manufacturing capability.</p>
     <p>Not only do these magnets matter for EVs — they are also critical for defence equipment and industrial applications. Building domestic capability therefore serves multiple strategic priorities simultaneously. Full story and bid details on ETAuto.</p>`
   },
@@ -1786,7 +1816,7 @@ const M = {
     tag:'ETAuto · Geopolitics',
     hl:"India's auto boom at risk as Iran-Israel war chokes gas supplies and strains supply chains",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/indias-auto-boom-at-risk-from-iran-israel-war-gas-supply-disruption',
     body:`<p>The Iran-Israel war is disrupting gas supply chains globally, pushing up the cost of auto-grade steel, aluminium, and plastics — all key inputs for vehicle manufacturing. This is squeezing margins across the industry simultaneously, driving the wave of price hikes from April 1 (BMW India: +2%, Tata Motors non-EV: +0.5%).</p>
     <p>Due to this, the positive momentum from first-time buyers (driven by the income tax cut) faces a countervailing headwind. In addition to this, higher crude also raises running costs for petrol and diesel vehicles — potentially accelerating EV adoption among cost-conscious buyers. Full analysis on ETAuto.</p>`
   },
@@ -1794,7 +1824,7 @@ const M = {
     tag:'ETAuto · Corporate',
     hl:"Bajaj Auto reappoints Pradeep Shrivastava as Executive Director for five years",
     src:'ETAuto',
-    url:'https://auto.economictimes.indiatimes.com',
+    url:'https://auto.economictimes.indiatimes.com/news/industry/bajaj-auto-reappoints-pradeep-shrivastava-as-executive-director-for-5-years',
     body:`<p>Bajaj Auto reappointed Pradeep Shrivastava as Executive Director for another five-year term. In a week where HDFC Bank's chairman resigned citing concerns about internal practices, a clean reappointment at one of India's most consistently profitable auto companies is a quiet positive signal about organisational stability and succession planning. Full story on ETAuto.</p>`
   },
   'iran-india': {
@@ -1825,7 +1855,7 @@ const M = {
     tag:'Finshots · Thursday 19 Mar',
     hl:"Are G-Secs really risk-free?",
     src:'Finshots',
-    url:'https://finshots.in',
+    url:'https://finshots.in/archive/are-g-secs-really-risk-free/',
     body:`<p>Finshots' Thursday piece unpacked a common misunderstanding: government securities carry near-zero default risk (the government won't refuse to pay you back) but they do carry three other real risks — interest rate risk (if rates rise, your bond's price falls), inflation risk (if inflation runs above your coupon, your real return is negative), and liquidity risk (not all G-Secs trade actively).</p>
     <p>Due to this, the current environment — with India's 10-year yield rising to 6.77% on oil-price-driven inflation concerns — is a live demonstration of interest rate risk for bond holders. The full explainer is on Finshots.</p>`
   },
@@ -1833,7 +1863,7 @@ const M = {
     tag:'The Ken · The Collection',
     hl:"The exit at HDFC Bank is not just about HDFC Bank",
     src:'The Ken',
-    url:'https://the-ken.com',
+    url:'https://the-ken.com/story/the-exit-at-hdfc-bank-is-not-just-about-hdfc-bank/',
     body:`<p>HDFC Bank's part-time chairman Atanu Chakraborty resigned abruptly, citing "happenings and practices" at the bank over the past two years that weren't aligned with his personal values. The stock crashed ~5% to a 52-week low, erasing over ₹65,000 crore in market cap. The RBI issued a statement saying the bank remains well-capitalised with no material concerns.</p>
     <p>The Ken's Collection framed this alongside similar senior exits at IDFC First, Axis, ICICI, and IndusInd: banks run on balance sheets, but they run by humans. When those humans leave in unclear circumstances, the market's response is often larger than the underlying change justifies. Full story in The Ken's Collection (subscription required).</p>`
   },

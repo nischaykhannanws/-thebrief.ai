@@ -1322,8 +1322,15 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
       <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
     </div>
 
-    <!-- FORM -->
-    <form id="feedback-form" onsubmit="submitForm(event)" novalidate>
+    <!-- FORM — powered by Formspree -->
+    <!-- Replace YOUR_FORM_ID below with the ID from formspree.io/forms after you create a free account -->
+    <form id="feedback-form" action="https://formspree.io/f/myknvaaa" method="POST" novalidate>
+
+      <!-- Hidden fields Formspree uses to organise submissions -->
+      <input type="hidden" name="_subject" value="The Brief feedback — 20 Mar 2026">
+      <input type="hidden" name="issue" value="The Brief · 20 Mar 2026">
+      <!-- Rating is captured here by JS when a button is clicked -->
+      <input type="hidden" name="rating" id="rating-hidden" value="">
 
       <!-- ① OVERALL RATING -->
       <div class="form-section-title">How was today's Brief?</div>
@@ -1917,16 +1924,14 @@ function go(id, btn) {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
 
-// ── GOOGLE APPS SCRIPT ENDPOINT ──
-// Paste your deployed Web App URL here after following the setup instructions in your Gmail draft
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxNlrL4tbHoy0lXJMQaUcZaNPnACLzBHwmgYWaaMbDi4JC6l9Fw0ACcVv3NHwDQC-W/exec';
-
 // ── FORM FUNCTIONS ──
 let selectedRating = 0;
 let selectedFreq = 'daily';
 
 function setRating(val) {
   selectedRating = val;
+  // Write value into the hidden input so Formspree receives it
+  document.getElementById('rating-hidden').value = val;
   document.querySelectorAll('.rating-btn').forEach(btn => {
     btn.classList.toggle('selected', parseInt(btn.dataset.val) === val);
   });
@@ -1939,24 +1944,24 @@ function toggleCheck(label) {
 }
 
 function handleSubscribeToggle(checkbox) {
-  const card = document.getElementById('subscribe-card');
-  const emailWrap = document.getElementById('subscribe-email-wrap');
-  const freqWrap = document.getElementById('subscribe-freq-wrap');
-  const submitBtn = document.getElementById('submit-btn');
+  const card       = document.getElementById('subscribe-card');
+  const emailWrap  = document.getElementById('subscribe-email-wrap');
+  const freqWrap   = document.getElementById('subscribe-freq-wrap');
+  const submitBtn  = document.getElementById('submit-btn');
   const submitNote = document.getElementById('submit-note');
   if (checkbox.checked) {
     card.classList.add('active');
     emailWrap.style.display = 'block';
-    freqWrap.style.display = 'block';
-    submitBtn.textContent = 'Send feedback & subscribe →';
-    submitNote.textContent = "You'll receive The Brief at the address above.";
+    freqWrap.style.display  = 'block';
+    submitBtn.textContent   = 'Send feedback & subscribe →';
+    submitNote.textContent  = "You'll receive The Brief at the address above.";
   } else {
     card.classList.remove('active');
     emailWrap.style.display = 'none';
-    freqWrap.style.display = 'none';
+    freqWrap.style.display  = 'none';
     document.getElementById('subscribe-email-error').style.display = 'none';
-    submitBtn.textContent = 'Send feedback →';
-    submitNote.textContent = 'Your response stays private.';
+    submitBtn.textContent   = 'Send feedback →';
+    submitNote.textContent  = 'Your response stays private.';
   }
 }
 
@@ -1977,9 +1982,9 @@ function submitForm(e) {
   }
 
   // Validate subscribe email if toggled on
-  const isSubscribed = document.getElementById('subscribe-toggle').checked;
+  const isSubscribed     = document.getElementById('subscribe-toggle').checked;
   const subscribeEmailEl = document.getElementById('subscribe-email');
-  const readerEmail = document.getElementById('reader-email').value.trim();
+  const readerEmail      = document.getElementById('reader-email').value.trim();
   if (isSubscribed) {
     const subEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
     if (!subEmail && !readerEmail) {
@@ -1991,49 +1996,35 @@ function submitForm(e) {
     document.getElementById('subscribe-email-error').style.display = 'none';
   }
 
-  const subscribeEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
-
-  // Collect all form values into a flat object (one row per submission in the Sheet)
-  const data = {
-    timestamp:       new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-    issue:           'The Brief · 20 Mar 2026',
-    rating:          selectedRating,
-    what_liked:      document.getElementById('what-liked').value,
-    what_disliked:   document.getElementById('what-disliked').value,
-    topics_expand:   [...document.querySelectorAll('input[name="topics"]:checked')].map(i => i.value).join(', '),
-    sections_remove: [...document.querySelectorAll('input[name="remove"]:checked')].map(i => i.value).join(', '),
-    new_sources:     [...document.querySelectorAll('input[name="new_sources"]:checked')].map(i => i.value).join(', '),
-    new_features:    [...document.querySelectorAll('input[name="features"]:checked')].map(i => i.value).join(', '),
-    open_feedback:   document.getElementById('open-feedback').value,
-    reader_name:     document.getElementById('reader-name').value,
-    reader_email:    readerEmail,
-    reader_role:     document.getElementById('reader-role').value,
-    how_found:       document.getElementById('how-found').value,
-    subscribe:       isSubscribed ? 'yes' : 'no',
-    subscribe_email: isSubscribed ? (subscribeEmail || readerEmail) : '',
-    subscribe_freq:  isSubscribed ? selectedFreq : ''
-  };
-
   const btn = document.getElementById('submit-btn');
   btn.textContent = 'Sending…';
-  btn.disabled = true;
+  btn.disabled    = true;
 
-  if (APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_URL_HERE') {
-    fetch(APPS_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      body: JSON.stringify(data)
-      // No Content-Type header — required for no-cors requests to work.
-      // Browser sends as text/plain which bypasses the CORS preflight check.
-      // Apps Script receives the raw JSON string in e.postData.contents.
-    })
-    .then(() => showSuccess())
-    .catch(() => showSuccess());
-  } else {
-    // Apps Script not yet configured — log locally and show success anyway
-    console.log('[The Brief] Feedback (Apps Script not yet set up):', data);
-    setTimeout(showSuccess, 600);
-  }
+  const form = document.getElementById('feedback-form');
+  const formData = new FormData(form);
+
+  // Submit to Formspree via AJAX so we can show our own success screen
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      showSuccess();
+    } else {
+      res.json().then(data => {
+        btn.textContent = 'Send feedback →';
+        btn.disabled    = false;
+        alert('Something went wrong: ' + (data.errors ? data.errors.map(e => e.message).join(', ') : 'please try again.'));
+      });
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Send feedback →';
+    btn.disabled    = false;
+    alert('Network error — please check your connection and try again.');
+  });
 }
 
 function showSuccess() {

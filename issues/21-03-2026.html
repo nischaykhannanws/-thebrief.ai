@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Brief · 9:30 PM · 20 March 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --off-white: #f9f8f5;
+  --cream: #f3f0ea;
+  --warm-50: #faf8f4;
+  --ink: #1c1a17;
+  --ink-60: #5c5852;
+  --ink-30: #a8a49e;
+  --border: #e8e3da;
+  --border-strong: #ccc8c0;
+  --red: #c0292e;
+  --red-light: #fdf2f2;
+  --amber: #b86b00;
+  --amber-light: #fdf7ee;
+  --green: #1a6640;
+  --green-light: #f0f8f3;
+  --blue: #1a4a80;
+  --blue-light: #f0f4fb;
+  --teal: #0a6060;
+  --teal-light: #f0f8f8;
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 6px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--off-white); color: var(--ink); line-height: 1.6; }
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar-brand {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+}
+.topbar-brand span { color: var(--red); }
+.topbar-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+.hero-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.9rem;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.hero-title em { color: var(--red); font-style: normal; }
+.hero-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+}
+.hero-desc {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+.hero-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--red);
+  margin: 1.4rem auto 0;
+}
+
+/* ── TICKER ── */
+.ticker {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  height: 34px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.ticker-pill {
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ticker-track { flex: 1; overflow: hidden; }
+.ticker-inner {
+  display: flex;
+  gap: 2.5rem;
+  animation: run 28s linear infinite;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+@keyframes run { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ti {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-60);
+}
+.ti-n { font-weight: 500; color: var(--ink); }
+.up { color: #1a7a3a; }
+.dn { color: var(--red); }
+
+/* ── NAV ── */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.ntab {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.85rem 1rem;
+  color: var(--ink-60);
+  border: none;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.ntab:hover { color: var(--ink); }
+.ntab.on { color: var(--red); border-bottom-color: var(--red); }
+
+/* ── LAYOUT ── */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+.sec { display: none; padding: 2.5rem 0 4rem; }
+.sec.on { display: block; }
+
+/* ── SECTION HEADER ── */
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid var(--ink);
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.sec-left {}
+.sec-src {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.35rem;
+}
+.sec-title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.sec-count {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+
+/* ── MARKET STRIP ── */
+.mkt-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  border: 1px solid var(--border);
+  background: var(--border);
+  gap: 1px;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.mc {
+  background: var(--white);
+  padding: 0.9rem 1rem;
+}
+.mc-l {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 4px;
+}
+.mc-v {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+.mc-c { font-family: var(--mono); font-size: 11px; margin-top: 3px; }
+
+/* ── LEAD CARD ── */
+.lead-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 680px) { .lead-card { grid-template-columns: 1fr; gap: 1.2rem; } }
+.lead-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+.lead-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+  color: var(--ink);
+}
+.lead-summary {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 1rem;
+}
+.src-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.src-btn:hover { background: var(--red); color: #fff; }
+.src-btn::after { content: '↗'; font-size: 11px; }
+.lead-aside {
+  border-left: 1px solid var(--border);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 680px) { .lead-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 1rem; } }
+.pull-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.55;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--red);
+}
+.pull-attr {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+/* ── STORY LIST ── */
+.story-list {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.story-row {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  align-items: start;
+  gap: 0.8rem;
+  padding: 1.1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.story-row:last-child { border-bottom: none; }
+.story-row:hover { background: var(--off-white); }
+.story-num {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  padding-top: 3px;
+  letter-spacing: 1px;
+}
+.story-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.story-row:hover .story-hl { color: var(--red); }
+.story-deck {
+  font-size: 13px;
+  color: var(--ink-60);
+  line-height: 1.5;
+}
+.story-src-badge {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1px;
+  color: var(--red);
+  white-space: nowrap;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+.ctag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  margin-bottom: 0.6rem;
+}
+.ctag.red { background: var(--red-light); color: var(--red); }
+.ctag.green { background: var(--green-light); color: var(--green); }
+.ctag.blue { background: var(--blue-light); color: var(--blue); }
+.ctag.amber { background: var(--amber-light); color: var(--amber); }
+.ctag.teal { background: var(--teal-light); color: var(--teal); }
+.ctag.neutral { background: var(--cream); color: var(--ink-60); }
+.card-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.card:hover .card-hl { color: var(--red); }
+.card-deck { font-size: 13px; color: var(--ink-60); line-height: 1.5; margin-bottom: 0.6rem; }
+.card-src { font-family: var(--mono); font-size: 8.5px; color: var(--ink-30); letter-spacing: 1px; text-transform: uppercase; }
+
+/* ── INFO BOX ── */
+.info-box {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.info-box-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.6rem;
+}
+.info-box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.info-box p:last-child { margin-bottom: 0; }
+.info-box strong { color: var(--ink); font-weight: 600; }
+
+/* ── FEEDBACK FORM ── */
+.form-group { margin-bottom: 1.6rem; }
+.form-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.form-label span { color: var(--red); margin-left: 2px; }
+.form-hint {
+  font-size: 12.5px;
+  color: var(--ink-30);
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(192,41,46,0.08);
+}
+.form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a8a49e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.2rem;
+  cursor: pointer;
+}
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  user-select: none;
+}
+.check-item:hover { border-color: var(--border-strong); background: var(--off-white); }
+.check-item.checked { border-color: var(--red); background: var(--red-light); }
+.check-item input[type="checkbox"] { display: none; }
+.check-box {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s;
+}
+.check-item.checked .check-box {
+  background: var(--red);
+  border-color: var(--red);
+}
+.check-tick { color: #fff; font-size: 10px; display: none; }
+.check-item.checked .check-tick { display: block; }
+.check-text { font-size: 13px; color: var(--ink-60); }
+.check-item.checked .check-text { color: var(--ink); }
+.rating-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.rating-btn {
+  width: 44px; height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.12s, transform 0.1s;
+  flex-shrink: 0;
+}
+.rating-btn:hover { border-color: var(--border-strong); transform: scale(1.1); }
+.rating-btn.selected { border-color: var(--red); background: var(--red-light); transform: scale(1.12); }
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.submit-btn:hover { background: var(--red); }
+.submit-btn:active { transform: scale(0.98); }
+.submit-btn::after { content: '→'; font-size: 13px; }
+.form-success {
+  display: none;
+  background: var(--green-light);
+  border: 1.5px solid #a8d5b8;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  text-align: center;
+}
+.form-success-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--green); margin-bottom: 0.4rem; }
+.form-success p { font-size: 13.5px; color: var(--ink-60); line-height: 1.6; }
+.form-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.form-section-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.form-section-sub {
+  font-size: 13px;
+  color: var(--ink-60);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+/* Subscribe card */
+.subscribe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  background: var(--off-white);
+  transition: border-color 0.15s, background 0.15s;
+}
+.subscribe-card.active {
+  border-color: var(--red);
+  background: var(--red-light);
+}
+.subscribe-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.subscribe-icon {
+  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.subscribe-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+.subscribe-desc {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 1px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+/* Toggle switch */
+.toggle-wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-wrap input { display: none; }
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background: var(--border-strong);
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.2s;
+  display: block;
+}
+.toggle-wrap input:checked ~ .toggle-track { background: var(--red); }
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.toggle-wrap input:checked ~ .toggle-track .toggle-thumb { transform: translateX(20px); }
+/* Frequency buttons */
+.freq-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+  user-select: none;
+  color: var(--ink-60);
+}
+.freq-btn:hover { border-color: var(--border-strong); }
+.freq-btn.active { border-color: var(--red); background: var(--red-light); color: var(--ink); font-weight: 500; }
+
+/* ── DIVIDER ── */
+.div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ── MODAL ── */
+.modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 500;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}
+.modal-bg.open { display: flex; }
+.modal {
+  background: var(--white);
+  max-width: 620px;
+  width: 100%;
+  margin: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  animation: mup 0.2s ease;
+  position: relative;
+}
+@keyframes mup { from { transform: translateY(16px); opacity: 0; } }
+.modal-head {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 1.3rem 1.5rem;
+}
+.modal-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.4rem;
+}
+.modal-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  padding-right: 2rem;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-60);
+  transition: background 0.15s;
+}
+.modal-close:hover { background: var(--border-strong); }
+.modal-body {
+  padding: 1.4rem 1.5rem 1.8rem;
+}
+/* Summary note inside modal */
+.modal-summary-note {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.modal-body p { font-size: 14px; line-height: 1.75; color: var(--ink-60); margin-bottom: 0.85rem; }
+.modal-body p:last-child { margin-bottom: 0; }
+.modal-body strong { color: var(--ink); font-weight: 600; }
+.modal-source-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.modal-source-link span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.modal-source-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 5px 11px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.modal-source-link a:hover { background: var(--red); color: #fff; }
+.modal-source-link a::after { content: '↗'; }
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--white);
+  padding: 1.8rem 1.5rem;
+  margin-top: 2rem;
+}
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-brand { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); }
+.footer-brand span { color: var(--red); }
+.footer-meta { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.8; text-align: right; }
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .story-row { grid-template-columns: 28px 1fr; }
+  .story-src-badge { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">The <span>Brief</span></div>
+  <div class="topbar-meta">9:30 PM · Sat 21 Mar 2026</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">Saturday Edition · Issue 002</div>
+  <div class="hero-title">The <em>Brief</em></div>
+  <div class="hero-desc">Your Saturday edition — The Ken, ETAuto, Finshots, MakeUseOf, and more.</div>
+  <div class="hero-date">Saturday, 21 March 2026 · 7 newsletters · 9:30 PM</div>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-pill">Live</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span class="ti"><span class="ti-n">MARKETS CLOSED</span><span>Saturday</span></span>
+      <span class="ti"><span class="ti-n">NIFTY FRI CLOSE</span><span>23,114</span><span class="up">▲ 0.49%</span></span>
+      <span class="ti"><span class="ti-n">SENSEX FRI</span><span>74,532</span><span class="up">▲ 0.44%</span></span>
+      <span class="ti"><span class="ti-n">USD/INR</span><span>₹93.49</span><span class="dn">▼ All-time low</span></span>
+      <span class="ti"><span class="ti-n">WTI CRUDE</span><span>~$96/bbl</span></span>
+      <span class="ti"><span class="ti-n">INDIA OIL IMPORTS MAR</span><span class="dn">▼ 23%</span></span>
+      <span class="ti"><span class="ti-n">INDIA 10Y</span><span>6.77%</span><span class="dn">5-wk high</span></span>
+      <span class="ti"><span class="ti-n">PETROL HIKE</span><span>▲ ₹2.35/L</span><span class="dn">Premium grades</span></span>
+      <span class="ti"><span class="ti-n">RARE EARTH RFP</span><span>₹7,280 cr</span></span>
+      <!-- duplicate -->
+      <span class="ti"><span class="ti-n">MARKETS CLOSED</span><span>Saturday</span></span>
+      <span class="ti"><span class="ti-n">NIFTY FRI CLOSE</span><span>23,114</span><span class="up">▲ 0.49%</span></span>
+      <span class="ti"><span class="ti-n">SENSEX FRI</span><span>74,532</span><span class="up">▲ 0.44%</span></span>
+      <span class="ti"><span class="ti-n">USD/INR</span><span>₹93.49</span><span class="dn">▼ All-time low</span></span>
+      <span class="ti"><span class="ti-n">WTI CRUDE</span><span>~$96/bbl</span></span>
+      <span class="ti"><span class="ti-n">INDIA OIL IMPORTS MAR</span><span class="dn">▼ 23%</span></span>
+      <span class="ti"><span class="ti-n">INDIA 10Y</span><span>6.77%</span></span>
+      <span class="ti"><span class="ti-n">PETROL HIKE</span><span>▲ ₹2.35/L</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="ntab on" onclick="go('mkt',this)">📅 Week Recap</button>
+    <button class="ntab" onclick="go('auto',this)">🚗 Auto</button>
+    <button class="ntab" onclick="go('india',this)">🇮🇳 India</button>
+    <button class="ntab" onclick="go('deepread',this)">🧠 Deep Reads</button>
+    <button class="ntab" onclick="go('world',this)">🌍 World</button>
+    <button class="ntab" onclick="go('feedback',this)">✏️ Feedback</button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     MARKETS — Aftermarket Report + Groww Digest
+══════════════════════════════════════ -->
+<section class="sec on" id="sec-mkt">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Saturday · Markets Closed</div>
+      <h2 class="sec-title">No trading today — here is the week in numbers</h2>
+    </div>
+  </div>
+
+  <div class="info-box" style="margin-bottom:2rem">
+    <div class="info-box-label">Saturday Edition · 21 March 2026</div>
+    <p>Indian equity markets are closed today. The week ended with <strong>Nifty at 23,114 (+0.49%)</strong> on Friday after one of the more dramatic weeks of 2026. The index crashed <strong>3.26% on Thursday</strong> as HDFC Bank's chairman abruptly resigned citing "happenings and practices" he couldn't reconcile with his values — wiping out over ₹65,000 crore in market cap in a single session. The rupee printed a fresh all-time low of <strong>₹93.49/dollar</strong>. The week's one piece of structural good news: India's bond yield curve did exactly what it was supposed to do, pricing in a "higher for longer" rate environment.</p>
+    <p>No Aftermarket Report or Groww Digest on weekends. Today's Brief covers ETAuto's full Saturday roundup, The Ken's deep AI column, Finshots' weekly wrap, and MakeUseOf's Saturday tech reads.</p>
+  </div>
+
+  <div class="card-grid">
+    <div class="card" onclick="openM('week-nifty')">
+      <span class="ctag red">Week in Review</span>
+      <div class="card-hl">Nifty lost 3.26% Thursday, recovered 0.49% Friday — weekly net loss</div>
+      <div class="card-deck">HDFC Bank's chairman exit was the trigger. Geopolitical escalation and the Iran conflict's impact on the rupee kept selling pressure elevated through Thursday. Friday saw IT lead the bounce (+2.17%) but conviction was thin. Key level to watch next week: 23,000 (max Put OI support).</div>
+      <div class="card-src">Aftermarket Report · Groww Digest (Fri recap)</div>
+    </div>
+    <div class="card" onclick="openM('week-rupee')">
+      <span class="ctag red">Currency</span>
+      <div class="card-hl">₹93.49 per dollar — India's currency at an all-time low</div>
+      <div class="card-deck">Crude at $96, FII outflows, and a strengthening dollar all hit simultaneously. Oil imports through the Strait of Hormuz are down 23% in March as disruption bites. The RBI is intervening but forex reserves have already dropped $7.05 billion to $709.76 billion in a single week.</div>
+      <div class="card-src">Aftermarket Report · ETAuto</div>
+    </div>
+    <div class="card" onclick="openM('week-petrol')">
+      <span class="ctag amber">Fuel</span>
+      <div class="card-hl">Indian oil companies raised premium petrol prices by up to ₹2.35/litre</div>
+      <div class="card-deck">Regular petrol and diesel prices have been held flat to contain CPI inflation — but OMCs are absorbing the difference as under-recoveries. Raising only premium grades is a political compromise that can't hold indefinitely if crude stays above $90. ETAuto covered the full story.</div>
+      <div class="card-src">ETAuto · Sat 21 Mar</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     AUTO — ETAuto Saturday (deep treatment)
+══════════════════════════════════════ -->
+<section class="sec" id="sec-auto">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">ETAuto Latest News · Sat 21 Mar 2026</div>
+      <h2 class="sec-title">Rare earth magnets, luxury EVs, hydrogen, and Ola's IPO fund diversion</h2>
+    </div>
+    <span class="sec-count">10 stories</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · ETAuto · Saturday</div>
+      <h3 class="lead-hl">The government released the incentive structure for its ₹7,280 crore rare earth magnet RFP — and China just made the urgency clearer</h3>
+      <p class="lead-summary">You see, India currently imports 100% of its rare earth magnets — the components inside every EV motor, wind turbine, and piece of defence equipment. Not only has the government now opened bids for the ₹7,280 crore RFP, it has also published the incentive structure: OEMs must establish the full value chain from NdPr oxide to finished magnets. In addition to this, a government pilot plant is already operational at ARCI in Hyderabad. Due to this timing, one more piece of context matters: China's rare earth magnet exports spiked sharply ahead of the Trump-Xi diplomatic meeting — using supply as leverage just as India is trying to build independence from it.</p>
+      <a class="src-btn" href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read on ETAuto</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"Hydrogen could scale faster than expected in India."</div>
+        <div class="pull-attr">— Vikram Gulati, Senior VP, Toyota Kirloskar Motor, to ETAuto</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.8">
+        <strong style="color:var(--ink)">Rare earth RFP snapshot:</strong><br>
+        Target: 6,000 MTPA capacity via global bids<br>
+        Full value chain required: NdPr oxide → magnets<br>
+        Pilot plant: ARCI, Hyderabad (operational)<br>
+        Centre: Incentives + investment reimbursement
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('hydrogen')">
+      <span class="ctag green">Future Fuels</span>
+      <div class="card-hl">Hydrogen could scale faster than expected in India, says Toyota Kirloskar Motor</div>
+      <div class="card-deck">TKM's Vikram Gulati believes India's hydrogen ecosystem — covering industrial demand, refuelling infrastructure, and commercial vehicles — could develop more rapidly than current timelines indicate. Read the full interview on ETAuto.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('luxury-ev')">
+      <span class="ctag blue">Luxury EVs</span>
+      <div class="card-hl">Luxury EV demand is outpacing expectations — driven by tech-savvy buyers, says BMW India's Hardeep Brar</div>
+      <div class="card-deck">The premium EV segment is growing faster than BMW India planned. Not only BMW — Lexus simultaneously launched the ES 500e at ₹89.99 lakh, its first full BEV for India, and shelved its hybrid strategy. The luxury EV market is moving from pilot to mainstream faster than incumbents expected.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('ola-ipo')">
+      <span class="ctag red">EV</span>
+      <div class="card-hl">Ola Electric is diverting ₹575 crore of IPO funds to pay debt — the third such move</div>
+      <div class="card-deck">The company raised IPO money for product development and growth. Diverting ₹575 crore to debt repayment — on top of repeated R&D cuts — raises legitimate questions about the original use-of-proceeds disclosures and whether the turnaround narrative is credible. ETAuto has the full story.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('hormuz-oil')">
+      <span class="ctag red">Oil & Energy</span>
+      <div class="card-hl">India's oil imports are down 23% in March as the Hormuz shock bites</div>
+      <div class="card-deck">This is the most concrete data point yet on the Iran conflict's direct impact on India's supply chain. A 23% import decline in a single month is not a rounding error — it is a genuine supply constraint that will push costs higher across manufacturing, logistics, and fuel. Read on ETAuto.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('tyre-stocks')">
+      <span class="ctag red">Markets</span>
+      <div class="card-hl">Tyre stocks have fallen 18% in March — analysts warn of another 24% downside</div>
+      <div class="card-deck">Crude at $96 means natural rubber and synthetic polymer input costs are rising simultaneously. Due to this, tyre companies face margin compression at the same time as auto sector volumes are softening. ETAuto covers the analyst calls in full.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('tesla-india')">
+      <span class="ctag teal">Tesla</span>
+      <div class="card-hl">Tesla is exploring India for energy storage — beyond cars — as a job ad reveals its ambitions</div>
+      <div class="card-deck">A job listing points to Powerwall and Megapack deployments as a standalone India business. In addition to this, Tesla faces a wider NHTSA probe of its self-driving feature as it prepares to eventually sell steering-wheel-free vehicles. Two Tesla stories worth reading together.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('skoda')">
+      <span class="ctag blue">Passenger Vehicles</span>
+      <div class="card-hl">Skoda targets volume growth with Kushaq facelift and a 200-city retail push</div>
+      <div class="card-deck">Skoda India is expanding beyond Tier 1 cities. That said, the competitive context is tough — Hyundai just launched the updated Exter at ₹5.79 lakh and Maruti is under investor pressure over market share concerns. ETAuto covers the full picture.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('xpeng')">
+      <span class="ctag green">Global EV</span>
+      <div class="card-hl">China's Xpeng posted its first-ever profit on the back of high-margin EV sales</div>
+      <div class="card-deck">A landmark for a Chinese EV brand that was burning cash aggressively just two years ago. The contrast with Ola Electric — still diverting IPO funds to service debt — is a useful frame for where different EV companies are in their maturity curves. Story on ETAuto.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('delhi-ev-buses')">
+      <span class="ctag green">EV Policy</span>
+      <div class="card-hl">Delhi CM flags off 300 new EV buses · Centre clarifies no licensing rules for EV chargers in MP</div>
+      <div class="card-deck">300 EV buses add meaningfully to Delhi's fleet. In addition to this, the Centre clarified that EV chargers in Madhya Pradesh don't require separate licensing — removing a friction that had been slowing charger rollout across the state. Two policy moves covered on ETAuto.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('mineral-blocks')">
+      <span class="ctag amber">Policy</span>
+      <div class="card-hl">India auctioned a record 200 mineral blocks in FY26 — the highest ever in a single year</div>
+      <div class="card-deck">Put simply, this is the government's broadest push yet to reduce India's critical mineral import dependence — directly connected to the rare earth magnet RFP story. The two are part of the same industrial policy arc. ETAuto covers the data.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEEP READ — The Ken + Finshots
+══════════════════════════════════════ -->
+<section class="sec" id="sec-india">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">The Ken · Zero Shot · Finshots Weekly Wrap</div>
+      <h2 class="sec-title">The week's best reads — AI layoffs, LPG markets, and bananas</h2>
+    </div>
+    <span class="sec-count">6 stories</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">The Ken · Zero Shot · by Praveen Gopal Krishnan · Today</div>
+      <h3 class="lead-hl">Oracle, Amazon, and Meta are laying off thousands. In the same breath, they're announcing record AI infrastructure spending. Humans are the budget.</h3>
+      <p class="lead-summary">You see, there is a new template for the modern tech layoff. Oracle is cutting thousands citing a "cash crunch" from AI data centre expansion. Meta is reportedly weighing a 20% workforce reduction to fund AI infrastructure. Amazon laid off 16,000 employees the same month its CEO stated that AWS revenue is expected to grow at twice the rate previously projected. Not only this — Amazon's Andy Jassy made the logic explicit in an internal town hall: capex for data centres must be laid out years before monetisation. Put simply, humans are being liquidated to fund the infrastructure that AI will eventually run. The Ken's Praveen Gopal Krishnan calls it clearly: the ingredients for social backlash are getting real now. Read the full column on The Ken.</p>
+      <a class="src-btn" href="https://the-ken.com/columns/zero-shot/humans-are-the-budget/" target="_blank" rel="noopener">Read on The Ken</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"The faster we grow in AWS, the more capex we have to spend shorter term... we have to lay all that out a couple of years in advance."</div>
+        <div class="pull-attr">— Andy Jassy, Amazon CEO, internal town hall · Reported by The Ken</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.8">
+        <strong style="color:var(--ink)">The pattern:</strong><br>
+        Oracle — thousands of cuts, AI data centre expansion<br>
+        Meta — 20% workforce cut reportedly being weighed<br>
+        Amazon — 16,000 layoffs, AWS growth doubled<br>
+        The common thread: workers → capex → AI infrastructure
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('finshots-wrap')">
+      <span class="ctag neutral">Finshots · Saturday Weekly Wrap</span>
+      <div class="card-hl">Five stories in one email: LPG, slow ships, bananas, G-Secs, and what counts as an "industry"</div>
+      <div class="card-deck">Finshots' Saturday edition wraps the entire week into one crisp read. Well worth saving for the weekend. All five originals link directly from finshots.in.</div>
+      <div class="card-src">Finshots → Read the weekly wrap</div>
+    </div>
+
+    <div class="card" onclick="openM('lpg')">
+      <span class="ctag amber">Finshots · Monday</span>
+      <div class="card-hl">India's LPG success story created an unexpected problem — subsidised cylinders are being diverted to restaurants</div>
+      <div class="card-deck">The price gap between domestic and commercial LPG has opened a black market. The very system that expanded clean cooking access is now distorting incentives. Can India fix the subsidy design without undoing one of its biggest energy wins? Read the full story on Finshots.</div>
+      <div class="card-src">Finshots → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('banana')">
+      <span class="ctag green">Finshots · Wednesday</span>
+      <div class="card-hl">Bananas could go extinct — and the exact same thing happened once before</div>
+      <div class="card-deck">The Cavendish variety — the only banana most people have ever eaten — faces a deadly fungal disease, exactly like the Gros Michel did decades ago. India is the world's largest banana producer but exports almost none. Finshots breaks it down clearly.</div>
+      <div class="card-src">Finshots → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('polymer')">
+      <span class="ctag amber">Finshots · Markets</span>
+      <div class="card-hl">Polymer prices are rising because of the war in West Asia — and this time could mark a structural turning point</div>
+      <div class="card-deck">The Iran conflict is disrupting petrochemical supply chains, pushing up prices for plastics used in packaging, auto components, FMCG goods, and electronics — all at the same time. Finshots' Saturday Markets edition asks whether this could be a structural shift, not a temporary spike.</div>
+      <div class="card-src">Finshots → Read the Markets edition</div>
+    </div>
+
+    <div class="card" onclick="openM('indiamart-openai')">
+      <span class="ctag teal">The Ken · Zero Shot Podcast</span>
+      <div class="card-hl">IndiaMart is suing OpenAI for "selective discrimination" — and the Calcutta High Court thinks something's off</div>
+      <div class="card-deck">India's largest B2B marketplace says ChatGPT is systematically excluding it from search results. The court noted "selective discrimination... without any logic." The Ken's Zero Shot podcast breaks down the competition law angle with a boutique law firm co-founder. Listen on Spotify, Apple, or YouTube.</div>
+      <div class="card-src">The Ken Zero Shot → Listen to the episode</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEEP READ — Zerodha + MakeUseOf
+══════════════════════════════════════ -->
+<section class="sec" id="sec-deepread">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">The Daily Brief · MakeUseOf · Saturday 21 Mar</div>
+      <h2 class="sec-title">Weekend reads: What we're reading, and what we're fixing on our PCs</h2>
+    </div>
+    <span class="sec-count">5 stories</span>
+  </div>
+
+  <div class="info-box" style="margin-bottom:1.5rem">
+    <div class="info-box-label">The Daily Brief by Zerodha · Who Said What S2E35</div>
+    <p>The Daily Brief's Saturday edition this week is their "Who Said What" series — a curation of what the Zerodha Markets team has been reading, covering <strong>AI developments, China's economic positioning, and the power of brand</strong> in an age of commodity products. A good long-form weekend read. <a href="https://thedailybrief.zerodha.com" target="_blank" rel="noopener" style="color:var(--red)">Read on The Daily Brief ↗</a></p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('frame-gen')">
+      <span class="ctag teal">MakeUseOf · Gaming</span>
+      <div class="card-hl">Frame generation is everywhere now — and it's papering over a real performance problem nobody wants to discuss</div>
+      <div class="card-deck">Nvidia's Multi Frame Generation boosts frame rates — but it's still riddled with visual artefacts and added input latency. MakeUseOf argues that the industry's enthusiasm for MFG is masking the fact that raw GPU performance has stagnated relative to price. Read it on MakeUseOf.</div>
+      <div class="card-src">MakeUseOf → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('windows-update')">
+      <span class="ctag blue">MakeUseOf · Windows</span>
+      <div class="card-hl">A single Windows registry key stopped forced restarts after updates — and MakeUseOf hasn't lost work since</div>
+      <div class="card-deck">Windows' built-in active hours setting doesn't always prevent forced restarts. A specific registry key permanently stops Windows from restarting after updates without manual approval. The how-to guide is on MakeUseOf.</div>
+      <div class="card-src">MakeUseOf → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('s26-ultra')">
+      <span class="ctag neutral">MakeUseOf · Review</span>
+      <div class="card-hl">The Galaxy S26 Ultra is almost the perfect Android phone — and that "almost" is what bothers MakeUseOf</div>
+      <div class="card-deck">After two weeks as a daily driver, MakeUseOf says it's still the best Android phone money can buy — but one specific issue keeps it from being perfect. The full review is on MakeUseOf — worth reading if you're in the market for a flagship Android.</div>
+      <div class="card-src">MakeUseOf → Read the full review</div>
+    </div>
+
+    <div class="card" onclick="openM('gemini-audio')">
+      <span class="ctag teal">MakeUseOf · AI</span>
+      <div class="card-hl">Gemini can analyse audio — and once you know this, it becomes part of your daily workflow</div>
+      <div class="card-deck">Most people type prompts at Gemini. You can instead feed it audio files — recordings, interviews, meetings, podcasts — and have it summarise, transcribe, and analyse. MakeUseOf breaks down how to make this a practical daily habit.</div>
+      <div class="card-src">MakeUseOf → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('ssd-myth')">
+      <span class="ctag neutral">MakeUseOf · How-To</span>
+      <div class="card-hl">Everyone disables this Windows setting to "protect" their SSD — but they're wrong</div>
+      <div class="card-deck">A common piece of PC advice says disabling a specific Windows setting extends SSD life. MakeUseOf tested this, ran the numbers, and concluded the advice is wrong — Windows has better SSD management built in than most users realise. Full explanation on MakeUseOf.</div>
+      <div class="card-src">MakeUseOf → Read the full story</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WORLD — Screener + brief global
+══════════════════════════════════════ -->
+<section class="sec" id="sec-world">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Screener.in · Global Context</div>
+      <h2 class="sec-title">Watchlist alert and the weekend's macro backdrop</h2>
+    </div>
+    <span class="sec-count">3 items</span>
+  </div>
+
+  <div class="info-box" style="margin-bottom:1.5rem">
+    <div class="info-box-label">Screener.in · Watchlist Alert · Sat 21 Mar 2026</div>
+    <p><strong>Tata Motors Passenger Vehicles</strong> announced under Regulation 30 (LODR) that ICE vehicle prices will rise approximately <strong>0.5% weighted average</strong> effective April 1, 2026. This is a scheduled announcement, not a surprise — Tata Motors PV flagged this move earlier in the week. The price hike is being driven by rising input costs from commodity disruption. <a href="https://screener.in" target="_blank" rel="noopener" style="color:var(--red)">Track on Screener.in ↗</a></p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('iran-macro')">
+      <span class="ctag red">Geopolitics</span>
+      <div class="card-hl">The Iran war this week: oil at $96, India imports down 23%, rupee at all-time low</div>
+      <div class="card-deck">Three data points from this week that tell the story of how directly the Iran conflict is hitting India. The Strait of Hormuz disruption is no longer theoretical — it is showing up in import volumes, the rupee, and fuel prices simultaneously. Source: ETAuto + Aftermarket Report.</div>
+      <div class="card-src">ETAuto · Aftermarket Report → Links above</div>
+    </div>
+
+    <div class="card" onclick="openM('china-magnets')">
+      <span class="ctag blue">China</span>
+      <div class="card-hl">China's rare earth magnet exports jumped ahead of the Trump-Xi meeting — using supply as leverage</div>
+      <div class="card-deck">China accelerated rare earth magnet exports in the weeks before US-China diplomatic contact. This is precisely why India's ₹7,280 crore domestic magnet RFP — opened yesterday — matters beyond the auto sector. Supply chain independence is a geopolitical imperative, not just an industrial policy. Source: ETAuto.</div>
+      <div class="card-src">ETAuto → Read the full story</div>
+    </div>
+
+    <div class="card" onclick="openM('lenskart')">
+      <span class="ctag neutral">The Ken · Free Read</span>
+      <div class="card-hl">Lenskart succeeds where Zomato and Ola stumbled — 40% of revenue from overseas, IPO approaching</div>
+      <div class="card-deck">The Ken's free unlocked story today is a case study in how an Indian consumer brand went global without losing its domestic base. With an IPO around the corner, it is a useful frame for evaluating Indian consumer internet companies more broadly. No subscription needed.</div>
+      <div class="card-src">The Ken → Read free (no subscription)</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FEEDBACK FORM
+══════════════════════════════════════ -->
+<section class="sec" id="sec-feedback">
+<div class="wrap">
+
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Reader Feedback · Issue 002</div>
+      <h2 class="sec-title">Help shape The Brief</h2>
+    </div>
+  </div>
+
+  <div style="max-width:680px">
+    <p style="font-size:15px;color:var(--ink-60);line-height:1.7;margin-bottom:2rem">This newsletter is a work in progress. Your feedback directly determines what gets built next — which sources get more depth, what new sections get added, and how the whole thing gets delivered. Takes about 3 minutes.</p>
+
+    <!-- SUCCESS STATE -->
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✓</div>
+      <h3>Thanks for the feedback.</h3>
+      <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
+    </div>
+
+    <!-- FORM — powered by Formspree -->
+    <!-- Replace YOUR_FORM_ID below with the ID from formspree.io/forms after you create a free account -->
+    <form id="feedback-form" action="https://formspree.io/f/myknvaaa" method="POST" novalidate>
+
+      <!-- Hidden fields Formspree uses to organise submissions -->
+      <input type="hidden" name="_subject" value="The Brief feedback — 21 Mar 2026">
+      <input type="hidden" name="issue" value="The Brief · 21 Mar 2026 (Saturday)">
+      <!-- Rating is captured here by JS when a button is clicked -->
+      <input type="hidden" name="rating" id="rating-hidden" value="">
+
+      <!-- ① OVERALL RATING -->
+      <div class="form-section-title">How was today's Brief?</div>
+      <div class="form-section-sub">Your honest reaction to this issue, not what you think I want to hear.</div>
+
+      <div class="form-group">
+        <div class="form-label">Overall rating <span>*</span></div>
+        <div class="rating-row" id="rating-row">
+          <button type="button" class="rating-btn" data-val="1" onclick="setRating(1)" title="Pretty bad">😕</button>
+          <button type="button" class="rating-btn" data-val="2" onclick="setRating(2)" title="Could be better">😐</button>
+          <button type="button" class="rating-btn" data-val="3" onclick="setRating(3)" title="Pretty good">🙂</button>
+          <button type="button" class="rating-btn" data-val="4" onclick="setRating(4)" title="Really good">😊</button>
+          <button type="button" class="rating-btn" data-val="5" onclick="setRating(5)" title="Excellent">🔥</button>
+        </div>
+        <div id="rating-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please pick a rating before submitting.</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ② WHAT WORKED / DIDN'T -->
+      <div class="form-section-title">What's working — and what isn't?</div>
+      <div class="form-section-sub">Be specific if you can. "The auto section is too long" is more useful than "it's fine."</div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-liked">What did you like most about today's issue?</label>
+        <textarea class="form-textarea" id="what-liked" name="what_liked" placeholder="e.g. The market strip at the top, the ETAuto summaries, the pilot shortage story…" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-disliked">What felt off, too long, or unnecessary?</label>
+        <textarea class="form-textarea" id="what-disliked" name="what_disliked" placeholder="e.g. Too many world stories, the lead cards are too big on mobile, The Ken section feels thin…" rows="3"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ③ CONTENT PREFERENCES -->
+      <div class="form-section-title">What do you want more of?</div>
+      <div class="form-section-sub">Select everything that applies. These directly set the editorial direction for future issues.</div>
+
+      <div class="form-group">
+        <div class="form-label">Topics you want expanded</div>
+        <div class="check-grid" id="topics-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="markets_depth">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deeper market analysis</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="auto">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Auto industry coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="tech">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Tech & AI news</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="macro">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">India macro & policy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="global">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Global markets & world</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="startups">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Startups & VC</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="personal_finance">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Personal finance</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="commodities">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Commodities & energy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="banking">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Banking & financials</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="ipo">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">IPO & corporate actions</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Sections you want removed or made smaller</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="world">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">World / Economist</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="deepread">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deep Read section</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="makeuseof">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">MakeUseOf / tech how-tos</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="ticker">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Market ticker bar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="lead_cards">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Lead story cards (too big)</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="pull_quotes">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Pull quotes in lead cards</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ④ NEW SOURCES / FEATURES -->
+      <div class="form-section-title">What's missing entirely?</div>
+      <div class="form-section-sub">Sources you'd like added, features you want, things other newsletters do well that this one doesn't yet.</div>
+
+      <div class="form-group">
+        <div class="form-label">New sources or newsletters to include</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="morning_context">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning Context</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="capitalmind">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Capitalmind</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="ars_technica">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Ars Technica</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="economist_full">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">More Economist coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="bloomberg">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Bloomberg India</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="moneycontrol">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Moneycontrol</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">New features you'd like</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="audio_summary">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Audio / TTS summary</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="portfolio_alerts">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Portfolio stock alerts</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="calendar">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Upcoming events calendar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="earnings">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Earnings / results tracker</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="chart_of_day">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Chart of the day</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="morning_edition">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning edition too</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="whatsapp">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">WhatsApp delivery</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="weekly_digest">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Weekly digest on Sunday</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="open-feedback">Anything else? Open mic.</label>
+        <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
+        <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑤ PERSONAL (optional) -->
+      <div class="form-section-title">Optionally — who are you?</div>
+      <div class="form-section-sub">Only fill this in if you want a reply. None of this is required.</div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-name">Your name</label>
+          <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-email">Email (for a reply)</label>
+          <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="reader-role">How would you describe yourself?</label>
+        <select class="form-select" id="reader-role" name="reader_role">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="retail_investor">Retail investor</option>
+          <option value="trader">Active trader</option>
+          <option value="finance_professional">Finance professional</option>
+          <option value="business_founder">Business founder / operator</option>
+          <option value="student">Student</option>
+          <option value="just_curious">Just generally curious</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="how-found">How did you find The Brief?</label>
+        <select class="form-select" id="how-found" name="how_found">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="nischay_direct">Nischay shared it directly</option>
+          <option value="friend">A friend shared it</option>
+          <option value="twitter">Twitter / X</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑥ SUBSCRIBE -->
+      <div class="form-section-title">Want The Brief in your inbox every evening?</div>
+      <div class="form-section-sub">The Brief goes out at 9:30 PM on weekdays — a summary of everything that landed in the newsletter pile that day. No ads, no sponsored content.</div>
+
+      <div class="form-group">
+        <div class="subscribe-card" id="subscribe-card">
+          <div class="subscribe-left">
+            <div class="subscribe-icon">✉</div>
+            <div>
+              <div class="subscribe-title">Subscribe to The Brief</div>
+              <div class="subscribe-desc">Daily · 9:30 PM weekdays · Free</div>
+            </div>
+          </div>
+          <label class="toggle-wrap">
+            <input type="checkbox" id="subscribe-toggle" name="subscribe" value="yes" onchange="handleSubscribeToggle(this)">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="subscribe-email-wrap" style="display:none">
+        <label class="form-label" for="subscribe-email">Email address for the newsletter <span>*</span></label>
+        <div class="form-hint">If you already filled this in above, we'll use that — or add a different address here.</div>
+        <input class="form-input" type="email" id="subscribe-email" name="subscribe_email" placeholder="you@example.com">
+        <div id="subscribe-email-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter a valid email address to subscribe.</div>
+      </div>
+
+      <div class="form-group" id="subscribe-freq-wrap" style="display:none">
+        <div class="form-label">Preferred frequency</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <label class="freq-btn" onclick="setFreq(this,'daily')">
+            <input type="radio" name="freq" value="daily" style="display:none" checked>
+            <span>Every weekday</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekends_too')">
+            <input type="radio" name="freq" value="weekends_too" style="display:none">
+            <span>Weekdays + Saturday digest</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekly_only')">
+            <input type="radio" name="freq" value="weekly_only" style="display:none">
+            <span>Weekly digest only</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem">
+        <button type="submit" class="submit-btn" id="submit-btn">Send feedback</button>
+        <span style="font-size:12px;color:var(--ink-30);font-family:var(--mono)" id="submit-note">Your response stays private.</span>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     MODALS — summaries with source links
+══════════════════════════════════════ -->
+<div class="modal-bg" id="mbg" onclick="outsideClose(event)">
+  <div class="modal" id="mbox">
+    <div class="modal-head">
+      <div class="modal-tag" id="mtag"></div>
+      <div class="modal-hl" id="mhl"></div>
+      <button class="modal-close" onclick="closeM()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-summary-note">Summary · Click "Read original" to access the full story</div>
+      <div id="mbody"></div>
+      <div class="modal-source-link">
+        <span id="msrc-label">Source</span>
+        <a id="msrc-link" href="#" target="_blank" rel="noopener">Read original</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const M = {
+  'week-nifty': {
+    tag:'Aftermarket Report · Week Recap',
+    hl:'Nifty fell 3.26% on Thursday, recovered 0.49% on Friday',
+    src:'Aftermarket Report · Groww Digest',
+    url:'https://aftermarketreport.zerodha.com',
+    body:`<p>The week started normally and ended dramatically. HDFC Bank\'s chairman Atanu Chakraborty resigned Thursday citing "happenings and practices" he couldn\'t reconcile with his values. The stock crashed ~5% to a 52-week low, erasing over ₹65,000 crore in market cap. The RBI issued a statement saying the bank remains well-capitalised — confirming the market\'s anxiety was real enough to require a response.</p><p>Friday\'s modest recovery was led by IT stocks (+2.17%). Broader market breadth: 1,884 advances vs 1,337 declines. Max Put OI at 23,000 is the support level to watch next week. Key data from Aftermarket Report and Groww Digest.</p>`
+  },
+  'week-rupee': {
+    tag:'Aftermarket Report · Currency',
+    hl:"₹93.49/dollar — India's rupee at an all-time low",
+    src:'Aftermarket Report · ETAuto',
+    url:'https://aftermarketreport.zerodha.com',
+    body:`<p>The rupee lost 60 paise in a single Friday session to print ₹93.49 — its weakest ever against the dollar. Three forces converging: crude oil at $96 widening the import bill, FII selling across Indian equities, and a globally stronger dollar (US 10Y at 4.3%). Not only this — ETAuto reports India\'s oil imports through the Strait of Hormuz are already down 23% in March. The RBI has been intervening but forex reserves fell $7.05 billion to $709.76 billion in one week. Full coverage in Aftermarket Report and ETAuto.</p>`
+  },
+  'week-petrol': {
+    tag:'ETAuto · Fuel',
+    hl:'Premium petrol raised by up to ₹2.35/litre — regular held flat',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Indian oil marketing companies raised prices on premium petrol variants (Speed, Power, Hi-Speed) by up to ₹2.35 per litre. Regular petrol and diesel remain flat to contain CPI inflation — but this means OMCs (HPCL, BPCL, Indian Oil) absorb the crude shock as under-recoveries on every litre sold. Due to this, ETAuto published an analysis titled "The inevitability of a fuel price hike" — arguing a generalised retail price increase is a matter of when, not if. Full story on ETAuto.</p>`
+  },
+  hydrogen: {
+    tag:'ETAuto · Future Fuels',
+    hl:'Hydrogen could scale faster than expected in India — Toyota Kirloskar Motor',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>TKM\'s Vikram Gulati told ETAuto that India\'s hydrogen ecosystem could develop more rapidly than current projections. The key insight: India\'s existing industrial hydrogen demand — for refineries, fertilisers, and steel production — provides a commercial demand anchor that can fund refuelling infrastructure before passenger vehicles need it. Put simply, India doesn\'t have to wait for hydrogen cars to justify building the ecosystem. Policy certainty and production cost reductions remain the two gating factors. Full interview on ETAuto.</p>`
+  },
+  'luxury-ev': {
+    tag:'ETAuto · Luxury EVs',
+    hl:'Luxury EV demand outpacing expectations — BMW India and Lexus both signal the same shift',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>BMW India\'s Hardeep Singh Brar told ETAuto the luxury EV segment is growing faster than planned — driven by buyers who prioritise software, OTA updates, and technology over traditional luxury markers. Not only BMW — Lexus launched the ES 500e at ₹89.99 lakh the same week, its first full BEV in India, shelving its hybrid strategy entirely. In addition to this, both moves together signal that the ₹50 lakh+ EV segment has crossed from early adopter to early majority in India\'s premium market. Full coverage on ETAuto.</p>`
+  },
+  'ola-ipo': {
+    tag:'ETAuto · EV',
+    hl:'Ola Electric diverts ₹575 crore of IPO funds to pay debt',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Ola Electric has diverted ₹575 crore from its IPO proceeds to debt repayment. The company\'s IPO prospectus stated proceeds would go toward product development, R&D, and expansion. Due to this diversion — the third such cycle in recent quarters — investors and analysts are scrutinising the company\'s cash position and whether the turnaround narrative is credible. That said, India\'s broader EV two-wheeler market is not slowing. TVS iQube, Bajaj Chetak, and Ather are the beneficiaries of Ola\'s difficulties. Full story on ETAuto.</p>`
+  },
+  'hormuz-oil': {
+    tag:'ETAuto · Oil',
+    hl:"India's oil imports down 23% in March — the Hormuz disruption is in the data",
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>India\'s oil import volumes through March are 23% below the equivalent period last year. This is the clearest data confirmation yet that the Strait of Hormuz disruption is having a direct, measurable impact — not just theoretical pricing pressure. Put simply, a 23% import decline means refineries managing inventory harder, alternative routes adding weeks of transit time and cost, and every barrel that does arrive is more expensive because of the rupee\'s all-time low. Full story on ETAuto.</p>`
+  },
+  'tyre-stocks': {
+    tag:'ETAuto · Markets',
+    hl:'Tyre stocks down 18% in March — analysts warn of 24% more downside',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Indian tyre manufacturers have seen their stocks fall 18% in March. Crude oil at $96 raises both natural rubber prices (synthetic rubber is petroleum-derived) and manufacturing energy costs simultaneously. Due to this, margin compression is arriving exactly when commercial vehicle volume support — the biggest tyre segment — is weakening from economic uncertainty. Analyst coverage ETAuto reports suggests a further 24% downside if crude stays elevated. Full analysis on ETAuto.</p>`
+  },
+  'tesla-india': {
+    tag:'ETAuto · Tesla',
+    hl:'Tesla exploring India energy storage as standalone business — job ads show intent',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>A Tesla job listing points to Powerwall and Megapack deployments as an India business line separate from EV sales. This is significant because it gives Tesla an India market entry path that bypasses the vehicle import duty debate entirely. Not only this — Tesla faces a wider NHTSA probe of its self-driving feature as it prepares to sell steering-wheel-free vehicles. Both stories on ETAuto.</p>`
+  },
+  skoda: {
+    tag:'ETAuto · Passenger Vehicles',
+    hl:'Skoda targets volume growth with Kushaq facelift and 200-city reach',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Skoda India is expanding to 200 cities with the updated Kushaq. The competitive context is tough — Hyundai launched the updated Exter at ₹5.79 lakh the same week, Maruti is under margin pressure, and macro headwinds are making entry-level buyers more cautious. Skoda\'s direction is right; the timing is challenging. Full story on ETAuto.</p>`
+  },
+  xpeng: {
+    tag:'ETAuto · Global EV',
+    hl:"China's Xpeng posts first-ever profit on high-margin EV sales",
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Xpeng — which was burning cash aggressively as recently as 2023 — posted its first-ever quarterly profit, driven by a shift to higher-margin models and improved manufacturing efficiency. The contrast with Ola Electric is instructive: both are EV startups that went public with ambitious roadmaps. Xpeng hit profitability through discipline and product mix. Ola is still diverting IPO funds to service debt. Full coverage on ETAuto.</p>`
+  },
+  'delhi-ev-buses': {
+    tag:'ETAuto · EV Policy',
+    hl:'Delhi flags off 300 EV buses · Centre clears EV charger licensing in MP',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Delhi CM Rekha Gupta flagged off 300 new electric buses — a meaningful addition to the city\'s public transport fleet. Not only does this expand EV bus coverage; it generates real operational data on range, charging turnaround, and grid load. In addition to this, the Centre clarified that EV chargers in Madhya Pradesh don\'t require separate licensing — removing friction that had been slowing private charger deployment. Both stories on ETAuto.</p>`
+  },
+  'mineral-blocks': {
+    tag:'ETAuto · Policy',
+    hl:'India auctioned a record 200 mineral blocks in FY26',
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>The Centre auctioned 200 mineral blocks in FY26 — the highest in any single fiscal year. Blocks cover lithium, cobalt, nickel, and rare earth elements essential for battery manufacturing, EV motors, and renewable infrastructure. Put simply, this is the government\'s broadest single-year push to reduce critical mineral import dependence — directly connected to the rare earth magnet RFP story. Both are part of the same industrial policy arc being accelerated by China supply chain risk. Full story on ETAuto.</p>`
+  },
+  'finshots-wrap': {
+    tag:'Finshots · Saturday Weekly Wrap',
+    hl:'Five Finshots stories this week in one email',
+    src:'Finshots',
+    url:'https://finshots.in',
+    body:`<p>Finshots wraps the week into one Saturday email: LPG black market (Monday), why cargo ships slow down deliberately (Tuesday), the Cavendish banana existential threat (Wednesday), whether G-Secs are truly risk-free (Thursday), and the Supreme Court\'s 48-year revisit of what counts as an "industry" under Indian labour law (Friday). In addition to this, the Saturday Markets edition covers rising polymer prices from the West Asia war. All originals link from finshots.in.</p>`
+  },
+  lpg: {
+    tag:'Finshots · Monday',
+    hl:"India's LPG success created a black market for subsidised cylinders",
+    src:'Finshots',
+    url:'https://finshots.in',
+    body:`<p>India\'s PMUY programme moved millions of households from firewood to gas — one of the country\'s biggest clean energy wins. But it created a distortion: domestic cylinders are priced significantly lower than commercial ones. Due to this price gap, subsidised cylinders are being diverted to restaurants and businesses. The very system designed to expand access is also distorting incentives. Can India fix the subsidy design without making cooking gas less affordable for the households it was built to serve? Full story on Finshots.</p>`
+  },
+  banana: {
+    tag:'Finshots · Wednesday',
+    hl:'Bananas could go extinct — and the exact same thing happened once before',
+    src:'Finshots',
+    url:'https://finshots.in',
+    body:`<p>Almost all commercially traded bananas come from one variety: the Cavendish. A deadly fungal disease called Tropical Race 4 (TR4) is spreading through Cavendish plantations globally. This has happened before — the Gros Michel (the dominant banana before the 1950s) was wiped out by Panama Disease. The Cavendish replaced it. Now the Cavendish faces the same threat. India is the world\'s largest banana producer but exports almost none — Indian farmers grow dozens of varieties. A global supply shock would hit exported Cavendish markets hardest. Full story on Finshots.</p>`
+  },
+  polymer: {
+    tag:'Finshots · Saturday Markets',
+    hl:'Polymer prices rising due to the war in West Asia — structural or cyclical?',
+    src:'Finshots',
+    url:'https://finshots.in',
+    body:`<p>The Iran conflict is disrupting petrochemical supply chains, pushing up prices for plastics used across packaging, auto components, FMCG goods, and electronics simultaneously. Finshots\' Markets edition asks: is this a temporary price spike, or a structural shift? The case for structural: the geopolitical realignment of energy supply chains makes "cheap hydrocarbons" a less reliable assumption for manufacturers. Worth reading for anyone with portfolio exposure to FMCG, auto ancillaries, or packaging companies. Full story on Finshots.</p>`
+  },
+  'indiamart-openai': {
+    tag:'The Ken · Zero Shot Podcast',
+    hl:'IndiaMart is suing OpenAI for selective discrimination — Calcutta HC agrees',
+    src:'The Ken Zero Shot',
+    url:'https://the-ken.com/podcasts/zero-shot/indias-biggest-b2b-marketplace-takes-openai-to-court/',
+    body:`<p>IndiaMart — India\'s largest B2B marketplace — filed a suit arguing ChatGPT systematically excludes it from search results while surfacing competitors. The Calcutta High Court noted the exclusion appeared to be "selective discrimination... without any logic" — an early and significant signal from an Indian court on AI search visibility and competition law. The Ken\'s Zero Shot podcast spoke with a competition law expert about the case\'s broader implications. Not only does this matter for IndiaMart — it is an early test of how Indian courts will handle AI models as market gatekeepers. Listen on Spotify or Apple Podcasts.</p>`
+  },
+  'iran-macro': {
+    tag:'ETAuto · Aftermarket Report',
+    hl:"The Iran war's India impact this week: imports -23%, rupee ATL, crude $96",
+    src:'ETAuto · Aftermarket Report',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>Three data points tell the week\'s Iran conflict story for India. First, oil imports through the Strait of Hormuz are down 23% in March — a direct supply disruption. Second, the rupee hit ₹93.49, an all-time low, partly driven by the crude-widened current account deficit. Third, crude at $96 is feeding input cost increases across manufacturing, logistics, and chemicals simultaneously. Due to this convergence, the government faces a difficult policy choice: hold fuel prices flat (protecting CPI but destroying OMC finances) or raise them (protecting OMC finances but adding to inflation). Sources: ETAuto and Aftermarket Report.</p>`
+  },
+  'china-magnets': {
+    tag:'ETAuto · China',
+    hl:"China's rare earth magnet exports jumped ahead of Trump-Xi meeting",
+    src:'ETAuto',
+    url:'https://auto.economictimes.indiatimes.com',
+    body:`<p>China accelerated rare earth magnet exports in the weeks leading up to US-China diplomatic contact — a pattern that reads as using supply availability as geopolitical leverage before a negotiation. This is not the first time; China did the same with Japan in 2010 during a territorial dispute. Put simply, India\'s ₹7,280 crore domestic rare earth magnet manufacturing RFP — bids opened yesterday — is directly connected to this pattern. Building domestic capability removes a single-source dependency that China has demonstrated it is willing to exploit. Full story on ETAuto.</p>`
+  },
+  lenskart: {
+    tag:'The Ken · Free Read Today',
+    hl:'Lenskart succeeds where Zomato and Ola stumbled — 40% of revenue from overseas',
+    src:'The Ken',
+    url:'https://the-ken.com/story/lenskart-succeeds-where-zomato-ola-stumbled/',
+    body:`<p>The Ken\'s free unlocked story today examines how Lenskart built an international business — 40% of revenue now from overseas — while maintaining its India base. The contrast with Zomato and Ola is the frame: both tried international expansion and retreated. Lenskart went into markets where eyewear retail was structurally underpenetrated, used India\'s manufacturing cost advantage, and didn\'t over-leverage to get there. With an IPO approaching, this piece is the most useful frame for evaluating the Lenskart business model. No subscription needed — free on The Ken today.</p>`
+  },
+  'frame-gen': {
+    tag:'MakeUseOf · Gaming',
+    hl:'Frame generation is papering over a real GPU performance problem',
+    src:'MakeUseOf',
+    url:'https://www.makeuseof.com/nvidia-frame-generation-papering-over-problem-nobody-wants-to-talk-about/',
+    body:`<p>Nvidia\'s Multi Frame Generation uses AI to interpolate additional frames between real rendered frames, boosting the frame counter dramatically. The catch: interpolated frames add input latency and still produce visual artefacts in fast-moving scenes. MakeUseOf argues that the gaming industry\'s enthusiasm for MFG is masking the fact that raw GPU rasterisation performance has not improved proportionally to price. Due to this, buyers paying premium prices for GPUs are increasingly getting AI-assisted performance — which behaves differently in competitive, latency-sensitive games. Full analysis on MakeUseOf.</p>`
+  },
+  'windows-update': {
+    tag:'MakeUseOf · Windows',
+    hl:'One registry key permanently stopped Windows force-restarting after updates',
+    src:'MakeUseOf',
+    url:'https://www.makeuseof.com/i-fixed-worst-part-windows-updates-registry-key/',
+    body:`<p>Windows\' built-in active hours setting is supposed to prevent forced restarts during work periods — but Windows doesn\'t always respect it. A specific Registry key permanently prevents Windows from initiating automatic restarts without explicit user approval. The trade-off: you need to manually restart to apply updates, which can inadvertently delay security patches. MakeUseOf argues this is acceptable for users who actively manage their PCs. Full step-by-step guide with the exact registry path on MakeUseOf.</p>`
+  },
+  's26-ultra': {
+    tag:'MakeUseOf · Review',
+    hl:'Galaxy S26 Ultra review: almost perfect — and that "almost" is what bothers MakeUseOf',
+    src:'MakeUseOf',
+    url:'https://www.makeuseof.com/samsung-galaxy-s26-ultra-review/',
+    body:`<p>After two weeks as a daily driver, MakeUseOf concludes the Samsung Galaxy S26 Ultra is still the best Android phone money can buy — but one specific issue keeps it from being truly excellent. The reviewer describes Samsung\'s latest flagship as "exciting, innovative, and risky in completely different ways" compared to the S25 Edge or iPhone Air. Worth reading in full if you\'re deciding between a flagship Android purchase. Full review on MakeUseOf.</p>`
+  },
+  'gemini-audio': {
+    tag:'MakeUseOf · AI',
+    hl:"Gemini can analyse audio files — most people don't know this",
+    src:'MakeUseOf',
+    url:'https://www.makeuseof.com/gemini-can-analyze-audio/',
+    body:`<p>Google\'s Gemini accepts audio files as input — recordings, meetings, podcast episodes — and can summarise, transcribe, identify speakers, or extract action items. Most users type text prompts and never discover this. MakeUseOf\'s writer now uses this as a daily workflow habit: uploading meeting recordings for instant summaries, or feeding podcast episodes to extract specific information without listening in full. Full how-to on MakeUseOf, including supported formats and best prompting approaches.</p>`
+  },
+  'ssd-myth': {
+    tag:'MakeUseOf · Windows',
+    hl:'Disabling this Windows setting to "protect" your SSD is wrong',
+    src:'MakeUseOf',
+    url:'https://www.makeuseof.com/everyone-disables-windows-setting-protect-ssd-theyre-wrong/',
+    body:`<p>Common PC advice says disabling Windows write caching extends SSD lifespan. MakeUseOf tested this, checked real-world wear data from CrystalDiskMark, and concluded the advice is wrong — or massively overstated. Modern SSDs have sophisticated wear-levelling algorithms and Windows\' built-in management is designed around these. Put simply, disabling protective settings to "save writes" reduces performance with no meaningful lifespan benefit for most consumer use cases. Full data-backed explanation on MakeUseOf.</p>`
+  }
+};
+
+// ── NAVIGATION & MODAL FUNCTIONS ──
+function openM(id) {
+  const a = M[id];
+  if (!a) return;
+  document.getElementById('mtag').textContent  = a.tag;
+  document.getElementById('mhl').textContent   = a.hl;
+  document.getElementById('mbody').innerHTML   = a.body;
+  document.getElementById('msrc-label').textContent = a.src;
+  document.getElementById('msrc-link').href    = a.url;
+  document.getElementById('mbg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeM() {
+  document.getElementById('mbg').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function outsideClose(e) {
+  if (e.target === document.getElementById('mbg')) closeM();
+}
+function go(id, btn) {
+  document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
+  document.querySelectorAll('.ntab').forEach(b => b.classList.remove('on'));
+  document.getElementById('sec-' + id).classList.add('on');
+  btn.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+
+// ── FORM FUNCTIONS ──
+let selectedRating = 0;
+let selectedFreq = 'daily';
+
+function setRating(val) {
+  selectedRating = val;
+  // Write value into the hidden input so Formspree receives it
+  document.getElementById('rating-hidden').value = val;
+  document.querySelectorAll('.rating-btn').forEach(btn => {
+    btn.classList.toggle('selected', parseInt(btn.dataset.val) === val);
+  });
+  document.getElementById('rating-error').style.display = 'none';
+}
+
+function toggleCheck(label) {
+  const cb = label.querySelector('input[type="checkbox"]');
+  setTimeout(() => { label.classList.toggle('checked', cb.checked); }, 0);
+}
+
+function handleSubscribeToggle(checkbox) {
+  const card       = document.getElementById('subscribe-card');
+  const emailWrap  = document.getElementById('subscribe-email-wrap');
+  const freqWrap   = document.getElementById('subscribe-freq-wrap');
+  const submitBtn  = document.getElementById('submit-btn');
+  const submitNote = document.getElementById('submit-note');
+  if (checkbox.checked) {
+    card.classList.add('active');
+    emailWrap.style.display = 'block';
+    freqWrap.style.display  = 'block';
+    submitBtn.textContent   = 'Send feedback & subscribe →';
+    submitNote.textContent  = "You'll receive The Brief at the address above.";
+  } else {
+    card.classList.remove('active');
+    emailWrap.style.display = 'none';
+    freqWrap.style.display  = 'none';
+    document.getElementById('subscribe-email-error').style.display = 'none';
+    submitBtn.textContent   = 'Send feedback →';
+    submitNote.textContent  = 'Your response stays private.';
+  }
+}
+
+function setFreq(label, val) {
+  selectedFreq = val;
+  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+  label.classList.add('active');
+}
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // Validate rating
+  if (!selectedRating) {
+    document.getElementById('rating-error').style.display = 'block';
+    document.getElementById('rating-row').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Validate subscribe email if toggled on
+  const isSubscribed     = document.getElementById('subscribe-toggle').checked;
+  const subscribeEmailEl = document.getElementById('subscribe-email');
+  const readerEmail      = document.getElementById('reader-email').value.trim();
+  if (isSubscribed) {
+    const subEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
+    if (!subEmail && !readerEmail) {
+      document.getElementById('subscribe-email-error').style.display = 'block';
+      subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      subscribeEmailEl.focus();
+      return;
+    }
+    document.getElementById('subscribe-email-error').style.display = 'none';
+  }
+
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
+
+  const form = document.getElementById('feedback-form');
+  const formData = new FormData(form);
+
+  // Submit to Formspree via AJAX so we can show our own success screen
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      showSuccess();
+    } else {
+      res.json().then(data => {
+        btn.textContent = 'Send feedback →';
+        btn.disabled    = false;
+        alert('Something went wrong: ' + (data.errors ? data.errors.map(e => e.message).join(', ') : 'please try again.'));
+      });
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Send feedback →';
+    btn.disabled    = false;
+    alert('Network error — please check your connection and try again.');
+  });
+}
+
+function showSuccess() {
+  document.getElementById('feedback-form').style.display = 'none';
+  const successEl = document.getElementById('form-success');
+  successEl.style.display = 'block';
+  successEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Mark first freq button active on load
+window.addEventListener('load', () => {
+  const first = document.querySelector('.freq-btn');
+  if (first) first.classList.add('active');
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">The <span>Brief</span></div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--ink-30);letter-spacing:1px;margin-top:3px">Curated by Nischay · Not a replacement for original journalism</div>
+    </div>
+    <div class="footer-meta">
+      9:30 PM Edition · Saturday, 21 March 2026<br>
+      Sources: ETAuto · The Ken · Finshots<br>
+      MakeUseOf · The Daily Brief · Screener.in
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

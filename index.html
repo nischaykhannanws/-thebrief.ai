@@ -1919,7 +1919,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); })
 
 // ── GOOGLE APPS SCRIPT ENDPOINT ──
 // Paste your deployed Web App URL here after following the setup instructions in your Gmail draft
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxaoAiY0OlFLNpzVkpItsGZZHdADiRTssYttZJyybz5YwFIAM6QPXWP8533zUgg_A2n/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxNlrL4tbHoy0lXJMQaUcZaNPnACLzBHwmgYWaaMbDi4JC6l9Fw0ACcVv3NHwDQC-W/exec';
 
 // ── FORM FUNCTIONS ──
 let selectedRating = 0;
@@ -2022,11 +2022,13 @@ function submitForm(e) {
     fetch(APPS_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
+      // No Content-Type header — required for no-cors requests to work.
+      // Browser sends as text/plain which bypasses the CORS preflight check.
+      // Apps Script receives the raw JSON string in e.postData.contents.
     })
     .then(() => showSuccess())
-    .catch(() => showSuccess()); // no-cors resolves without readable response — always show success
+    .catch(() => showSuccess());
   } else {
     // Apps Script not yet configured — log locally and show success anyway
     console.log('[The Brief] Feedback (Apps Script not yet set up):', data);

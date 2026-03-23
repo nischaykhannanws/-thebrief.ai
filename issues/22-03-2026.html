@@ -1846,6 +1846,31 @@ const M = {
   }
 };
 
+function openM(id) {
+  const a = M[id];
+  if (!a) return;
+  document.getElementById('mtag').textContent  = a.tag;
+  document.getElementById('mhl').textContent   = a.hl;
+  document.getElementById('mbody').innerHTML   = a.body;
+  document.getElementById('msrc-label').textContent = a.src;
+  document.getElementById('msrc-link').href    = a.url;
+  document.getElementById('mbg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeM() {
+  document.getElementById('mbg').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function outsideClose(e) {
+  if (e.target === document.getElementById('mbg')) closeM();
+}
+function go(id, btn) {
+  document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
+  document.querySelectorAll('.ntab').forEach(b => b.classList.remove('on'));
+  document.getElementById('sec-' + id).classList.add('on');
+  btn.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
 
 // ── FORM FUNCTIONS ──

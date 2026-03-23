@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Brief · 9:30 PM · 22 March 2026</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Brief · 22 Mar 2026 — 1973 oil crisis vs today, Urban Company vs Snabbit, Zerodha&#39;s week-12 market metrics">
+  <meta property="og:description" content="Sunday edition: Groww Digest draws lessons from the 1973 oil embargo, The Ken&#39;s full week recap covers Urban Company, Razorpay agentic payments and Brnd.me. Zerodha&#39;s In The Money on a flat but turbulent week-12. Plus Finshots on diamond clothes and carcinisation.">
+  <meta property="og:url" content="https://nischaykhannanws.github.io/-thebrief.ai/issues/22-03-2026.html">
+  <meta property="og:site_name" content="The Brief">
+  <meta property="og:image" content="https://nischaykhannanws.github.io/-thebrief.ai/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Brief · 22 Mar 2026 — 1973 oil crisis vs today, Urban Company vs Snabbit, week-12 metrics">
+  <meta name="twitter:description" content="Sunday edition: Groww Digest on 1973 vs today&#39;s oil shock. The Ken&#39;s week recap. Zerodha&#39;s In The Money market analysis. Finshots on diamond fabric and carcinisation. The Economist on the energy shock&#39;s worst victims.">
+  <meta name="description" content="Sunday edition: The 1973 oil crisis and lessons for 2026, Urban Company vs Snabbit, Zerodha&#39;s weekly market metrics, Finshots curiosity edition, The Economist on emerging market vulnerability.">
+  <meta name="author" content="Nischay Khanna">
+  <meta name="date" content="2026-03-22">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --off-white: #f9f8f5;
+  --cream: #f3f0ea;
+  --warm-50: #faf8f4;
+  --ink: #1c1a17;
+  --ink-60: #5c5852;
+  --ink-30: #a8a49e;
+  --border: #e8e3da;
+  --border-strong: #ccc8c0;
+  --red: #c0292e;
+  --red-light: #fdf2f2;
+  --amber: #b86b00;
+  --amber-light: #fdf7ee;
+  --green: #1a6640;
+  --green-light: #f0f8f3;
+  --blue: #1a4a80;
+  --blue-light: #f0f4fb;
+  --teal: #0a6060;
+  --teal-light: #f0f8f8;
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 6px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--off-white); color: var(--ink); line-height: 1.6; }
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar-brand {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+}
+.topbar-brand span { color: var(--red); }
+.topbar-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+.hero-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.9rem;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.hero-title em { color: var(--red); font-style: normal; }
+.hero-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+}
+.hero-desc {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+.hero-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--red);
+  margin: 1.4rem auto 0;
+}
+
+/* ── TICKER ── */
+.ticker {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  height: 34px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.ticker-pill {
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ticker-track { flex: 1; overflow: hidden; }
+.ticker-inner {
+  display: flex;
+  gap: 2.5rem;
+  animation: run 28s linear infinite;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+@keyframes run { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ti {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-60);
+}
+.ti-n { font-weight: 500; color: var(--ink); }
+.up { color: #1a7a3a; }
+.dn { color: var(--red); }
+
+/* ── NAV ── */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  align-items: center;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.ntab {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0.25rem;
+  color: var(--ink-60);
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 20px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s;
+  position: relative;
+  user-select: none;
+}
+.ntab:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+  background: var(--off-white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.ntab:active { transform: translateY(0); box-shadow: none; }
+.ntab.on {
+  color: var(--white);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 2px 8px rgba(192,41,46,0.3);
+}
+.ntab.on:hover { background: var(--red); opacity: 0.9; transform: translateY(-1px); }
+
+/* ── LAYOUT ── */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+.sec { display: none; padding: 2.5rem 0 4rem; }
+.sec.on { display: block; }
+
+/* ── SECTION HEADER ── */
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid var(--ink);
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.sec-left {}
+.sec-src {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.35rem;
+}
+.sec-title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.sec-count {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+
+/* ── MARKET STRIP ── */
+.mkt-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  border: 1px solid var(--border);
+  background: var(--border);
+  gap: 1px;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.mc {
+  background: var(--white);
+  padding: 0.9rem 1rem;
+}
+.mc-l {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 4px;
+}
+.mc-v {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+.mc-c { font-family: var(--mono); font-size: 11px; margin-top: 3px; }
+
+/* ── LEAD CARD ── */
+.lead-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 680px) { .lead-card { grid-template-columns: 1fr; gap: 1.2rem; } }
+.lead-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+.lead-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+  color: var(--ink);
+}
+.lead-summary {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 1rem;
+}
+.src-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.src-btn:hover { background: var(--red); color: #fff; }
+.src-btn::after { content: '↗'; font-size: 11px; }
+.lead-aside {
+  border-left: 1px solid var(--border);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 680px) { .lead-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 1rem; } }
+.pull-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.55;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--red);
+}
+.pull-attr {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+/* ── STORY LIST ── */
+.story-list {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.story-row {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  align-items: start;
+  gap: 0.8rem;
+  padding: 1.1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.story-row:last-child { border-bottom: none; }
+.story-row:hover { background: var(--off-white); }
+.story-num {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  padding-top: 3px;
+  letter-spacing: 1px;
+}
+.story-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.story-row:hover .story-hl { color: var(--red); }
+.story-deck {
+  font-size: 13px;
+  color: var(--ink-60);
+  line-height: 1.5;
+}
+.story-src-badge {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1px;
+  color: var(--red);
+  white-space: nowrap;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+.ctag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  margin-bottom: 0.6rem;
+}
+.ctag.red { background: var(--red-light); color: var(--red); }
+.ctag.green { background: var(--green-light); color: var(--green); }
+.ctag.blue { background: var(--blue-light); color: var(--blue); }
+.ctag.amber { background: var(--amber-light); color: var(--amber); }
+.ctag.teal { background: var(--teal-light); color: var(--teal); }
+.ctag.neutral { background: var(--cream); color: var(--ink-60); }
+.card-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.card:hover .card-hl { color: var(--red); }
+.card-deck { font-size: 13px; color: var(--ink-60); line-height: 1.5; margin-bottom: 0.6rem; }
+.card-src { font-family: var(--mono); font-size: 8.5px; color: var(--ink-30); letter-spacing: 1px; text-transform: uppercase; }
+
+/* ── INFO BOX ── */
+.info-box {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.info-box-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.6rem;
+}
+.info-box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.info-box p:last-child { margin-bottom: 0; }
+.info-box strong { color: var(--ink); font-weight: 600; }
+
+/* ── FEEDBACK FORM ── */
+.form-group { margin-bottom: 1.6rem; }
+.form-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.form-label span { color: var(--red); margin-left: 2px; }
+.form-hint {
+  font-size: 12.5px;
+  color: var(--ink-30);
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(192,41,46,0.08);
+}
+.form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a8a49e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.2rem;
+  cursor: pointer;
+}
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  user-select: none;
+}
+.check-item:hover { border-color: var(--border-strong); background: var(--off-white); }
+.check-item.checked { border-color: var(--red); background: var(--red-light); }
+.check-item input[type="checkbox"] { display: none; }
+.check-box {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s;
+}
+.check-item.checked .check-box {
+  background: var(--red);
+  border-color: var(--red);
+}
+.check-tick { color: #fff; font-size: 10px; display: none; }
+.check-item.checked .check-tick { display: block; }
+.check-text { font-size: 13px; color: var(--ink-60); }
+.check-item.checked .check-text { color: var(--ink); }
+.rating-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.rating-btn {
+  width: 44px; height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.12s, transform 0.1s;
+  flex-shrink: 0;
+}
+.rating-btn:hover { border-color: var(--border-strong); transform: scale(1.1); }
+.rating-btn.selected { border-color: var(--red); background: var(--red-light); transform: scale(1.12); }
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.submit-btn:hover { background: var(--red); }
+.submit-btn:active { transform: scale(0.98); }
+.submit-btn::after { content: '→'; font-size: 13px; }
+.form-success {
+  display: none;
+  background: var(--green-light);
+  border: 1.5px solid #a8d5b8;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  text-align: center;
+}
+.form-success-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--green); margin-bottom: 0.4rem; }
+.form-success p { font-size: 13.5px; color: var(--ink-60); line-height: 1.6; }
+.form-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.form-section-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.form-section-sub {
+  font-size: 13px;
+  color: var(--ink-60);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+/* Subscribe card */
+.subscribe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  background: var(--off-white);
+  transition: border-color 0.15s, background 0.15s;
+}
+.subscribe-card.active {
+  border-color: var(--red);
+  background: var(--red-light);
+}
+.subscribe-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.subscribe-icon {
+  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.subscribe-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+.subscribe-desc {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 1px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+/* Toggle switch */
+.toggle-wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-wrap input { display: none; }
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background: var(--border-strong);
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.2s;
+  display: block;
+}
+.toggle-wrap input:checked ~ .toggle-track { background: var(--red); }
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.toggle-wrap input:checked ~ .toggle-track .toggle-thumb { transform: translateX(20px); }
+/* Frequency buttons */
+.freq-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+  user-select: none;
+  color: var(--ink-60);
+}
+.freq-btn:hover { border-color: var(--border-strong); }
+.freq-btn.active { border-color: var(--red); background: var(--red-light); color: var(--ink); font-weight: 500; }
+
+/* ── DIVIDER ── */
+.div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ── MODAL ── */
+.modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 500;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}
+.modal-bg.open { display: flex; }
+.modal {
+  background: var(--white);
+  max-width: 620px;
+  width: 100%;
+  margin: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  animation: mup 0.2s ease;
+  position: relative;
+}
+@keyframes mup { from { transform: translateY(16px); opacity: 0; } }
+.modal-head {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 1.3rem 1.5rem;
+}
+.modal-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.4rem;
+}
+.modal-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  padding-right: 2rem;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-60);
+  transition: background 0.15s;
+}
+.modal-close:hover { background: var(--border-strong); }
+.modal-body {
+  padding: 1.4rem 1.5rem 1.8rem;
+}
+/* Summary note inside modal */
+.modal-summary-note {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.modal-body p { font-size: 14px; line-height: 1.75; color: var(--ink-60); margin-bottom: 0.85rem; }
+.modal-body p:last-child { margin-bottom: 0; }
+.modal-body strong { color: var(--ink); font-weight: 600; }
+.modal-source-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.modal-source-link span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.modal-source-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 5px 11px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.modal-source-link a:hover { background: var(--red); color: #fff; }
+.modal-source-link a::after { content: '↗'; }
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--white);
+  padding: 1.8rem 1.5rem;
+  margin-top: 2rem;
+}
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-brand { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); }
+.footer-brand span { color: var(--red); }
+.footer-meta { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.8; text-align: right; }
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .story-row { grid-template-columns: 28px 1fr; }
+  .story-src-badge { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">The <span>Brief</span></div>
+  <div class="topbar-meta">9:30 PM · Sun 22 Mar 2026</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">Saturday Edition · Issue 003</div>
+  <div class="hero-title">The <em>Brief</em></div>
+  <div class="hero-desc">Your Sunday edition — The Ken, Groww Digest, Zerodha, Finshots, The Economist and more.</div>
+  <div class="hero-date">Sunday, 22 March 2026 · 7 newsletters · 9:30 PM</div>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-pill">Live</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span class="ti"><span class="ti-n">MARKETS CLOSED</span><span>Sunday</span></span>
+      <span class="ti"><span class="ti-n">NIFTY WEEK 12</span><span>23,114</span><span class="dn">▼ 0.16% WoW</span></span>
+      <span class="ti"><span class="ti-n">SENSEX WEEK 12</span><span>74,532</span><span class="dn">▼ 0.04% WoW</span></span>
+      <span class="ti"><span class="ti-n">BANKNIFTY</span><span>53,427</span><span class="dn">▼ 0.62% WoW</span></span>
+      <span class="ti"><span class="ti-n">INDIAVIX</span><span>22.81</span><span class="dn">▲ Elevated</span></span>
+      <span class="ti"><span class="ti-n">GOLD</span><span class="dn">▼ 7.72% week</span></span>
+      <span class="ti"><span class="ti-n">SILVER</span><span class="dn">▼ 10.75% week</span></span>
+      <span class="ti"><span class="ti-n">NIFTY EXPIRY</span><span>24 Mar (Tue)</span></span>
+      <span class="ti"><span class="ti-n">SENSEX EXPIRY</span><span>25 Mar (Wed)</span></span>
+      <!-- duplicate -->
+      <span class="ti"><span class="ti-n">MARKETS CLOSED</span><span>Sunday</span></span>
+      <span class="ti"><span class="ti-n">NIFTY WEEK 12</span><span>23,114</span><span class="dn">▼ 0.16% WoW</span></span>
+      <span class="ti"><span class="ti-n">SENSEX WEEK 12</span><span>74,532</span><span class="dn">▼ 0.04% WoW</span></span>
+      <span class="ti"><span class="ti-n">BANKNIFTY</span><span>53,427</span><span class="dn">▼ 0.62% WoW</span></span>
+      <span class="ti"><span class="ti-n">INDIAVIX</span><span>22.81</span></span>
+      <span class="ti"><span class="ti-n">GOLD</span><span class="dn">▼ 7.72% week</span></span>
+      <span class="ti"><span class="ti-n">SILVER</span><span class="dn">▼ 10.75% week</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="ntab on" onclick="go('mkt',this)">📊 Week Recap</button>
+    <button class="ntab" onclick="go('auto',this)">🚗 Auto</button>
+    <button class="ntab" onclick="go('india',this)">🇮🇳 India</button>
+    <button class="ntab" onclick="go('deepread',this)">🧠 Deep Reads</button>
+    <button class="ntab" onclick="go('world',this)">🌍 World</button>
+    <button class="ntab" onclick="go('feedback',this)">✏️ Feedback</button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     MARKETS — Aftermarket Report + Groww Digest
+══════════════════════════════════════ -->
+<section class="sec on" id="sec-mkt">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Sunday · Markets Closed · Week 12 Recap</div>
+      <h2 class="sec-title">A flat close that masks a brutal week — and history&#39;s most useful lesson for right now</h2>
+    </div>
+  </div>
+
+  <div class="info-box" style="margin-bottom:2rem">
+    <div class="info-box-label">Sunday Edition · 22 March 2026 · Issue 003</div>
+    <p>Markets are closed today. Week 12 ended with Nifty at <strong>23,114 (−0.16% week-on-week)</strong> and Sensex at <strong>74,532 (−0.04%)</strong> — numbers that look almost unchanged but hide one of the most volatile weeks of the year. Thursday&#39;s <strong>3.26% crash</strong> on the HDFC Bank chairman&#39;s resignation was the largest single-day fall since the General Election result day on 4 June 2024. INDIAVIX sits at 22.81, gold fell 7.72%, silver 10.80%. Next week: <strong>4-day week</strong> — Thursday 26 March is a holiday (Ram Navami). Back-to-back expiries: Nifty on Tuesday 24 March, Sensex on Wednesday 25 March.</p>
+    <p>Today&#39;s Brief is built around two anchor reads: Groww Digest&#39;s deep essay comparing the 1973 oil crisis to today, and Zerodha&#39;s In The Money weekly market metrics. Plus The Ken&#39;s full week recap and Finshots&#39; Sunday curiosity edition.</p>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · Groww Digest · Sunday</div>
+      <h3 class="lead-hl">In 1973, an oil embargo broke the American car industry&#39;s monopoly and handed it to Japan. Today&#39;s disruption looks different — but some patterns are familiar.</h3>
+      <p class="lead-summary">Groww Digest&#39;s Sunday essay is the best single piece of writing this week. You see, it starts with the American land yacht — the V8-engined, leather-soaked status symbols of the 1950s and &#39;60s that nobody questioned until the Arab members of OPEC cut off oil supply to the US in October 1973. Overnight, cheap petrol was gone. Americans queued for hours. Armed guards stood at pumps. The government capped speed limits at 55 mph. And the Japanese&#39;s tiny, fuel-efficient cars — which had been dismissed as "toy cars" — suddenly became the only rational purchase. Twenty years later, Toyota and Honda were topping US sales charts. That monopoly never came back.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">The essay then draws the comparison to today with care and honesty. Not by overstating it — but by noting what is genuinely different. In 1973, the Middle East produced over 80% of US oil. Today, the US itself is the world&#39;s largest producer (~14% of global supply). Oil supply is diversified across producers who don&#39;t cooperate. The price has gone from ~$70 to ~$100 — a meaningful jump, but not the 4x shock of 1973. Put simply, the current situation is severe but not catastrophic in the way 1973 was. That said, the essay ends by asking the harder question: what structural changes does this disruption permanently accelerate? In 1973, the answer was Japanese cars. In 2026, the answer might be EVs, supply chain diversification, and India&#39;s rare earth push.</p>
+      <a class="src-btn" href="https://groww.in/digest" target="_blank" rel="noopener">Read on Groww Digest</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"Once Americans tasted the reliability and low cost of Japanese cars, there was no going back."</div>
+        <div class="pull-attr">— Groww Digest, on the lasting lesson from 1973</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">Week 12 quick numbers:</strong><br>
+        Nifty: 23,114 · −0.16% WoW<br>
+        Sensex: 74,532 · −0.04% WoW<br>
+        BankNifty: 53,427 · −0.62% WoW<br>
+        INDIAVIX: 22.81 · +0.74% WoW<br>
+        Gold: −7.72% · Silver: −10.80%<br>
+        Top sector: Auto +2.15%
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('itm-nifty')">
+      <span class="ctag red">In The Money · Zerodha</span>
+      <div class="card-hl">Week 12 was technically flat — but it included the largest single-day fall since the 2024 General Election</div>
+      <div class="card-deck">Zerodha&#39;s Sandeep Rao breaks down the full week: three green candles Monday–Wednesday, then Thursday&#39;s 580-point gap-down on the HDFC Bank resignation news, bottoming at 22,930 before partial recovery Friday. The weekly candle masks a 932-point intraday range (~4%). Read the full technical breakdown on In The Money.</div>
+      <div class="card-src">In The Money by Zerodha → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">Read full analysis</a></div>
+    </div>
+
+    <div class="card" onclick="openM('itm-expiry')">
+      <span class="ctag amber">Expiry Week Alert</span>
+      <div class="card-hl">Back-to-back expiries next week: Nifty on Tuesday 24 March, Sensex on Wednesday 25 March</div>
+      <div class="card-deck">Thursday 26 March is a holiday (Ram Navami), making it a 4-day trading week with two expiries in two days. Nifty&#39;s ATM straddle closed at 452 points, implying a ~1.95% move either side. Expected Nifty expiry range: 22,663–23,567. Sensex range: 72,823–76,243. Zerodha&#39;s In The Money has the full OI breakdown.</div>
+      <div class="card-src">In The Money by Zerodha → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">Read full analysis</a></div>
+    </div>
+
+    <div class="card" onclick="openM('itm-sectors')">
+      <span class="ctag green">Sector Rotation</span>
+      <div class="card-hl">Auto, Metals, PSU Banks led this week — Pharma stepped back after being a consistent outperformer</div>
+      <div class="card-deck">New top-5 this week: Auto (+2.15%), Metal (+1.06%), Consumption (+0.91%), PSU Bank (+0.80%), Commodities (+0.53%). Pharma had been a consistent outperformer for weeks — its pullback this week is worth watching. If Auto, PSU Banks, and Metals hold leadership next week, it may signal a genuine rotation. Zerodha covers the sector data in detail.</div>
+      <div class="card-src">In The Money by Zerodha → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">Read full analysis</a></div>
+    </div>
+
+    <div class="card" onclick="openM('groww-data')">
+      <span class="ctag neutral">Groww Digest · Quick Takes</span>
+      <div class="card-hl">India&#39;s unemployment fell to 4.9%, exports fell 0.8% YoY, WPI hit 11-month high of 2.13%</div>
+      <div class="card-deck">Groww Digest&#39;s weekly data dump: unemployment 4.9% (Feb, vs 5% Jan). Merchandise exports −0.8% YoY in Feb, imports +24.12%, trade deficit widened to $27.1 billion. WPI inflation at 2.13% (11-month high). India-US trade deal signing on hold pending new tariff structure. Centre approved ₹33,660 crore BHAVYA scheme for 100 industrial parks. US Fed held rates at 3.5–3.75%.</div>
+      <div class="card-src">Groww Digest → <a href="https://groww.in/digest" target="_blank" rel="noopener">Read the full edition</a></div>
+    </div>
+
+    <div class="card" onclick="openM('itm-metals')">
+      <span class="ctag red">Commodities Surprise</span>
+      <div class="card-hl">Gold fell 7.72% and silver fell 10.80% this week — despite equity markets ending almost flat</div>
+      <div class="card-deck">This is the counterintuitive move of the week. Theory says gold acts as a hedge during equity volatility — and most of the time it does. This week it didn&#39;t. Zerodha&#39;s Sandeep Rao notes this as a reminder that the gold-as-hedge relationship is real but not guaranteed. Copper also fell 6.27%. Crude and natural gas were flat. Worth reading his note on what this means for portfolio positioning.</div>
+      <div class="card-src">In The Money by Zerodha → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">Read full analysis</a></div>
+    </div>
+
+    <div class="card" onclick="openM('itm-history')">
+      <span class="ctag neutral">Six Years Ago</span>
+      <div class="card-hl">Six years ago today — 23 March 2020 — Nifty closed −12%</div>
+      <div class="card-deck">Zerodha&#39;s weekly note ends with this: 23 March 2020 was the day Nifty fell 12% — the single worst day in recent memory, driven by a single microscopic entity. The note uses it as a reminder of how fragile market structure can be, and why the long arc of index investing still bends upward. Well worth sitting with this weekend.</div>
+      <div class="card-src">In The Money by Zerodha → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">Read full note</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     AUTO — ETAuto Sunday Roundup
+══════════════════════════════════════ -->
+<section class="sec" id="sec-auto">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">ETAuto · Sunday Morning Roundup · 22 Mar 2026</div>
+      <h2 class="sec-title">Most-read from the week: rare earth magnets, Ola, Tesla, tyre stocks</h2>
+    </div>
+    <span class="sec-count">Sunday roundup</span>
+  </div>
+
+  <div class="info-box" style="margin-bottom:1.5rem">
+    <div class="info-box-label">ETAuto · Sunday Edition</div>
+    <p>ETAuto&#39;s Sunday edition is a "most-read of last week" roundup rather than new stories. The big themes from the week: India&#39;s rare earth magnet RFP (now live with full incentive details), Ola Electric&#39;s continued diversion of IPO funds to debt, Tesla&#39;s India energy storage push, and the 23% decline in India&#39;s oil imports from the Hormuz shock. All covered in depth in Issue #002 (Saturday). For the full ETAuto archive, visit <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener" style="color:var(--red)">auto.economictimes.indiatimes.com ↗</a></p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('etauto-magnets-recap')">
+      <span class="ctag red">Most-Read This Week</span>
+      <div class="card-hl">India&#39;s rare earth magnet RFP went live — 6,000 MTPA capacity, full value chain required</div>
+      <div class="card-deck">The most significant auto/industrial policy story of the week. India currently imports 100% of its rare earth magnets used in EV motors, wind turbines, and defence. The government&#39;s ₹7,280 crore RFP with full incentive details and a pilot plant at ARCI Hyderabad already operational. China&#39;s export surge before the Trump-Xi meeting made the timing stark. Covered in full in Issue #002.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com/news/industry/centre-invites-global-bids-to-set-up-6000-mtpa-rare-earth-magnet-manufacturing-capacity" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('etauto-ola-recap')">
+      <span class="ctag red">EV Watch</span>
+      <div class="card-hl">Ola Electric: ₹575 crore diverted from IPO funds to debt repayment — for the third time</div>
+      <div class="card-deck">Falling sales, cut R&amp;D, and now a third diversion of IPO proceeds to debt. The pattern is clear. While Xpeng posted its first-ever profit this week on high-margin EV sales, Ola continues to burn through the money it raised from public markets. The contrast is a useful frame for evaluating EV startup maturity curves.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com/news/two-wheelers/scooters/ola-electric-diverts-rs-575-crore-from-ipo-funds-to-pare-debt-push-growth" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('etauto-tyre-recap')">
+      <span class="ctag amber">Auto Stocks</span>
+      <div class="card-hl">Tyre stocks down 18% in March — analysts warn of another 24% downside</div>
+      <div class="card-deck">Crude at $96 squeezes margins from both sides: input costs (synthetic rubber, energy) rise while commercial vehicle demand softens. Tyre stocks were the week&#39;s clearest auto-sector casualty. This week&#39;s Auto sector leadership (+2.15%) was OEM-driven, not component-driven — making it a selective bounce rather than a broad recovery.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com/news/industry/tyre-stocks-skid-up-to-18-in-march-can-slip-another-24-cautions-analyst" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     INDIA — The Ken Sunday Weekly Recap
+══════════════════════════════════════ -->
+<section class="sec" id="sec-india">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">The Ken · Sunday Weekly Recap · 22 Mar 2026</div>
+      <h2 class="sec-title">Urban Company vs the quick-service insurgents, Razorpay&#39;s agentic bet, Brnd.me&#39;s Unilever dream</h2>
+    </div>
+    <span class="sec-count">8 stories</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · The Ken · In the Spotlight</div>
+      <h3 class="lead-hl">Urban Company hit 50,000 orders a day — and is still losing ₹381 on every ₹172 order. Snabbit says it has a cheaper model. Pronto is winning on downloads. None of this makes economic sense yet.</h3>
+      <p class="lead-summary">You see, this is a familiar Indian startup story with a new cast. Urban Company&#39;s Instahelp hit 50,000 daily orders in February — a scale milestone. The problem is unit economics: it costs ₹381 to fulfill every order worth ₹172. Meanwhile Snabbit&#39;s Aayush Agarwal argues his model is fundamentally cheaper because it focuses on hyper-dense areas and keeps marketing costs low. And Pronto recorded the most app downloads of the three last month according to app-intelligence platform Asolytics.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">Not only this — investors are optimistic the home-services market will "go the way of quick commerce," which is a phrase worth unpacking. Quick commerce found its unit economics by raising delivery fees, expanding dark stores, and essentially making customers pay for convenience. It took years and billions. The Ken&#39;s story asks whether home services can follow the same path — or whether the variables are too different. In addition to this, the story includes data on how UC turned the tables tactically on Snabbit. Well worth reading in full.</p>
+      <a class="src-btn" href="https://the-ken.com/story/how-urban-company-turned-the-tables-on-snabbit/" target="_blank" rel="noopener">Read on The Ken</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"₹381 to fulfill every ₹172 order."</div>
+        <div class="pull-attr">— The Ken, on Urban Company&#39;s Instahelp unit economics</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">This week on The Ken:</strong><br>
+        Urban Company vs Snabbit vs Pronto<br>
+        Razorpay&#39;s agentic payments bet<br>
+        India&#39;s steel middle class<br>
+        Brnd.me / Mensa rebranding<br>
+        Bihar&#39;s public farm advisory AI<br>
+        NPCI resurrects Bhim UPI<br>
+        Yoga over Python (credit system)<br>
+        Kerala remittance + Iran war risk
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('razorpay-agentic')">
+      <span class="ctag teal">The Ken · Agents on the Loose</span>
+      <div class="card-hl">Razorpay&#39;s agentic payments bet: voice-order, pay without opening a UPI app — and why it could hurt PhonePe and Google Pay</div>
+      <div class="card-deck">At FTX26, Razorpay showed a Zomato demo: user orders by voice, pays without opening a checkout page or UPI app. In an agentic model, AI handles discovery and initial transaction — reducing payments apps to a backend authentication layer. Cross-platform agents could be even more disruptive. The Ken raises unresolved questions: trust, fraud, consent, liability. Well worth reading before this becomes mainstream.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/story/what-does-razorpay-know-about-agentic-ai-that-openai-amazon-ebay-dont/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('steel-middle-class')">
+      <span class="ctag amber">The Ken · Make India Competitive</span>
+      <div class="card-hl">India&#39;s steel industry gets a middle class — as Tata turns to scrap and JSW hunts for iron ore</div>
+      <div class="card-deck">A new class of semi-integrated steelmakers is reshaping the market between the fully integrated giants and the small re-rollers. Not only is this a supply chain story — it&#39;s also a competitiveness story. Tata Steel&#39;s new electric arc furnace (scrap-based) is one signal. JSW&#39;s iron ore push is another. The Ken&#39;s Make India Competitive newsletter covers the structural shift.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/newsletter/make-india-competitive-again/indias-steel-industry-gets-a-middle-class-and-more-competition/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('brnd-me')">
+      <span class="ctag neutral">The Ken · IPO Watch</span>
+      <div class="card-hl">Brnd.me (rebranded Mensa): "It&#39;ll be a digital Unilever" — but the model still looks like a roll-up</div>
+      <div class="card-deck">Ananth Narayanan has rebranded Mensa to Brnd.me, flipped its domicile from Singapore to India, and is IPO-bound. He insists it&#39;s not a roll-up. His argument: he&#39;s now focused on fewer, larger brands and taking niche categories global rather than acquiring dozens of digital-first brands. Whether that distinction convinces investors pre-IPO is the real test. The Ken&#39;s full story is worth reading ahead of the IPO.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/story/itll-be-a-digital-unilever-ananth-narayanan-insists-his-rebranded-mensa-isnt-a-roll-up/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('bhim-upi')">
+      <span class="ctag blue">The Ken · Ka-ching</span>
+      <div class="card-hl">NPCI resurrects Bhim UPI — India&#39;s sovereign payments app gets another shot</div>
+      <div class="card-deck">Bhim was India&#39;s first UPI app, launched with massive government backing, and then slowly lost ground to PhonePe and Google Pay. NPCI is trying again. The Ken&#39;s Ka-ching newsletter looks at what the revival means — whether it&#39;s a genuine product push or a strategic hedge by NPCI against platform concentration risk in the UPI ecosystem.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/kaching/npci-resurrects-its-own-upi-payments-app-dreams-with-bhim/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('yoga-python')">
+      <span class="ctag amber">The Ken · Education</span>
+      <div class="card-hl">Yoga over Python: India&#39;s new college credit system is being gamed — students are picking the easiest courses</div>
+      <div class="card-deck">Five years after NEP introduced vocational training credits into higher education, students have found the loophole: yoga, music, and other low-effort courses are being chosen over Python, data science, and industry-relevant skills. The online government platform built for this is barely seeing traction. The Ken&#39;s story is a useful ground-truth check on the gap between policy intent and student behaviour.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/story/yoga-over-python-how-indias-new-college-curriculum-rewards-the-easiest-skills/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('kerala-remittance')">
+      <span class="ctag red">The Ken · Daybreak Podcast</span>
+      <div class="card-hl">In Kerala, remittance built a world — and the Iran war could undo it</div>
+      <div class="card-deck">Millions of Keralites built their lives in the Gulf — houses, education, healthcare — funded by remittances. The US-Israel-Iran war is now threatening Gulf economic stability. Not only does this affect the Keralites in the Gulf; it affects their families back home who depend on those transfers. The Ken&#39;s Daybreak podcast covers this human dimension of the Iran conflict that the macro data doesn&#39;t capture. Listen on Spotify or Apple.</div>
+      <div class="card-src">The Ken Daybreak → <a href="https://the-ken.com/podcasts/daybreak/in-kerala-remittance-built-a-world-that-war-can-now-undo/" target="_blank" rel="noopener">Listen to the episode</a></div>
+    </div>
+
+    <div class="card" onclick="openM('lpg-buffer')">
+      <span class="ctag amber">The Ken · Daybreak Podcast</span>
+      <div class="card-hl">India&#39;s LPG success story runs on a two-day buffer — how did we get here?</div>
+      <div class="card-deck">The Daybreak podcast follows up on Finshots&#39; LPG black market story from last week with a harder question: how did the world&#39;s most ambitious clean cooking programme end up with only a two-day supply buffer? The answer involves the same subsidy design flaw Finshots identified — domestic cylinders priced so low that commercial diversion is rational. Listen to the Daybreak episode for the full picture.</div>
+      <div class="card-src">The Ken Daybreak → <a href="https://the-ken.com/podcasts/daybreak/indias-lpg-success-story-runs-on-a-two-day-buffer/" target="_blank" rel="noopener">Listen to the episode</a></div>
+    </div>
+
+    <div class="card" onclick="openM('bihar-agri')">
+      <span class="ctag green">The Ken · Agritech</span>
+      <div class="card-hl">Bihar&#39;s public AI farm advisory could disrupt VC-funded agritech — and show the nation the way</div>
+      <div class="card-deck">Bihar Krishi is a government-built AI-powered farm advisory app that is part of India&#39;s "agri stack." Since farm advisory isn&#39;t really monetisable on its own, private agritech firms link it to input marketplaces. Public infrastructure that decouples advisory from commerce could undermine that model. Bihar is the test case. The Ken&#39;s story is worth reading for anyone watching the agritech space.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/story/insidebihars-plan-to-disrupt-the-agritech-advisory-market/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEEP READ — Finshots Sunday + The Economist
+══════════════════════════════════════ -->
+<section class="sec" id="sec-deepread">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Finshots Sunday · The Economist</div>
+      <h2 class="sec-title">Diamond fabric, the crab evolution, and which countries are the energy shock&#39;s biggest victims</h2>
+    </div>
+    <span class="sec-count">5 stories</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Finshots · Sunday Curiosity Edition</div>
+      <h3 class="lead-hl">Non-crab crustaceans keep independently evolving into crabs. Scientists call it carcinisation. And in a strange way, humans do something similar with ideas.</h3>
+      <p class="lead-summary">Finshots&#39; Sunday edition is their curiosity special — and this week it is genuinely delightful. The main piece covers carcinisation: the evolutionary process by which completely unrelated crustaceans independently develop crab-like body forms. It has happened at least five separate times across different evolutionary lineages. The Cavendish banana story of evolution, except instead of disease, it&#39;s convergent adaptation.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">The writer then extends the idea: humans do an intellectual version of carcinisation. The arch, the wheel, writing systems — independent civilisations with no contact arrived at the same solutions. Since 2019, people have coined "intellectual carcinisation" for this. The essay ends with the clarification that no, we are not literally becoming crabs — but it is a shape the universe keeps stumbling upon for certain creatures under certain conditions. Well worth the 5 minutes it takes to read.</p>
+      <a class="src-btn" href="https://finshots.in/archive/clothes-made-of-diamonds-humans-mutating-into-crabs/" target="_blank" rel="noopener">Read on Finshots</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"Evolution is not a straight line marching toward some ideal creature. It is nature running the same experiment over and over."</div>
+        <div class="pull-attr">— Finshots, Sunday curiosity edition</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">Also in this Finshots Sunday:</strong><br>
+        Diamond nanoparticle fabric — cools skin by 2–3°C<br>
+        Could cut AC use by 20–30%<br>
+        Already used in computer chip cooling<br>
+        Indian summer clothing application: possible<br>
+        India LPG stat: 40% of consumption is non-domestic
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('diamond-fabric')">
+      <span class="ctag teal">Finshots · Sunday</span>
+      <div class="card-hl">Scientists have coated cotton fabric with diamond nanoparticles — and it cools the body by 2–3°C</div>
+      <div class="card-deck">Researchers at RMIT University coated cotton with nanodiamonds (not jewellery diamonds — cheap ones made from plastic waste via detonation). The particles conduct heat away from skin faster than regular cotton. In tests, the coated side cools by 2–3°C and could reduce air conditioning use by 20–30% in warm environments. The question Finshots raises: could this work for Indian summer clothing? Conceptually yes — but scaling the coating process is the real challenge.</div>
+      <div class="card-src">Finshots → <a href="https://finshots.in/archive/clothes-made-of-diamonds-humans-mutating-into-crabs/" target="_blank" rel="noopener">Read the full story</a></div>
+    </div>
+
+    <div class="card" onclick="openM('economist-energy')">
+      <span class="ctag red">The Economist · Lead</span>
+      <div class="card-hl">Which country is the biggest loser from the energy shock? The Economist ranked emerging market vulnerability</div>
+      <div class="card-deck">The Economist&#39;s lead story this week analysed which emerging markets are most exposed to the energy shock from the Gulf war. The lesson from previous shocks remains consistent: when global energy supply is squeezed, the poorest countries suffer most — not because they consume the most, but because they have the fewest buffers. The full analysis with country rankings is at economist.com (subscription required).</div>
+      <div class="card-src">The Economist → <a href="https://www.economist.com/international/2026/03/21/which-country-is-the-biggest-loser-from-the-energy-shock" target="_blank" rel="noopener">Read at economist.com</a></div>
+    </div>
+
+    <div class="card" onclick="openM('economist-airlines')">
+      <span class="ctag blue">The Economist · Business</span>
+      <div class="card-hl">The war may bring lasting change to the airline business — Western carriers will relish winning customers back</div>
+      <div class="card-deck">Gulf carriers — Emirates, Etihad, Qatar Airways — built their dominance on routes through a corridor that is now disrupted. Western airlines are rerouting through longer paths and some are quietly recapturing long-haul traffic that Gulf carriers had taken over the past decade. The Economist covers whether this is a temporary disruption or a structural shift in aviation economics.</div>
+      <div class="card-src">The Economist → <a href="https://www.economist.com/business/2026/03/21/war-may-bring-lasting-change-to-the-airline-business" target="_blank" rel="noopener">Read at economist.com</a></div>
+    </div>
+
+    <div class="card" onclick="openM('economist-ev-battery')">
+      <span class="ctag green">The Economist · Technology</span>
+      <div class="card-hl">Rapid-charging EV batteries are coming — refuelling in as little time as filling a tank of petrol</div>
+      <div class="card-deck">The Economist&#39;s technology story this week covers new battery chemistry advances that could allow EVs to charge in the same time as filling a petrol tank. Due to this, one of the last major objections to EV adoption — charging time versus refuelling time — could become a non-issue within years. Well worth reading for anyone tracking the EV transition timeline.</div>
+      <div class="card-src">The Economist → <a href="https://www.economist.com/science-and-technology/2026/03/21/rapid-charging-ev-batteries-are-on-the-way" target="_blank" rel="noopener">Read at economist.com</a></div>
+    </div>
+
+    <div class="card" onclick="openM('makeuseof-linux')">
+      <span class="ctag neutral">MakeUseOf · Sunday</span>
+      <div class="card-hl">The unexpected Linux desktop killer, a benchmark surprise loser, and what happened when switching to Starlink</div>
+      <div class="card-deck">MakeUseOf&#39;s Sunday edition covers: an unexpected application that is quietly killing Linux desktop adoption; benchmark tests across flagship phones that revealed a surprise loser (not who you&#39;d expect); and a first-person account of switching from traditional broadband to Starlink. Three quick reads for the tech-curious weekend.</div>
+      <div class="card-src">MakeUseOf → <a href="https://www.makeuseof.com" target="_blank" rel="noopener">Read at makeuseof.com</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WORLD — Global context Sunday
+══════════════════════════════════════ -->
+<section class="sec" id="sec-world">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Global context · Sunday 22 Mar 2026</div>
+      <h2 class="sec-title">The week that was, globally — and what to watch next week</h2>
+    </div>
+    <span class="sec-count">3 items</span>
+  </div>
+
+  <div class="info-box" style="margin-bottom:1.5rem">
+    <div class="info-box-label">In The Money · What to Expect Next Week</div>
+    <p>Zerodha&#39;s Sandeep Rao closes this week&#39;s market metrics with: <em>"Markets look likely to consolidate and chop at these levels for a while. For index investors, the long-term thesis remains intact. The arc of index investing is long — but it bends upward."</em> Key watch for the week: Iran-conflict developments remain the single biggest variable. No major scheduled economic events on the calendar.</p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('itm-read-1')">
+      <span class="ctag red">In The Money · Must-Read</span>
+      <div class="card-hl">India&#39;s IT sector: built on cost-effective English-speaking labour over 25 years — AI agents are a genuine structural threat</div>
+      <div class="card-deck">Zerodha&#39;s team flagged this New York Times piece: India&#39;s $300 billion IT and BPO sector employs over 6 million people. AI agents that can code, handle customer service, and manage HR tasks at a fraction of the cost are now a real threat to that model — not hypothetical, not years away. The NYT piece is worth reading for the structural risk perspective it offers on India&#39;s most important export industry.</div>
+      <div class="card-src">New York Times (via In The Money) → <a href="https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f" target="_blank" rel="noopener">See the full recommendation</a></div>
+    </div>
+
+    <div class="card" onclick="openM('economist-church')">
+      <span class="ctag neutral">The Economist · 1843</span>
+      <div class="card-hl">The battle for the soul of the Church of England — can the first female Archbishop of Canterbury stop it tearing itself apart?</div>
+      <div class="card-deck">The Economist&#39;s long-read from its 1843 magazine. The Church of England has been in crisis for decades — the idyllic days of George Orwell&#39;s "old maids hiking to holy communion" are long gone. The first female Archbishop faces a church divided over doctrine, sexuality, and relevance. A well-written long-form piece for the weekend.</div>
+      <div class="card-src">The Economist 1843 → <a href="https://www.economist.com/1843/2026/03/21/the-battle-for-the-soul-of-the-church-of-england" target="_blank" rel="noopener">Read at economist.com</a></div>
+    </div>
+
+    <div class="card" onclick="openM('oman-war')">
+      <span class="ctag red">The Economist · By Invitation</span>
+      <div class="card-hl">America&#39;s friends must help extricate it from an unlawful war — Oman&#39;s chief diplomat writes</div>
+      <div class="card-deck">Badr Albusaidi, Oman&#39;s foreign minister, writes in The Economist that the US has lost control of its foreign policy and that American allies must now act to pull it back from a war that is both strategically damaging and legally indefensible. Oman has historically played the diplomatic back-channel role in US-Iran relations — making this a significant public signal.</div>
+      <div class="card-src">The Economist → <a href="https://www.economist.com/by-invitation/2026/03/21/americas-friends-must-help-extricate-it-from-an-unlawful-war" target="_blank" rel="noopener">Read at economist.com</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FEEDBACK FORM
+══════════════════════════════════════ -->
+<section class="sec" id="sec-feedback">
+<div class="wrap">
+
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Reader Feedback · Issue 003</div>
+      <h2 class="sec-title">Help shape The Brief</h2>
+    </div>
+  </div>
+
+  <div style="max-width:680px">
+    <p style="font-size:15px;color:var(--ink-60);line-height:1.7;margin-bottom:2rem">This newsletter is a work in progress. Your feedback directly determines what gets built next — which sources get more depth, what new sections get added, and how the whole thing gets delivered. Takes about 3 minutes.</p>
+
+    <!-- SUCCESS STATE -->
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✓</div>
+      <h3>Thanks for the feedback.</h3>
+      <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
+    </div>
+
+    <!-- FORM — powered by Formspree -->
+    <!-- Replace YOUR_FORM_ID below with the ID from formspree.io/forms after you create a free account -->
+    <form id="feedback-form" action="https://formspree.io/f/myknvaaa" method="POST" novalidate>
+
+      <!-- Hidden fields Formspree uses to organise submissions -->
+      <input type="hidden" name="_subject" value="The Brief feedback — 21 Mar 2026">
+      <input type="hidden" name="issue" value="The Brief · 22 Mar 2026 (Sunday)">
+      <!-- Rating is captured here by JS when a button is clicked -->
+      <input type="hidden" name="rating" id="rating-hidden" value="">
+
+      <!-- ① OVERALL RATING -->
+      <div class="form-section-title">How was today's Brief?</div>
+      <div class="form-section-sub">Your honest reaction to this issue, not what you think I want to hear.</div>
+
+      <div class="form-group">
+        <div class="form-label">Overall rating <span>*</span></div>
+        <div class="rating-row" id="rating-row">
+          <button type="button" class="rating-btn" data-val="1" onclick="setRating(1)" title="Pretty bad">😕</button>
+          <button type="button" class="rating-btn" data-val="2" onclick="setRating(2)" title="Could be better">😐</button>
+          <button type="button" class="rating-btn" data-val="3" onclick="setRating(3)" title="Pretty good">🙂</button>
+          <button type="button" class="rating-btn" data-val="4" onclick="setRating(4)" title="Really good">😊</button>
+          <button type="button" class="rating-btn" data-val="5" onclick="setRating(5)" title="Excellent">🔥</button>
+        </div>
+        <div id="rating-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please pick a rating before submitting.</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ② WHAT WORKED / DIDN'T -->
+      <div class="form-section-title">What's working — and what isn't?</div>
+      <div class="form-section-sub">Be specific if you can. "The auto section is too long" is more useful than "it's fine."</div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-liked">What did you like most about today's issue?</label>
+        <textarea class="form-textarea" id="what-liked" name="what_liked" placeholder="e.g. The market strip at the top, the ETAuto summaries, the pilot shortage story…" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-disliked">What felt off, too long, or unnecessary?</label>
+        <textarea class="form-textarea" id="what-disliked" name="what_disliked" placeholder="e.g. Too many world stories, the lead cards are too big on mobile, The Ken section feels thin…" rows="3"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ③ CONTENT PREFERENCES -->
+      <div class="form-section-title">What do you want more of?</div>
+      <div class="form-section-sub">Select everything that applies. These directly set the editorial direction for future issues.</div>
+
+      <div class="form-group">
+        <div class="form-label">Topics you want expanded</div>
+        <div class="check-grid" id="topics-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="markets_depth">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deeper market analysis</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="auto">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Auto industry coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="tech">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Tech & AI news</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="macro">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">India macro & policy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="global">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Global markets & world</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="startups">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Startups & VC</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="personal_finance">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Personal finance</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="commodities">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Commodities & energy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="banking">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Banking & financials</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="ipo">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">IPO & corporate actions</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Sections you want removed or made smaller</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="world">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">World / Economist</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="deepread">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deep Read section</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="makeuseof">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">MakeUseOf / tech how-tos</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="ticker">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Market ticker bar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="lead_cards">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Lead story cards (too big)</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="pull_quotes">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Pull quotes in lead cards</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ④ NEW SOURCES / FEATURES -->
+      <div class="form-section-title">What's missing entirely?</div>
+      <div class="form-section-sub">Sources you'd like added, features you want, things other newsletters do well that this one doesn't yet.</div>
+
+      <div class="form-group">
+        <div class="form-label">New sources or newsletters to include</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="morning_context">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning Context</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="capitalmind">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Capitalmind</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="ars_technica">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Ars Technica</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="economist_full">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">More Economist coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="bloomberg">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Bloomberg India</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="moneycontrol">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Moneycontrol</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">New features you'd like</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="audio_summary">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Audio / TTS summary</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="portfolio_alerts">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Portfolio stock alerts</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="calendar">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Upcoming events calendar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="earnings">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Earnings / results tracker</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="chart_of_day">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Chart of the day</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="morning_edition">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning edition too</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="whatsapp">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">WhatsApp delivery</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="weekly_digest">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Weekly digest on Sunday</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="open-feedback">Anything else? Open mic.</label>
+        <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
+        <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑤ PERSONAL (optional) -->
+      <div class="form-section-title">Optionally — who are you?</div>
+      <div class="form-section-sub">Only fill this in if you want a reply. None of this is required.</div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-name">Your name</label>
+          <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-email">Email (for a reply)</label>
+          <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="reader-role">How would you describe yourself?</label>
+        <select class="form-select" id="reader-role" name="reader_role">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="retail_investor">Retail investor</option>
+          <option value="trader">Active trader</option>
+          <option value="finance_professional">Finance professional</option>
+          <option value="business_founder">Business founder / operator</option>
+          <option value="student">Student</option>
+          <option value="just_curious">Just generally curious</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="how-found">How did you find The Brief?</label>
+        <select class="form-select" id="how-found" name="how_found">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="nischay_direct">Nischay shared it directly</option>
+          <option value="friend">A friend shared it</option>
+          <option value="twitter">Twitter / X</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑥ SUBSCRIBE -->
+      <div class="form-section-title">Want The Brief in your inbox every evening?</div>
+      <div class="form-section-sub">The Brief goes out at 9:30 PM on weekdays — a summary of everything that landed in the newsletter pile that day. No ads, no sponsored content.</div>
+
+      <div class="form-group">
+        <div class="subscribe-card" id="subscribe-card">
+          <div class="subscribe-left">
+            <div class="subscribe-icon">✉</div>
+            <div>
+              <div class="subscribe-title">Subscribe to The Brief</div>
+              <div class="subscribe-desc">Daily · 9:30 PM weekdays · Free</div>
+            </div>
+          </div>
+          <label class="toggle-wrap">
+            <input type="checkbox" id="subscribe-toggle" name="subscribe" value="yes" onchange="handleSubscribeToggle(this)">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="subscribe-email-wrap" style="display:none">
+        <label class="form-label" for="subscribe-email">Email address for the newsletter <span>*</span></label>
+        <div class="form-hint">If you already filled this in above, we'll use that — or add a different address here.</div>
+        <input class="form-input" type="email" id="subscribe-email" name="subscribe_email" placeholder="you@example.com">
+        <div id="subscribe-email-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter a valid email address to subscribe.</div>
+      </div>
+
+      <div class="form-group" id="subscribe-freq-wrap" style="display:none">
+        <div class="form-label">Preferred frequency</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <label class="freq-btn" onclick="setFreq(this,'daily')">
+            <input type="radio" name="freq" value="daily" style="display:none" checked>
+            <span>Every weekday</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekends_too')">
+            <input type="radio" name="freq" value="weekends_too" style="display:none">
+            <span>Weekdays + Saturday digest</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekly_only')">
+            <input type="radio" name="freq" value="weekly_only" style="display:none">
+            <span>Weekly digest only</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem">
+        <button type="submit" class="submit-btn" id="submit-btn">Send feedback</button>
+        <span style="font-size:12px;color:var(--ink-30);font-family:var(--mono)" id="submit-note">Your response stays private.</span>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     MODALS — summaries with source links
+══════════════════════════════════════ -->
+<div class="modal-bg" id="mbg" onclick="outsideClose(event)">
+  <div class="modal" id="mbox">
+    <div class="modal-head">
+      <div class="modal-tag" id="mtag"></div>
+      <div class="modal-hl" id="mhl"></div>
+      <button class="modal-close" onclick="closeM()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-summary-note">Summary · Click "Read original" to access the full story</div>
+      <div id="mbody"></div>
+      <div class="modal-source-link">
+        <span id="msrc-label">Source</span>
+        <a id="msrc-link" href="#" target="_blank" rel="noopener">Read original</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const M = {
+  "itm-nifty": {
+    tag:"In The Money · Zerodha",
+    hl:"Week 12 was technically flat — Nifty lost just 37 points — but masked a 932-point intraday range",
+    src:"In The Money by Zerodha",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>Zerodha's Sandeep Rao opens with a precise observation: three green candles to start the week gave bulls some cause for optimism. Then Thursday arrived. A 580-point gap-down (2.5%), a breach of 23,000, a new weekly low at 22,930 — driven entirely by HDFC Bank chairman Atanu Chakraborty's resignation citing "happenings and practices" he couldn't reconcile with his values. The largest single-day fall since the General Election result day on 4 June 2024, when the market fell 5.93%.</p><p>Friday partially recovered: a gap-up open closing up ~0.5%. Not only does the weekly flat close mask the drama — it also means the 22,900 support level that Zerodha had flagged the prior week held almost exactly, with Nifty bottoming at 22,930 before pulling back. Due to this, Zerodha's view for next week is bearish to sideways, with sharp moves possible in either direction depending on Iran-conflict developments. Read the full technical breakdown including hourly analysis at the link.</p>`
+  },
+  "itm-expiry": {
+    tag:"In The Money · Zerodha",
+    hl:"Back-to-back expiries: Nifty on Tuesday 24 March, Sensex on Wednesday 25 March",
+    src:"In The Money by Zerodha",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>Thursday 26 March is a holiday (Ram Navami), compressing next week into four trading days with two expiries in consecutive sessions. Zerodha flags this as unusual and worth preparing for. Nifty's 1DTE ATM straddle premium closed at 452 points — down 48 from last week's 500 — implying approximately a 1.95% move either side. Expected expiry range: 22,663 on the downside, 23,567 on the upside — roughly a 900-point band priced in across the weekend and two trading days.</p><p>Sensex: the expiry shifts from its usual Thursday to Wednesday 25 March because of the holiday. ATM straddle closed at 1,710 points, implying a 2.29% move either side. Expected range: 72,823–76,243. Not only the calendar — the 23,000 Put has the highest open interest on the put side, confirming the street expects the market to hold above 23,000 as support. Full OI breakdown in Zerodha's report.</p>`
+  },
+  "itm-sectors": {
+    tag:"In The Money · Zerodha",
+    hl:"Auto led sectors at +2.15%, Pharma stepped back — an entirely new top-5 this week",
+    src:"In The Money by Zerodha",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>Week 12 produced an entirely new sector leadership set. Auto (+2.15%), Metal (+1.06%), Consumption (+0.91%), PSU Bank (+0.80%), and Commodities (+0.53%) led the week. Pharma, which had been a consistent outperformer for several weeks, stepped back. Not only is the rotation interesting in isolation — Zerodha notes that Auto, PSU Banks, and Metals have reappeared and are worth watching if leadership continues into next week.</p><p>Year-to-date context: SENSEX −12.54%, NIFTY −11.54%, BANKNIFTY −10.33%, MIDCPNIFTY −8.36%. At this pace, March 2026 is on track to be one of the worst March months since 2020. That said, Zerodha's historical analysis of forward returns after −3%+ days in NIFTY shows broadly positive outcomes at the 6-month and 1-year marks. Small sample size, but the base rate is reassuring. Full sector data in the weekly report.</p>`
+  },
+  "groww-data": {
+    tag:"Groww Digest · Weekly Data",
+    hl:"India macro: unemployment 4.9%, exports −0.8%, WPI at 11-month high, US-India trade deal on hold",
+    src:"Groww Digest",
+    url:"https://groww.in/digest",
+    body:`<p>Groww Digest's weekly quick-takes section is one of the most useful data summaries for India macro. This week: India's unemployment rate fell marginally to 4.9% in February (vs 5% in January). Merchandise exports fell 0.8% year-on-year in February while imports rose 24.12% — the trade deficit widened to $27.1 billion. WPI inflation rose to an 11-month high of 2.13% in February (vs 1.81% in January).</p><p>Not only this — the signing of the India-US trade deal is on hold pending a new tariff structure between the two countries. The Centre approved the BHAVYA scheme with ₹33,660 crore to develop 100 plug-and-play industrial parks. An inter-ministerial briefing confirmed fuel and LPG supplies in India remain adequate despite the West Asia conflict, with measures underway to curb hoarding. The US Fed held rates at 3.5–3.75%. India's forex reserves fell $7.05 billion to $709.76 billion. Full data in the Groww Digest Sunday edition.</p>`
+  },
+  "itm-metals": {
+    tag:"In The Money · Zerodha",
+    hl:"Gold −7.72%, silver −10.75% this week — despite equity markets ending almost flat",
+    src:"In The Money by Zerodha",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>This is the counterintuitive move of the week. Theory says gold acts as a hedge during equity volatility — when stocks fall, investors flee to gold, pushing its price up. Most of the time this is true. This week, gold fell 7.72% and silver fell 10.75% at the same time as equity markets ended essentially flat. Copper also fell 6.27%. Crude oil and natural gas were flat.</p><p>Zerodha's Sandeep Rao notes this as a reminder that the gold-as-hedge relationship is real but not guaranteed. In practice, gold can sell off in conditions where dollar strength is extreme or where margin calls force liquidation of all asset classes simultaneously. Due to this, the week serves as a useful data point for portfolio managers who rely on gold as a consistent hedge. Put simply: it works most of the time, but not all of the time. Full commodity breakdown in the In The Money weekly report.</p>`
+  },
+  "itm-history": {
+    tag:"In The Money · Zerodha",
+    hl:"Six years ago today — 23 March 2020 — Nifty closed −12%",
+    src:"In The Money by Zerodha",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>Zerodha's Sandeep Rao closes this week's report with a note worth sitting with: this weekend marks six years since 23 March 2020, the day Nifty closed −12% — the largest single-day fall in recent memory, driven by a single microscopic entity. In the months that followed, the market recovered to all-time highs. Investors who held through that day were rewarded. Investors who sold at the bottom were not.</p><p>Not only is this a data point — it is a reminder of something Rao says explicitly: "how fragile things can be, and how a single microscopic entity can alter the course of history. Lest we forget." The weekly note is worth reading in full, not just for the numbers but for how it frames the long-arc perspective that separates long-term investors from short-term traders.</p>`
+  },
+  "etauto-magnets-recap": {
+    tag:"ETAuto · Week's Most-Read",
+    hl:"India's rare earth magnet RFP: 6,000 MTPA, full value chain, OEMs must go from NdPr oxide to finished magnets",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com/news/industry/centre-invites-global-bids-to-set-up-6000-mtpa-rare-earth-magnet-manufacturing-capacity",
+    body:`<p>The most significant Indian industrial policy story of the week. India currently imports 100% of its rare earth magnets — the components inside every EV motor, wind turbine, and piece of defence equipment. The government's ₹7,280 crore RFP is now live with full incentive details: OEMs must establish the complete value chain from neodymium-praseodymium (NdPr) oxide to finished magnets. A pilot plant is already operational at ARCI Hyderabad. Centre auctions a record 200 mineral blocks in FY26 are part of the same policy arc.</p><p>Not only this — China's rare earth magnet exports spiked ahead of the Trump-Xi meeting, a pattern of using supply as geopolitical leverage that India has experienced before. Due to this timing, the domestic manufacturing push is both an industrial policy choice and a strategic necessity. Full story on ETAuto. Also covered in depth in Issue #002.</p>`
+  },
+  "etauto-ola-recap": {
+    tag:"ETAuto · EV Watch",
+    hl:"Ola Electric: ₹575 crore from IPO to debt — the third diversion in recent quarters",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com/news/two-wheelers/scooters/ola-electric-diverts-rs-575-crore-from-ipo-funds-to-pare-debt-push-growth",
+    body:`<p>Ola Electric raised IPO money stating it would go toward product development, R&D, and expansion. This is the third time the company has diverted IPO proceeds to debt repayment instead. Due to this pattern, the gap between the IPO use-of-proceeds disclosures and the actual deployment of capital is becoming increasingly hard to defend. Falling sales and repeated R&D cuts compound the concern.</p><p>The contrast with Xpeng is useful. Xpeng — also an EV startup that went public with ambitious roadmaps — posted its first-ever quarterly profit this week on high-margin EV sales. The difference: Xpeng reached profitability through product discipline and margin management. Ola is still servicing debt with shareholder money. Full story on ETAuto.</p>`
+  },
+  "etauto-tyre-recap": {
+    tag:"ETAuto · Auto Stocks",
+    hl:"Tyre stocks down 18% in March — input costs up, commercial vehicle demand softening",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com/news/industry/tyre-stocks-skid-up-to-18-in-march-can-slip-another-24-cautions-analyst",
+    body:`<p>Crude oil at $96 creates a two-sided margin squeeze for tyre manufacturers. Synthetic rubber is petroleum-derived, so input costs are rising. At the same time, commercial vehicle demand — the largest tyre segment — is softening as economic uncertainty reduces freight and construction activity. Due to this combination, analysts covering the sector warn of a further 24% downside if crude stays elevated.</p><p>This week's Auto sector leadership (+2.15%) was driven by OEMs (passenger vehicles, two-wheelers) rather than component suppliers — meaning it was a selective bounce rather than a broad auto recovery. Not only tyre stocks — ZF Friedrichschafen, the German auto component supplier, also flagged a downbeat revenue outlook specifically citing weak commercial vehicle demand globally. Full story on ETAuto.</p>`
+  },
+  "razorpay-agentic": {
+    tag:"The Ken · Agents on the Loose",
+    hl:"Razorpay showed a voice-order demo where you pay without opening a UPI app — and it could hurt PhonePe",
+    src:"The Ken",
+    url:"https://the-ken.com/story/what-does-razorpay-know-about-agentic-ai-that-openai-amazon-ebay-dont/",
+    body:`<p>At FTX26, Razorpay demonstrated a Zomato integration: a user orders food by voice and pays without ever opening a checkout page or UPI app. The AI agent handles discovery and the transaction; the payments app is reduced to a backend authentication layer. This is exactly what PhonePe and Google Pay would not want — their front-end position in the payments flow becoming invisible.</p><p>The Ken's story raises the questions that need answering before agentic commerce scales: Who is liable when an AI agent makes a purchase the user didn't intend? How is consent established? How is fraud handled when there's no human at the point of transaction? In addition to this, neutral cross-platform agents — which compare across marketplaces rather than staying within one platform like Zomato — could be even more disruptive by commoditising seller-selection. The Ken covers the full regulatory and trust landscape. Read in full — this is a story that will matter more every quarter.</p>`
+  },
+  "steel-middle-class": {
+    tag:"The Ken · Make India Competitive",
+    hl:"India's steel industry gets a middle class — semi-integrated mills reshaping the market",
+    src:"The Ken",
+    url:"https://the-ken.com/newsletter/make-india-competitive-again/indias-steel-industry-gets-a-middle-class-and-more-competition/",
+    body:`<p>India's steel sector has historically been split between large fully-integrated players (Tata Steel, JSW, SAIL) and small re-rollers. A new middle tier of semi-integrated steelmakers is now emerging — companies that have some upstream capability but source part of their raw material. This matters because it changes competitive dynamics, input cost structures, and margin profiles across the sector.</p><p>Not only this — the timing is significant. Tata Steel is shifting toward scrap-based electric arc furnace production (as evidenced by the Ludhiana facility inaugurated last week). JSW is actively pursuing iron ore mining rights. Due to these moves by the large players, the middle tier is being squeezed from both ends — but also finding niches. The Ken's Make India Competitive newsletter covers the full structural picture. Worth reading for anyone with steel sector exposure.</p>`
+  },
+  "brnd-me": {
+    tag:"The Ken · IPO Watch",
+    hl:"Brnd.me (formerly Mensa): 'it'll be a digital Unilever' — but the business model still looks like a roll-up",
+    src:"The Ken",
+    url:"https://the-ken.com/story/itll-be-a-digital-unilever-ananth-narayanan-insists-his-rebranded-mensa-isnt-a-roll-up/",
+    body:`<p>Ananth Narayanan rebranded Mensa to Brnd.me, flipped domicile from Singapore to India, and is now IPO-bound. His argument for why it's not a roll-up: instead of acquiring dozens of digital-first brands, he's now focused on fewer, larger ones and taking niche categories global. The aspiration — becoming a "digital Unilever" — is ambitious and specific enough to evaluate.</p><p>The Ken's story asks the harder question: is the distinction between "roll-up" and "fewer, focused global brands" operational or just definitional? The business model — acquire brands, build scale, exit — has the same structure regardless of how many brands are involved. Due to this, investors looking at the IPO will likely probe the same point. That said, the global revenue ambition gives Brnd.me a differentiated story relative to purely domestic consumer plays. Well worth reading ahead of the IPO listing.</p>`
+  },
+  "bhim-upi": {
+    tag:"The Ken · Ka-ching",
+    hl:"NPCI resurrects Bhim — India's sovereign UPI app gets another attempt at relevance",
+    src:"The Ken",
+    url:"https://the-ken.com/kaching/npci-resurrects-its-own-upi-payments-app-dreams-with-bhim/",
+    body:`<p>Bhim was launched in December 2016 with Prime Minister Modi's personal endorsement and massive government marketing. Within two years, PhonePe and Google Pay had outcompeted it on features, reliability, and cashback rewards. Bhim's market share collapsed. The app became a symbol of government-built products losing to private-sector execution.</p><p>NPCI is trying again. The Ken's Ka-ching newsletter covers what has changed and whether it matters. The strategic logic: NPCI is increasingly concerned about market concentration in UPI — PhonePe and Google Pay together account for ~85% of UPI transactions. A functioning Bhim gives NPCI a direct lever to apply competitive pressure without relying on private players to self-regulate. Whether the product can actually compete is a separate question. Read the full analysis on The Ken.</p>`
+  },
+  "yoga-python": {
+    tag:"The Ken · Education",
+    hl:"India's NEP credit framework is being gamed: students choose yoga over Python",
+    src:"The Ken",
+    url:"https://the-ken.com/story/yoga-over-python-how-indias-new-college-curriculum-rewards-the-easiest-skills/",
+    body:`<p>India's National Education Policy introduced a credit framework five years ago that was designed to merge vocational training with formal higher education — giving students credits for industry-relevant skills alongside their degree. The policy intent was explicitly to reduce the employability gap. The actual outcome: students are choosing yoga, music, and other low-effort courses over Python, data science, and coding because the credits are the same and the effort is less.</p><p>Not only this — the government's online platform built to host industry-relevant courses is barely seeing traction. Due to this, the gap between policy design and student behaviour is a direct indictment of the incentive structure. The Ken's story is a ground-truth check on one of India's most important education reforms. Worth reading for anyone thinking about India's human capital pipeline and the employability crisis that prompted NEP in the first place.</p>`
+  },
+  "kerala-remittance": {
+    tag:"The Ken · Daybreak Podcast",
+    hl:"Kerala's Gulf remittance economy is at risk from the Iran war",
+    src:"The Ken Daybreak",
+    url:"https://the-ken.com/podcasts/daybreak/in-kerala-remittance-built-a-world-that-war-can-now-undo/",
+    body:`<p>Kerala's development story is largely a remittance story. For decades, Keralites migrated to Gulf countries — UAE, Saudi Arabia, Kuwait, Oman — and sent money home. That money built houses, funded education, paid for healthcare, and supported an economic standard of living that Kerala's domestic economy alone could not sustain. The state has the highest human development indices in India — partly because of this remittance infrastructure.</p><p>The US-Israel-Iran war is now threatening the Gulf economies that sustain these jobs. Not only does conflict disrupt the physical infrastructure of the Gulf — it creates economic uncertainty that reduces hiring, slows construction, and prompts companies to reduce headcount. Due to this, Keralite workers face a double risk: potential job loss in the Gulf and the loss of the remittance income that their families at home depend on. The Ken's Daybreak podcast covers the human dimension of this macro risk. Available on Spotify and Apple Podcasts.</p>`
+  },
+  "lpg-buffer": {
+    tag:"The Ken · Daybreak Podcast",
+    hl:"India's LPG programme runs on a two-day supply buffer — how the world's most ambitious clean cooking scheme became fragile",
+    src:"The Ken Daybreak",
+    url:"https://the-ken.com/podcasts/daybreak/indias-lpg-success-story-runs-on-a-two-day-buffer/",
+    body:`<p>This Daybreak episode follows directly from Finshots's LPG story last week, which covered how subsidised domestic cylinders are being diverted to restaurants and businesses because the price gap with commercial LPG is too wide. The Ken's podcast asks the upstream question: how did a programme that successfully connected millions of households to clean cooking end up with only a two-day supply buffer?</p><p>The answer is a combination of factors: supply chains built for the pre-disruption world, storage infrastructure not scaled to match the expansion of PMUY connections, and the commercial diversion problem reducing effective domestic supply further. Due to the Iran conflict, this thin buffer is now a genuine vulnerability. Put simply, a programme designed to provide energy access could become an energy security risk. Available on Spotify and Apple Podcasts.</p>`
+  },
+  "bihar-agri": {
+    tag:"The Ken · Agritech",
+    hl:"Bihar Krishi: India's public AI farm advisory that could undercut VC-funded agritech",
+    src:"The Ken",
+    url:"https://the-ken.com/story/insidebihars-plan-to-disrupt-the-agritech-advisory-market/",
+    body:`<p>Bihar Krishi is a state government-built AI-powered farm advisory platform that is part of India's emerging "agri stack" — the digital public infrastructure layer for agriculture. It gives farmers crop advice, pest warnings, and market information. The model is significant because it decouples advisory from commerce.</p><p>Private agritech companies like DeHaat, AgroStar, and BigHaat bundle advisory with input marketplaces (seeds, fertiliser, pesticides) because advisory alone is not monetisable. If public infrastructure delivers comparable advisory for free, it removes the hook that keeps farmers on private platforms. Not only could this reduce agritech companies' monetisation — it could also reduce the quality of advice that comes with commercial incentives attached. Bihar is the test case. The Ken's story covers the mechanics, the data, and what scale nationally would mean for the agritech sector. Full read on The Ken.</p>`
+  },
+  "diamond-fabric": {
+    tag:"Finshots · Sunday",
+    hl:"Diamond nanoparticles coated on cotton can cool the body by 2–3°C — and the economics are surprisingly viable",
+    src:"Finshots",
+    url:"https://finshots.in/archive/clothes-made-of-diamonds-humans-mutating-into-crabs/",
+    body:`<p>Researchers from RMIT University in Australia coated cotton fabric with diamond nanoparticles. These are not jewellery diamonds — they are made in bulk from plastic waste or via detonation, making them cheap to produce. The carbon structure of these tiny particles (smaller than a thousandth of a human hair) conducts heat faster than regular cotton. One side of the fabric is coated with a polymer layer loaded with nanodiamonds — that's the side that touches skin. The nanodiamonds absorb body heat and push it outward; the uncoated side prevents hot outside air from being absorbed inward.</p><p>The result: fabric surface cooled by 2–3°C compared to regular cotton. In warm environments, this can reduce air conditioning use by 20–30%. Finshots asks the relevant India question: could this work for Indian summer clothing? The conceptual answer is yes — the technology plugs into existing cotton manufacturing and even a small skin temperature reduction is significant in heat-stressed Indian cities and rural areas. The real challenge: scaling the even coating process and bringing cost down from premium sportswear to mass-market kurtas. Read the full story on Finshots.</p>`
+  },
+  "economist-energy": {
+    tag:"The Economist · Lead",
+    hl:"Which country is the biggest loser from the energy shock? The poorest suffer most — as always.",
+    src:"The Economist",
+    url:"https://www.economist.com/international/2026/03/21/which-country-is-the-biggest-loser-from-the-energy-shock",
+    body:`<p>The Economist's lead analysis this week asked which emerging markets are most exposed to the energy shock from the Gulf war. The methodology: ranking countries on exposure (how much of their energy comes from Gulf imports, how large energy is as a share of their economy) against buffers (foreign exchange reserves, fiscal space, ability to substitute other fuels or producers).</p><p>The conclusion echoes every previous energy shock: when global energy supply is squeezed, the poorest countries suffer most. Not because they consume the most — they don't. But because they have the fewest buffers. A country with $700 billion in forex reserves (India) can absorb months of elevated import costs. A country with two weeks of reserves cannot. Due to this, the energy shock is simultaneously a geopolitical story, a trade story, and a development story. The Economist's full ranking and analysis requires a subscription but is worth reading for the emerging market framework it provides.</p>`
+  },
+  "economist-airlines": {
+    tag:"The Economist · Business",
+    hl:"The war may bring lasting change to the airline business — Gulf carrier dominance faces a structural challenge",
+    src:"The Economist",
+    url:"https://www.economist.com/business/2026/03/21/war-may-bring-lasting-change-to-the-airline-business",
+    body:`<p>Gulf carriers — Emirates, Etihad, Qatar Airways — built their global dominance on one structural advantage: their geography. Dubai, Abu Dhabi, and Doha sit at the intersection of East-West and North-South long-haul routes, allowing single-stop connections between almost any two cities on earth with shorter total journey times than traditional hub routes through London, Frankfurt, or New York.</p><p>The Iran conflict has disrupted that corridor. Airspace closures and route changes have added hours to some journeys. Western airlines — British Airways, Lufthansa, Delta, United — are quietly winning back some long-haul traffic that Gulf carriers had taken over the past decade. The Economist's story asks whether this is temporary (routes will normalise when conflict ends) or structural (if the conflict normalises airspace uncertainty, Western hubs become more attractive again). Worth reading for anyone with aviation sector exposure or an interest in how the geopolitical reordering affects specific industries.</p>`
+  },
+  "economist-ev-battery": {
+    tag:"The Economist · Technology",
+    hl:"Rapid-charging EV batteries — topped up in as little time as filling a tank of petrol",
+    src:"The Economist",
+    url:"https://www.economist.com/science-and-technology/2026/03/21/rapid-charging-ev-batteries-are-on-the-way",
+    body:`<p>The Economist's technology story this week covers new battery chemistry advances that could allow EVs to be charged in approximately the same time as filling a petrol tank. The key development: battery architectures that can accept charge rates of 4C or higher without degrading — meaning an 80% charge in 10–15 minutes rather than 30–45. Sodium-ion and advanced lithium compositions are both contributing to this.</p><p>Due to this development, one of the last major consumer objections to EV adoption — "it takes too long to charge" — could become a non-issue within 3–5 years. Not only would this accelerate consumer adoption; it would also fundamentally change charging infrastructure requirements (fewer chargers needed per location if each session is shorter) and change the competitive dynamics between battery EVs and hydrogen fuel cell vehicles, which currently have a charging-time advantage. The Economist's full analysis is worth reading for anyone tracking the EV transition.</p>`
+  },
+  "makeuseof-linux": {
+    tag:"MakeUseOf · Sunday",
+    hl:"The unexpected Linux desktop killer, a benchmark surprise, and Starlink vs traditional broadband",
+    src:"MakeUseOf",
+    url:"https://www.makeuseof.com",
+    body:`<p>MakeUseOf's Sunday edition covers three pieces worth reading for the tech-curious. The lead story argues that an unexpected application is quietly killing Linux desktop adoption — not Windows compatibility issues or driver problems, but something more mundane and harder to solve. The specific culprit is named in the full article on MakeUseOf.</p><p>The second piece covers benchmark tests across current flagship smartphones that revealed a surprise loser in the performance race — not the brand most people would expect to underperform. In addition to this, a first-person piece covers switching from traditional broadband to Starlink satellite internet: what changed, what didn't, and whether the premium price is justified for non-rural users. All three at makeuseof.com.</p>`
+  },
+  "economist-church": {
+    tag:"The Economist · 1843",
+    hl:"The Church of England's existential crisis — can the first female Archbishop stop it tearing itself apart?",
+    src:"The Economist 1843",
+    url:"https://www.economist.com/1843/2026/03/21/the-battle-for-the-soul-of-the-church-of-england",
+    body:`<p>The Economist's 1843 long-form magazine ran a piece this week on the Church of England's decades-long decline and the question of whether its new leader — the first female Archbishop of Canterbury — can reverse it. The piece opens with a George Orwell image: "old maids hiking to holy communion in the morning mist" — a world long gone. The church is now divided over doctrine (sexuality, inclusion), over relevance (attendance has been falling for 60 years), and over whether institutional reform or theological renewal is the answer.</p><p>The first female Archbishop represents one answer: modernisation, inclusion, institutional reform. A significant conservative faction within the church represents another: doctrinal orthodoxy, communion with African churches that hold traditional views, and skepticism about whether modernisation can arrest decline when it may simply accelerate defection from both progressive and conservative wings. A well-written long-read for the weekend.</p>`
+  },
+  "oman-war": {
+    tag:"The Economist · By Invitation",
+    hl:"America's friends must help extricate it from an unlawful war — Oman's chief diplomat",
+    src:"The Economist",
+    url:"https://www.economist.com/by-invitation/2026/03/21/americas-friends-must-help-extricate-it-from-an-unlawful-war",
+    body:`<p>Badr Albusaidi, Oman's foreign minister, has written publicly in The Economist — a notable choice of venue — that the US has lost control of its foreign policy in the Gulf and that American allies must now act to create an exit ramp. Oman is significant here: it has historically been the back-channel between the US and Iran, maintaining diplomatic relations with both during periods when direct dialogue was impossible. For Oman's foreign minister to write this publicly signals something.</p><p>His argument: the war is both strategically damaging to US interests (it is consuming resources, attention, and goodwill) and legally indefensible under international law. He calls on America's friends and allies to say so publicly rather than offering private counsel. Put simply, Albusaidi is arguing that the silence of US allies is making the situation worse, not better. Whether allies act on this is a different question — but the diplomatic signal is worth tracking. Read the full piece at economist.com.</p>`
+  },
+  "itm-read-1": {
+    tag:"In The Money · Must Read",
+    hl:"India's IT sector: 6 million jobs, $300 billion industry — AI agents are a genuine structural threat",
+    src:"New York Times (via In The Money)",
+    url:"https://inthemoneybyzerodha.substack.com/p/weekly-market-metrics-what-to-expect-57f",
+    body:`<p>Zerodha's In The Money team flagged this New York Times piece as their recommended read of the week. India's IT and BPO sector was built over 25 years on a single structural advantage: cost-effective, English-speaking white-collar labour. It employed over 6 million people directly and many more indirectly. It is India's largest merchandise export category.</p><p>The NYT piece argues that AI agents — specifically those that can code, handle customer service, process claims, and manage back-office functions — are now a genuine structural threat to that model. Not because Indian IT companies aren't adapting (they are), but because the adaptation may involve fewer people doing more work with AI assistance rather than more people doing traditional IT work. Due to this, the employment model that underpins the sector's scale may be structurally compromised even if revenues hold up. In addition to this, the global narrative on India as a "back office" is shifting — which has implications for how India is positioned in trade negotiations and investment decisions. The NYT piece is linked from Zerodha's weekly report.</p>`
+  }
+};
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+
+// ── FORM FUNCTIONS ──
+let selectedRating = 0;
+let selectedFreq = 'daily';
+
+function setRating(val) {
+  selectedRating = val;
+  // Write value into the hidden input so Formspree receives it
+  document.getElementById('rating-hidden').value = val;
+  document.querySelectorAll('.rating-btn').forEach(btn => {
+    btn.classList.toggle('selected', parseInt(btn.dataset.val) === val);
+  });
+  document.getElementById('rating-error').style.display = 'none';
+}
+
+function toggleCheck(label) {
+  const cb = label.querySelector('input[type="checkbox"]');
+  setTimeout(() => { label.classList.toggle('checked', cb.checked); }, 0);
+}
+
+function handleSubscribeToggle(checkbox) {
+  const card       = document.getElementById('subscribe-card');
+  const emailWrap  = document.getElementById('subscribe-email-wrap');
+  const freqWrap   = document.getElementById('subscribe-freq-wrap');
+  const submitBtn  = document.getElementById('submit-btn');
+  const submitNote = document.getElementById('submit-note');
+  if (checkbox.checked) {
+    card.classList.add('active');
+    emailWrap.style.display = 'block';
+    freqWrap.style.display  = 'block';
+    submitBtn.textContent   = 'Send feedback & subscribe →';
+    submitNote.textContent  = "You'll receive The Brief at the address above.";
+  } else {
+    card.classList.remove('active');
+    emailWrap.style.display = 'none';
+    freqWrap.style.display  = 'none';
+    document.getElementById('subscribe-email-error').style.display = 'none';
+    submitBtn.textContent   = 'Send feedback →';
+    submitNote.textContent  = 'Your response stays private.';
+  }
+}
+
+function setFreq(label, val) {
+  selectedFreq = val;
+  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+  label.classList.add('active');
+}
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // Validate rating
+  if (!selectedRating) {
+    document.getElementById('rating-error').style.display = 'block';
+    document.getElementById('rating-row').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Validate subscribe email if toggled on
+  const isSubscribed     = document.getElementById('subscribe-toggle').checked;
+  const subscribeEmailEl = document.getElementById('subscribe-email');
+  const readerEmail      = document.getElementById('reader-email').value.trim();
+  if (isSubscribed) {
+    const subEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
+    if (!subEmail && !readerEmail) {
+      document.getElementById('subscribe-email-error').style.display = 'block';
+      subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      subscribeEmailEl.focus();
+      return;
+    }
+    document.getElementById('subscribe-email-error').style.display = 'none';
+  }
+
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
+
+  const form = document.getElementById('feedback-form');
+  const formData = new FormData(form);
+
+  // Submit to Formspree via AJAX so we can show our own success screen
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      showSuccess();
+    } else {
+      res.json().then(data => {
+        btn.textContent = 'Send feedback →';
+        btn.disabled    = false;
+        alert('Something went wrong: ' + (data.errors ? data.errors.map(e => e.message).join(', ') : 'please try again.'));
+      });
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Send feedback →';
+    btn.disabled    = false;
+    alert('Network error — please check your connection and try again.');
+  });
+}
+
+function showSuccess() {
+  document.getElementById('feedback-form').style.display = 'none';
+  const successEl = document.getElementById('form-success');
+  successEl.style.display = 'block';
+  successEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Mark first freq button active on load
+window.addEventListener('load', () => {
+  const first = document.querySelector('.freq-btn');
+  if (first) first.classList.add('active');
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">The <span>Brief</span></div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--ink-30);letter-spacing:1px;margin-top:3px">Curated by Nischay · Not a replacement for original journalism</div>
+    </div>
+    <div class="footer-meta">
+      9:30 PM Edition · Sunday, 22 March 2026<br>
+      Sources: Groww Digest · In The Money (Zerodha) · The Ken<br>
+      Finshots · ETAuto · The Economist · MakeUseOf
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

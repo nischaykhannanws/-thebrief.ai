@@ -1495,8 +1495,8 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
             <span class="check-box"><span class="check-tick">✓</span></span>
             <span class="check-text">Morning edition too</span>
           </label>
-          <label class="check-item" onclick="toggleCheck(this)">
-            <input type="checkbox" name="features" value="whatsapp">
+          <label class="check-item" onclick="toggleCheck(this);toggleWhatsApp(this)">
+            <input type="checkbox" name="features" value="whatsapp" id="whatsapp-checkbox">
             <span class="check-box"><span class="check-tick">✓</span></span>
             <span class="check-text">WhatsApp delivery</span>
           </label>
@@ -1508,8 +1508,14 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
         </div>
       </div>
 
+      <div class="form-group" id="whatsapp-mobile-wrap" style="display:none;margin-top:-0.8rem">
+        <label class="form-label" for="whatsapp-mobile">WhatsApp mobile number <span style="color:var(--red)">*</span></label>
+        <div class="form-hint">Include country code — e.g. +91 98765 43210</div>
+        <input class="form-input" type="tel" id="whatsapp-mobile" name="whatsapp_mobile" placeholder="+91 98765 43210">
+        <div id="whatsapp-mobile-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter your WhatsApp number to enable WhatsApp delivery.</div>
+      </div>
+
       <div class="form-group">
-        <label class="form-label" for="open-feedback">Anything else? Open mic.</label>
         <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
         <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
       </div>
@@ -1526,7 +1532,7 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
           <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
         </div>
         <div class="form-group" style="margin-bottom:0">
-          <label class="form-label" for="reader-email">Email (for a reply)</label>
+          <label class="form-label" for="reader-email">Email <span id="email-required-note">(for a reply)</span></label>
           <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
         </div>
       </div>
@@ -1850,12 +1856,14 @@ function handleSubscribeToggle(checkbox) {
   const freqWrap   = document.getElementById('subscribe-freq-wrap');
   const submitBtn  = document.getElementById('submit-btn');
   const submitNote = document.getElementById('submit-note');
+  const emailNote  = document.getElementById('email-required-note');
   if (checkbox.checked) {
     card.classList.add('active');
     emailWrap.style.display = 'block';
     freqWrap.style.display  = 'block';
     submitBtn.textContent   = 'Send feedback & subscribe →';
     submitNote.textContent  = "You'll receive The Brief at the address above.";
+    if (emailNote) emailNote.innerHTML = '(required for newsletter) <span style="color:var(--red)">*</span>';
   } else {
     card.classList.remove('active');
     emailWrap.style.display = 'none';
@@ -1863,7 +1871,23 @@ function handleSubscribeToggle(checkbox) {
     document.getElementById('subscribe-email-error').style.display = 'none';
     submitBtn.textContent   = 'Send feedback →';
     submitNote.textContent  = 'Your response stays private.';
+    if (emailNote) emailNote.textContent = '(for a reply)';
   }
+}
+
+function toggleWhatsApp() {
+  setTimeout(() => {
+    const cb    = document.getElementById('whatsapp-checkbox');
+    const wrap  = document.getElementById('whatsapp-mobile-wrap');
+    const input = document.getElementById('whatsapp-mobile');
+    if (cb && cb.checked) {
+      wrap.style.display = 'block';
+      input.focus();
+    } else {
+      wrap.style.display = 'none';
+      document.getElementById('whatsapp-mobile-error').style.display = 'none';
+    }
+  }, 0);
 }
 
 function setFreq(label, val) {
@@ -1895,6 +1919,20 @@ function submitForm(e) {
       return;
     }
     document.getElementById('subscribe-email-error').style.display = 'none';
+  }
+
+  // Validate WhatsApp mobile if WhatsApp delivery is selected
+  const whatsappCb     = document.getElementById('whatsapp-checkbox');
+  const whatsappMobile = document.getElementById('whatsapp-mobile');
+  if (whatsappCb && whatsappCb.checked) {
+    const mobile = whatsappMobile ? whatsappMobile.value.trim() : '';
+    if (!mobile) {
+      document.getElementById('whatsapp-mobile-error').style.display = 'block';
+      whatsappMobile.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      whatsappMobile.focus();
+      return;
+    }
+    document.getElementById('whatsapp-mobile-error').style.display = 'none';
   }
 
   const btn = document.getElementById('submit-btn');

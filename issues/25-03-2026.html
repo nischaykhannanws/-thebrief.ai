@@ -1899,41 +1899,67 @@ function setFreq(label, val) {
 function submitForm(e) {
   e.preventDefault();
 
-  // Validate rating
+  // ── 1. Rating required ───────────────────────────────────────
   if (!selectedRating) {
     document.getElementById('rating-error').style.display = 'block';
     document.getElementById('rating-row').scrollIntoView({ behavior: 'smooth', block: 'center' });
     return;
   }
+  document.getElementById('rating-error').style.display = 'none';
 
-  // Validate subscribe email if toggled on
+  // ── 2. Gather contact fields ─────────────────────────────────
   const isSubscribed     = document.getElementById('subscribe-toggle').checked;
   const subscribeEmailEl = document.getElementById('subscribe-email');
-  const readerEmail      = document.getElementById('reader-email').value.trim();
-  if (isSubscribed) {
-    const subEmail = subscribeEmailEl ? subscribeEmailEl.value.trim() : '';
-    if (!subEmail && !readerEmail) {
-      document.getElementById('subscribe-email-error').style.display = 'block';
-      subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      subscribeEmailEl.focus();
-      return;
-    }
-    document.getElementById('subscribe-email-error').style.display = 'none';
-  }
+  const readerEmailEl    = document.getElementById('reader-email');
+  const whatsappCb       = document.getElementById('whatsapp-checkbox');
+  const whatsappMobile   = document.getElementById('whatsapp-mobile');
 
-  // Validate WhatsApp mobile if WhatsApp delivery is selected
-  const whatsappCb     = document.getElementById('whatsapp-checkbox');
-  const whatsappMobile = document.getElementById('whatsapp-mobile');
-  if (whatsappCb && whatsappCb.checked) {
-    const mobile = whatsappMobile ? whatsappMobile.value.trim() : '';
-    if (!mobile) {
-      document.getElementById('whatsapp-mobile-error').style.display = 'block';
-      whatsappMobile.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      whatsappMobile.focus();
-      return;
-    }
-    document.getElementById('whatsapp-mobile-error').style.display = 'none';
+  const subEmail    = (subscribeEmailEl  ? subscribeEmailEl.value.trim()  : '');
+  const readerEmail = (readerEmailEl     ? readerEmailEl.value.trim()     : '');
+  const mobile      = (whatsappMobile    ? whatsappMobile.value.trim()    : '');
+  const wantWA      = whatsappCb && whatsappCb.checked;
+
+  // ── 3. Subscribe on → email required ────────────────────────
+  if (isSubscribed && !subEmail && !readerEmail) {
+    document.getElementById('subscribe-email-error').style.display = 'block';
+    subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    subscribeEmailEl.focus();
+    return;
   }
+  document.getElementById('subscribe-email-error').style.display = 'none';
+
+  // ── 4. WhatsApp ticked → mobile required ────────────────────
+  if (wantWA && !mobile) {
+    document.getElementById('whatsapp-mobile-error').style.display = 'block';
+    whatsappMobile.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    whatsappMobile.focus();
+    return;
+  }
+  if (whatsappMobile) document.getElementById('whatsapp-mobile-error').style.display = 'none';
+
+  // ── 5. Always require at least one contact detail ────────────
+  // User must provide at minimum an email or a mobile number
+  const hasEmail  = !!(subEmail || readerEmail);
+  const hasMobile = !!mobile;
+  if (!hasEmail && !hasMobile) {
+    // Show error on the reader-email field since it's the most visible
+    const errId = 'contact-required-error';
+    let errEl = document.getElementById(errId);
+    if (!errEl) {
+      errEl = document.createElement('div');
+      errEl.id = errId;
+      errEl.style.cssText = 'color:var(--red);font-size:13px;margin-top:0.5rem;padding:0.7rem 1rem;background:#fdf2f2;border-radius:6px;border:1px solid #f0c0c0';
+      errEl.textContent = 'Please provide at least an email address or mobile number so we can follow up.';
+      readerEmailEl.parentNode.insertBefore(errEl, readerEmailEl.nextSibling);
+    }
+    errEl.style.display = 'block';
+    readerEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    readerEmailEl.focus();
+    return;
+  }
+  // Hide contact error if it exists
+  const existingErr = document.getElementById('contact-required-error');
+  if (existingErr) existingErr.style.display = 'none';
 
   const btn = document.getElementById('submit-btn');
   btn.textContent = 'Sending…';

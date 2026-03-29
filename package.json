@@ -1,0 +1,11 @@
+{
+  "name": "thebrief-newsletter",
+  "version": "1.0.0",
+  "description": "Email send workflow for The Brief newsletter",
+  "scripts": {
+    "send": "node scripts/send-email.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}

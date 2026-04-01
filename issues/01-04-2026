@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- updated: 02-04-2026-v1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Brief · 9:30 PM · 2 April 2026</title>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Brief · 2 Apr 2026 — FY27 Day 1: Nifty 22,679, defence stocks +6%, GST ₹2L cr record, LPG hike, IndiGo Walsh CEO, India LPG→PNG switch, WTO collapse, banks credit stress, India sovereign AI gap">
+  <meta property="og:description" content="FY27 Day 1: Nifty 22,679, defence stocks +6%, GST ₹2L cr record, LPG hike, IndiGo Walsh CEO, India LPG→PNG switch, WTO collapse, banks credit stress, India sovereign AI gap">
+  <meta property="og:url" content="https://nischaykhannanws.github.io/-thebrief.ai/issues/02-04-2026.html">
+  <meta property="og:site_name" content="The Brief">
+  <meta property="og:image" content="https://nischaykhannanws.github.io/-thebrief.ai/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Brief · 2 Apr 2026 — FY27 Day 1: Nifty 22,679, defence +6%, GST record, LPG hike, IndiGo new CEO, LPG→PNG switch, WTO, bank credit stress, sovereign AI">
+  <meta name="twitter:description" content="FY27 Day 1: Nifty 22,679, defence stocks +6%, GST ₹2L cr record, LPG hike, IndiGo Walsh CEO, India LPG→PNG switch, WTO collapse, banks credit stress, India sovereign AI gap.">
+  <meta name="description" content="FY27 Day 1: Nifty gap-up 568pts then gives back gains, closes 22,679. Defence stocks +6% on Trump NATO exit. GST ₹2L crore first time. LPG hike ₹195.5. IndiGo appoints Willie Walsh. India forced LPG to PNG switch — zero strategic reserves. WTO 14th ministerial failed. Banks credit stress building. The Ken: India sovereign AI GPUs lying unused.">
+  <meta name="author" content="Nischay Khanna">
+  <meta name="date" content="2026-04-02">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --off-white: #f9f8f5;
+  --cream: #f3f0ea;
+  --warm-50: #faf8f4;
+  --ink: #1c1a17;
+  --ink-60: #5c5852;
+  --ink-30: #a8a49e;
+  --border: #e8e3da;
+  --border-strong: #ccc8c0;
+  --red: #c0292e;
+  --red-light: #fdf2f2;
+  --amber: #b86b00;
+  --amber-light: #fdf7ee;
+  --green: #1a6640;
+  --green-light: #f0f8f3;
+  --blue: #1a4a80;
+  --blue-light: #f0f4fb;
+  --teal: #0a6060;
+  --teal-light: #f0f8f8;
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 6px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--off-white); color: var(--ink); line-height: 1.6; }
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar-brand {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+}
+.topbar-brand span { color: var(--red); }
+.topbar-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+.hero-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.9rem;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.hero-title em { color: var(--red); font-style: normal; }
+.hero-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+}
+.hero-desc {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+.hero-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--red);
+  margin: 1.4rem auto 0;
+}
+
+/* ── TICKER ── */
+.ticker {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  height: 34px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.ticker-pill {
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ticker-track { flex: 1; overflow: hidden; }
+.ticker-inner {
+  display: flex;
+  gap: 2.5rem;
+  animation: run 28s linear infinite;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+@keyframes run { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ti {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-60);
+}
+.ti-n { font-weight: 500; color: var(--ink); }
+.up { color: #1a7a3a; }
+.dn { color: var(--red); }
+
+/* ── NAV ── */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  align-items: center;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.ntab {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0.25rem;
+  color: var(--ink-60);
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 20px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s;
+  position: relative;
+  user-select: none;
+}
+.ntab:hover {
+  color: var(--ink);
+  border-color: var(--border-strong);
+  background: var(--off-white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.ntab:active { transform: translateY(0); box-shadow: none; }
+.ntab.on {
+  color: var(--white);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 2px 8px rgba(192,41,46,0.3);
+}
+.ntab.on:hover { background: var(--red); opacity: 0.9; transform: translateY(-1px); }
+
+/* ── LAYOUT ── */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+.sec { display: none; padding: 2.5rem 0 4rem; }
+.sec.on { display: block; }
+
+/* ── SECTION HEADER ── */
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid var(--ink);
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.sec-left {}
+.sec-src {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.35rem;
+}
+.sec-title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.sec-count {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--ink-30);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+
+/* ── MARKET STRIP ── */
+.mkt-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  border: 1px solid var(--border);
+  background: var(--border);
+  gap: 1px;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.mc {
+  background: var(--white);
+  padding: 0.9rem 1rem;
+}
+.mc-l {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 4px;
+}
+.mc-v {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+.mc-c { font-family: var(--mono); font-size: 11px; margin-top: 3px; }
+
+/* ── LEAD CARD ── */
+.lead-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 680px) { .lead-card { grid-template-columns: 1fr; gap: 1.2rem; } }
+.lead-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+.lead-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+  color: var(--ink);
+}
+.lead-summary {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 1rem;
+}
+.src-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.src-btn:hover { background: var(--red); color: #fff; }
+.src-btn::after { content: '↗'; font-size: 11px; }
+.lead-aside {
+  border-left: 1px solid var(--border);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 680px) { .lead-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 1rem; } }
+.pull-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.55;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--red);
+}
+.pull-attr {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+/* ── STORY LIST ── */
+.story-list {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.story-row {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  align-items: start;
+  gap: 0.8rem;
+  padding: 1.1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.story-row:last-child { border-bottom: none; }
+.story-row:hover { background: var(--off-white); }
+.story-num {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  padding-top: 3px;
+  letter-spacing: 1px;
+}
+.story-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.story-row:hover .story-hl { color: var(--red); }
+.story-deck {
+  font-size: 13px;
+  color: var(--ink-60);
+  line-height: 1.5;
+}
+.story-src-badge {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1px;
+  color: var(--red);
+  white-space: nowrap;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+.ctag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  margin-bottom: 0.6rem;
+}
+.ctag.red { background: var(--red-light); color: var(--red); }
+.ctag.green { background: var(--green-light); color: var(--green); }
+.ctag.blue { background: var(--blue-light); color: var(--blue); }
+.ctag.amber { background: var(--amber-light); color: var(--amber); }
+.ctag.teal { background: var(--teal-light); color: var(--teal); }
+.ctag.neutral { background: var(--cream); color: var(--ink-60); }
+.card-hl {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.card:hover .card-hl { color: var(--red); }
+.card-deck { font-size: 13px; color: var(--ink-60); line-height: 1.5; margin-bottom: 0.6rem; }
+.card-src { font-family: var(--mono); font-size: 8.5px; color: var(--ink-30); letter-spacing: 1px; text-transform: uppercase; }
+
+/* ── INFO BOX ── */
+.info-box {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.info-box-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-30);
+  margin-bottom: 0.6rem;
+}
+.info-box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.info-box p:last-child { margin-bottom: 0; }
+.info-box strong { color: var(--ink); font-weight: 600; }
+
+/* ── FEEDBACK FORM ── */
+.form-group { margin-bottom: 1.6rem; }
+.form-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.form-label span { color: var(--red); margin-left: 2px; }
+.form-hint {
+  font-size: 12.5px;
+  color: var(--ink-30);
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(192,41,46,0.08);
+}
+.form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a8a49e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.2rem;
+  cursor: pointer;
+}
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  user-select: none;
+}
+.check-item:hover { border-color: var(--border-strong); background: var(--off-white); }
+.check-item.checked { border-color: var(--red); background: var(--red-light); }
+.check-item input[type="checkbox"] { display: none; }
+.check-box {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s;
+}
+.check-item.checked .check-box {
+  background: var(--red);
+  border-color: var(--red);
+}
+.check-tick { color: #fff; font-size: 10px; display: none; }
+.check-item.checked .check-tick { display: block; }
+.check-text { font-size: 13px; color: var(--ink-60); }
+.check-item.checked .check-text { color: var(--ink); }
+.rating-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.rating-btn {
+  width: 44px; height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.12s, transform 0.1s;
+  flex-shrink: 0;
+}
+.rating-btn:hover { border-color: var(--border-strong); transform: scale(1.1); }
+.rating-btn.selected { border-color: var(--red); background: var(--red-light); transform: scale(1.12); }
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.submit-btn:hover { background: var(--red); }
+.submit-btn:active { transform: scale(0.98); }
+.submit-btn::after { content: '→'; font-size: 13px; }
+.form-success {
+  display: none;
+  background: var(--green-light);
+  border: 1.5px solid #a8d5b8;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  text-align: center;
+}
+.form-success-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--green); margin-bottom: 0.4rem; }
+.form-success p { font-size: 13.5px; color: var(--ink-60); line-height: 1.6; }
+.form-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.form-section-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.form-section-sub {
+  font-size: 13px;
+  color: var(--ink-60);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+/* Subscribe card */
+.subscribe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  background: var(--off-white);
+  transition: border-color 0.15s, background 0.15s;
+}
+.subscribe-card.active {
+  border-color: var(--red);
+  background: var(--red-light);
+}
+.subscribe-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.subscribe-icon {
+  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.subscribe-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+.subscribe-desc {
+  font-size: 12px;
+  color: var(--ink-60);
+  margin-top: 1px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+/* Toggle switch */
+.toggle-wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-wrap input { display: none; }
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background: var(--border-strong);
+  border-radius: 12px;
+  position: relative;
+  transition: background 0.2s;
+  display: block;
+}
+.toggle-wrap input:checked ~ .toggle-track { background: var(--red); }
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.toggle-wrap input:checked ~ .toggle-track .toggle-thumb { transform: translateX(20px); }
+/* Frequency buttons */
+.freq-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+  user-select: none;
+  color: var(--ink-60);
+}
+.freq-btn:hover { border-color: var(--border-strong); }
+.freq-btn.active { border-color: var(--red); background: var(--red-light); color: var(--ink); font-weight: 500; }
+
+/* ── DIVIDER ── */
+.div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ── MODAL ── */
+.modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 500;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+}
+.modal-bg.open { display: flex; }
+.modal {
+  background: var(--white);
+  max-width: 620px;
+  width: 100%;
+  margin: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  animation: mup 0.2s ease;
+  position: relative;
+}
+@keyframes mup { from { transform: translateY(16px); opacity: 0; } }
+.modal-head {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 1.3rem 1.5rem;
+}
+.modal-tag {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.4rem;
+}
+.modal-hl {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  padding-right: 2rem;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-60);
+  transition: background 0.15s;
+}
+.modal-close:hover { background: var(--border-strong); }
+.modal-body {
+  padding: 1.4rem 1.5rem 1.8rem;
+}
+/* Summary note inside modal */
+.modal-summary-note {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.modal-body p { font-size: 14px; line-height: 1.75; color: var(--ink-60); margin-bottom: 0.85rem; }
+.modal-body p:last-child { margin-bottom: 0; }
+.modal-body strong { color: var(--ink); font-weight: 600; }
+.modal-source-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.modal-source-link span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-30);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.modal-source-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  border: 1px solid var(--red);
+  padding: 5px 11px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.modal-source-link a:hover { background: var(--red); color: #fff; }
+.modal-source-link a::after { content: '↗'; }
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--white);
+  padding: 1.8rem 1.5rem;
+  margin-top: 2rem;
+}
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-brand { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); }
+.footer-brand span { color: var(--red); }
+.footer-meta { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.8; text-align: right; }
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .story-row { grid-template-columns: 28px 1fr; }
+  .story-src-badge { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">The <span>Brief</span></div>
+  <div class="topbar-meta">9:30 PM · Wed 2 Apr 2026</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">Wednesday Edition · Issue 011</div>
+  <div class="hero-title">The <em>Brief</em></div>
+  <div class="hero-desc">Markets are shut for the last day of FY26 — but the real action is elsewhere. Bain Capital's ₹4,000 crore gold bet just met the RBI. SEBI's algo trading rules go live tomorrow. Meta lost a product liability case that could change the internet. And Indian auto just closed its best year ever.</div>
+  <div class="hero-date">Wednesday, 2 April 2026 · 12 newsletters · 9:30 PM</div>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-pill">Live</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span class="ti"><span class="ti-n">🏖️ MARKET HOLIDAY</span><span>NSE/BSE closed</span><span class="dn">Financial Year End — 31 Mar 2026</span></span>
+      <span class="ti"><span class="ti-n">FY26 NIFTY CLOSE</span><span>22,331</span><span class="dn">Last traded · Mon 30 Mar</span></span>
+      <span class="ti"><span class="ti-n">RUPEE FY26 LOW</span><span>₹95.22/USD</span><span class="dn">Record low · intraday Mon 30 Mar</span></span>
+      <span class="ti"><span class="ti-n">BAIN vs RBI</span><span class="dn">₹4,385cr gold bet · new rules from April 1</span></span>
+      <span class="ti"><span class="ti-n">SEBI ALGO RULES</span><span class="dn">Live from April 1 · Static IP mandatory</span></span>
+      <span class="ti"><span class="ti-n">META VERDICT</span><span class="dn">$6mn · product liability · Section 230 bypassed</span></span>
+      <span class="ti"><span class="ti-n">FY26 AUTO</span><span class="up">All-time highs · EVs record March sales</span></span>
+      <span class="ti"><span class="ti-n">WTI CRUDE</span><span>~$100</span><span class="dn">Approaching $100/barrel</span></span>
+      <span class="ti"><span class="ti-n">IRAN DEADLINE</span><span class="dn">April 6 · Trump warns major strikes</span></span>
+      <!-- duplicate -->
+      <span class="ti"><span class="ti-n">🏖️ MARKET HOLIDAY</span><span>FY Year End</span><span class="dn">NSE/BSE closed</span></span>
+      <span class="ti"><span class="ti-n">BAIN vs RBI GOLD</span><span class="dn">₹4,385cr bet · RBI rules from Apr 1</span></span>
+      <span class="ti"><span class="ti-n">SEBI ALGO</span><span class="dn">Static IP mandatory from tomorrow</span></span>
+      <span class="ti"><span class="ti-n">META PRODUCT LIABILITY</span><span class="dn">Section 230 dead end · $6mn verdict</span></span>
+      <span class="ti"><span class="ti-n">FY26 AUTO ALL-TIME HIGH</span><span class="up">India's best auto year ever</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="ntab on" onclick="go('mkt',this)">📊 Markets</button>
+    <button class="ntab" onclick="go('auto',this)">🚗 Auto</button>
+    <button class="ntab" onclick="go('india',this)">🇮🇳 India</button>
+    <button class="ntab" onclick="go('deepread',this)">🧠 Deep Read</button>
+    <button class="ntab" onclick="go('world',this)">🌍 World</button>
+    <button class="ntab" onclick="go('feedback',this)">✏️ Feedback</button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     MARKETS — Market Holiday Edition
+══════════════════════════════════════ -->
+<section class="sec on" id="sec-mkt">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Aftermarket Report · Wednesday 2 April 2026 · FY27 Day 1</div>
+      <h2 class="sec-title">FY27 opened with a 568-point gap-up — and closed having given almost all of it back. Breadth was the strongest in weeks, defence stocks surged 6%, GST crossed ₹2 lakh crore for the first time. The index lied. The market did not.</h2>
+    </div>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · Aftermarket Report · Wednesday 2 April 2026</div>
+      <h3 class="lead-hl">Nifty opened FY27 with a 568-point gap-up at 22,899 — the biggest single-day open in months — driven by Trump signalling a possible deal with a "more reasonable regime" in Iran. By close, it had given back nearly all of it, settling at 22,679. But the breadth told a completely different story: 2,936 advances vs just 283 declines. The market went up broadly. The index didn't hold.</h3>
+      <p class="lead-summary">Well, you see, this is what a market looks like when macro uncertainty is high but risk appetite is quietly recovering. The Nifty itself faced a ceiling — Max Call OI sat at 23,000, creating a hard resistance band at 23,100–23,200 that the index ran straight into and bounced off. In the afternoon, as the initial euphoria of a possible Iran deal faded without any concrete announcement, selling picked up and the index slid from 22,900 to 22,650 before recovering to 22,679 at close. Not a pretty close. But the broader market — the 2,936 stocks that went up versus the 283 that fell — was telling a different story. This breadth reading is the best since late February. It suggests that the Monday FY26-end selloff was a capitulation, not the beginning of a new leg lower. That said, the April 6 Iran deadline is still four days away. No structural resolution has happened. The gap-up was priced on a tweet, not a treaty.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">The day's standout sector was defence — up nearly 6% on the Nifty India Defence Index. The trigger was Trump's statement hinting at exiting NATO ("beyond reconsideration... I always knew they were a paper tiger"), combined with Rajnath Singh clearing defence deals worth ₹2.38 lakh crore in one shot. Put simply, a US retreating from NATO means Europe needs to rearm fast, India needs to self-defend faster, and every domestic defence manufacturer looks structurally re-rated. PSU Bank was also a top gainer at +3.70%. Pharma was the sole sector in red (-0.99%). Source: Aftermarket Report.</p>
+      <a class="src-btn" href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read full Aftermarket Report</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"I would say [pulling out of NATO is] beyond reconsideration. I always knew they were a paper tiger, and Putin knows that too."</div>
+        <div class="pull-attr">— Donald Trump, 1 April 2026</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">FY27 Day 1 close:</strong><br>
+        Nifty: 22,679 (gap-up 568, gave back most)<br>
+        Advances: 2,936 · Declines: 283<br>
+        PSU Bank: +3.70% (top gainer)<br>
+        Defence index: ~+6%<br>
+        Pharma: -0.99% (only red sector)<br>
+        <strong style="color:var(--ink)">OI (Apr 7 expiry):</strong><br>
+        Max Call OI: 23,000 → resistance 23,100–23,200<br>
+        Max Put OI: 22,500/22,700 → support 22,400–22,500<br>
+        <strong style="color:var(--ink)">Top Gainers (Nifty):</strong><br>
+        PSU Banks · Defence stocks<br>
+        <strong style="color:var(--ink)">Top Losers (Nifty):</strong><br>
+        Pharma (-0.99% sector)<br>
+        <strong style="color:var(--ink)">Global:</strong><br>
+        Brent: $102 (▼2%) · Iran deal signal<br>
+        Nvidia invested $2bn in Marvell (+12%)<br>
+        Oracle layoffs: ~30,000 (~12,000 India)
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('defence-rally')">
+      <span class="ctag red">Stocks · Defence</span>
+      <div class="card-hl">Defence stocks surged ~6% on FY27 Day 1 — Trump's NATO exit hint plus Rajnath's ₹2.38 lakh crore defence deal clearance landed simultaneously</div>
+      <div class="card-deck">The Nifty India Defence Index rising nearly 6% in a single session is not a normal event. Two catalysts converged on the same day. First, Trump's statement that pulling out of NATO is "beyond reconsideration" is a structural re-rating event for global defence spending. If the US security umbrella over Europe shrinks, European nations need to ramp up domestic defence manufacturing immediately. That demand spills over to allies and suppliers globally, and India's defence export ambitions suddenly have a much larger addressable market. Second, Defence Minister Rajnath Singh cleared procurement proposals worth ₹2.38 lakh crore in a single DAC (Defence Acquisition Council) meeting — one of the largest single-day defence clearances in India's history. The combination of a structural global demand expansion and a massive domestic order signal sent investors rushing into HAL, BEL, Bharat Dynamics, Mazagon Dock, and BEML. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('gst-record')">
+      <span class="ctag green">Economy · GST</span>
+      <div class="card-hl">GST collections crossed ₹2 lakh crore in March for the first time ever — +9% YoY, with import-driven collections surging 18%</div>
+      <div class="card-deck">March 2026 GST collections came in at approximately ₹2.04 lakh crore — the first time in history that monthly GST has crossed the ₹2 lakh crore mark. The YoY growth was +9% from ₹1.83 lakh crore in March 2025. The split is instructive: domestic GST grew a more modest +6%, while import-driven collections surged +18%. The import surge is largely war-related — as India scrambled to front-load critical imports (LNG, LPG alternatives, defence equipment, semiconductor inputs) ahead of further Hormuz disruption, customs duty collections spiked. Not only this — the ₹2 lakh crore crossing is significant for the fiscal mathematics going into FY27: if GST collections sustain above ₹1.8–2 lakh crore per month, the government has considerably more fiscal headroom to absorb the oil shock subsidy burden without blowing out the deficit. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('lpg-hike')">
+      <span class="ctag red">Policy · Fuel</span>
+      <div class="card-hl">Commercial LPG cylinder raised ₹195.5 to ₹2,078.5 in Delhi — a +10% hike. ATF for international flights more than doubled. Domestic flights capped at +25%.</div>
+      <div class="card-deck">The government hiked commercial LPG (19kg cylinder used by restaurants, hotels, caterers) by ₹195.5 to ₹2,078.5 in Delhi — a 10% increase, the largest single hike since the Iran war began. This follows the government's logic: commercial users have more pricing flexibility than household consumers, and the OMC underrecoveries on LPG (currently about ₹380 per cylinder) cannot be sustained indefinitely. Aviation Turbine Fuel (ATF) for international and chartered flights more than doubled — jet fuel is priced at import parity and not subsidised. Domestic flights got a cap: ATF price increase for scheduled domestic carriers was limited to 25%. IndiGo, SpiceJet, and Air India have been managing rising fuel costs for five weeks; the domestic cap provides partial relief while international routes absorb the full market rate. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('indigo-walsh')">
+      <span class="ctag blue">Stocks · IndiGo</span>
+      <div class="card-hl">IndiGo appoints Willie Walsh as CEO — the man who ran British Airways through 9/11 and built IAG now takes on India's biggest airline during its hardest stretch</div>
+      <div class="card-deck">Willie Walsh is one of the most respected airline executives in the world. He ran Aer Lingus, turned around British Airways, built International Airlines Group (IAG — the parent of BA, Iberia, Vueling), and then became Director General of IATA. His appointment as IndiGo's CEO is a signal that the board wants serious crisis-management and network-scaling experience at the top. IndiGo has been under severe pressure: fuel costs have spiked 25%+ for domestic operations, the Iran war has disrupted Middle East routes (a key market for the airline), and the exit of previous CEO Pieter Elbers left a leadership gap. Walsh's track record at British Airways — where he navigated post-9/11 collapse, multiple fuel crises, and Labour union disputes — is exactly the kind of experience IndiGo needs right now. Due to this, IndiGo shares were in focus on the news, even as the broader airline sector remained under fuel cost pressure. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('nse-gas-nse')">
+      <span class="ctag teal">Markets · New Product</span>
+      <div class="card-hl">NSE launched exchange-traded natural gas derivatives for the first time — priced against GIXI, India's own domestic gas benchmark</div>
+      <div class="card-deck">NSE's launch of exchange-traded natural gas futures — in collaboration with Indian Gas Exchange (IGX) — is a genuinely significant market infrastructure development that arrived on the exact day it mattered most: FY27 Day 1, as India pushes an emergency pivot from LPG to piped natural gas. Back in the day, natural gas price discovery in India happened through bilateral contracts and import benchmarks (Henry Hub in the US, TTF in Europe) — there was no Indian domestic gas price benchmark. GIXI (Gas IndeX of India) tracks actual domestic gas trades across six regional delivery hubs, giving a real price signal for Indian gas. Exchange-traded derivatives on this benchmark allow city gas distributors, industrial consumers, fertilizer companies, and power plants to hedge their natural gas costs for the first time. This is particularly relevant now — with the government forcing a rapid scale-up of PNG connections and commercial users shifting to domestic gas, having a liquid derivatives market to manage the price risk is not an optional add-on. It is infrastructure. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('gaar-maruti')">
+      <span class="ctag amber">Markets · Policy</span>
+      <div class="card-hl">GAAR won't apply to pre-2017 PE/VC exits — a major relief for legacy investors. Maruti March sales +16.72% YoY.</div>
+      <div class="card-deck">Two quick market notes. First, the government clarified that the General Anti-Avoidance Rule (GAAR) will not apply to exits from investments made before April 1, 2017. GAAR, which allows the tax authority to disregard transactions that lack commercial substance and are designed primarily for tax avoidance, had created a long-standing overhang for PE firms, VC funds, and sovereign wealth funds that made legacy investments in India through structures set up before 2017. The clarification removes uncertainty and is being read as a positive signal for India's foreign investor relationship, particularly at a time when the Iran war has already weighed on FII sentiment. Second, Maruti Suzuki reported March 2026 sales of 2,25,251 units, up 16.72% YoY. Domestic PV sales: 1,66,219 units (+10.27%). A strong number given the macro backdrop — showing that consumer demand for passenger vehicles held firm through the war's early weeks. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     AUTO
+══════════════════════════════════════ -->
+<section class="sec" id="sec-auto">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">ETAuto · Wednesday 2 April 2026</div>
+      <h2 class="sec-title">FY26 was India's best auto year on record — despite five weeks of war, oil shocks, and a rupee in freefall. Now FY27 arrives with higher costs, weaker demand for ICE vehicles, and e2W at record highs. Here's what drove the boom and what threatens it.</h2>
+    </div>
+    <span class="sec-count">3 stories</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · ETAuto · Wednesday 2 April 2026</div>
+      <h3 class="lead-hl">India's auto industry closed FY26 at all-time highs across multiple segments — passenger vehicles, electric 2-wheelers, and overall industry volumes all set records. Electric 2-wheeler sales jumped nearly 36% in March alone. And then FY27 walked in with rising fuel costs, a weakening rupee, and West Asia war headwinds that every OEM is now trying to price into their FY27 plans.</h3>
+      <p class="lead-summary">You see, the FY26 auto story has a very specific shape. The first half of the year (April–September 2025) was sluggish — sentiment was cautious, rural demand was uneven, and inventory at dealerships was elevated. Then the second half came alive aggressively. Premiumisation — the steady shift of buyers from entry-level to mid-segment vehicles — continued without pause. And the Iran war, which began February 28, had a counterintuitive effect on EVs: it made the total cost of ownership argument for electric vehicles so obvious that any buyer who was on the fence about an EV quickly fell off the fence onto the EV side. March 2026 e2W sales of 1.7 lakh units represent a 36% YoY jump. That's the war accelerating a transition that would have taken another 18 months under normal conditions.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">For FY27, ETAuto's year-in-review and headwinds analysis are sobering. Rising fuel prices are a double-edged sword: good for EVs, bad for ICE demand and especially bad for commercial vehicles (CVs) where fuel is the largest operating cost. The weak rupee (₹95.22 at the FY26 close) is inflating the cost of imported components — particularly semiconductors, displays, and precision parts — that Indian OEMs still cannot fully source domestically. Car prices are set to go up: Tata, BMW, and Mercedes have already announced hikes for FY27. And NBFCs face rising stress in MSME and vehicle loans (per Nomura), which tightens the auto financing tap that powers volume growth. Source: ETAuto.</p>
+      <a class="src-btn" href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read on ETAuto</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"Rising fuel prices are stoking inflation concerns, pushing up input costs as imports of key components become costlier due to the weak rupee."</div>
+        <div class="pull-attr">— ETAuto FY27 headwinds analysis, 2 April 2026</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">FY26 auto records:</strong><br>
+        PV volumes: all-time annual high<br>
+        e2W March: ~1.7L units · +36% YoY<br>
+        Maruti March: 2.25L units · +16.72%<br>
+        <strong style="color:var(--ink)">FY27 headwinds:</strong><br>
+        Fuel costs: ATF doubled, LPG +10%<br>
+        Rupee: ₹95.22 → import cost inflation<br>
+        Car price hikes: Tata, BMW, Mercedes<br>
+        CV financing: rising NBFC stress<br>
+        CNG pressure: low at Mumbai pumps<br>
+        <strong style="color:var(--ink)">EV tailwinds:</strong><br>
+        Oil price shock: TCO case strengthened<br>
+        e-bus tender: 3,000 units by June<br>
+        Maharashtra: ₹12cr EV incentives approved
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('fy26-auto-review')">
+      <span class="ctag green">ETAuto · FY26 Review</span>
+      <div class="card-hl">How FY26 became India auto's best year on record — the premiumisation story, the EV inflection, and why the war accidentally helped e2W sales</div>
+      <div class="card-deck">Back in the day, India's auto market was divided cleanly: mass-market ICE vehicles for most buyers, premium vehicles for a small fraction, and EVs as an experiment. FY26 blurred all three lines. Premiumisation meant more buyers opted for mid-segment SUVs over entry hatchbacks — Hyundai Creta, Tata Nexon, Maruti Grand Vitara, and Mahindra's XUV range all saw strong demand. The overall PV market set a new annual record. But the most striking number was in electric 2-wheelers. March 2026 e2W sales of approximately 1.7 lakh units (+36% YoY) were driven by two forces: end-of-fiscal discounts from OEMs (Ola Electric, TVS, Bajaj) clearing inventory before FY27 price revisions, and genuine demand acceleration as petrol prices rose sharply in March following the LPG price hike and ATF adjustments. The Iran war, in the last five weeks of FY26, effectively acted as the most powerful EV subsidy the government never had to pay for. Due to this, FY26's auto strength is partly structural (premiumisation, expanding middle class) and partly accidental (war-driven fuel cost shock). The question for FY27 is which one sustains and which one normalises. Source: ETAuto.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('e2w-march-record')">
+      <span class="ctag teal">ETAuto · EV 2W</span>
+      <div class="card-hl">Electric 2-wheeler sales jumped nearly 36% in March — fuel shortage fears, end-of-fiscal discounts, and Ather's oil-shock tailwind</div>
+      <div class="card-deck">India's electric 2-wheeler sales hit approximately 1.7 lakh units in March 2026, per Vahan portal data — a 36% YoY jump and a monthly record. The drivers stacked up simultaneously. End-of-fiscal inventory clearing: OEMs typically push hard in March to meet annual targets, and this year the incentive was sharper because FY27 brings higher import costs (rupee at ₹95) that will force price hikes. Fuel shortage fears: with LPG scarce, CNG pressure low at pumps in Mumbai suburbs (auto drivers flagging the problem to ETAuto directly), and petrol structurally expensive, the operational economics of an electric scooter became obvious in a way they weren't six months ago. Not only this — ETAuto's own analysis of Ather Energy's position notes that the oil price shock could be a significant tailwind for the company. Ather's ₹1 lakh+ positioning means it captures buyers who have the disposable income to make a considered EV purchase rather than defaulting to the cheapest available option. Source: ETAuto.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('fy27-auto-headwinds')">
+      <span class="ctag red">ETAuto · FY27 Outlook</span>
+      <div class="card-hl">West Asia war headwinds for FY27: rising fuel costs, weak rupee, car price hikes, CV financing stress — and CNG pressure already low at Mumbai pumps</div>
+      <div class="card-deck">ETAuto's FY27 headwinds analysis outlines five structural pressures OEMs are entering the new financial year with. First, rising fuel costs inflate input costs across the supply chain — from plastic mouldings (petrochemical-derived) to logistics (diesel-dependent) to imported components (priced in dollars on a weak rupee). Second, the rupee at ₹95.22 means every imported semiconductor, display panel, and precision component is approximately 10–12% more expensive than a year ago. Third, car prices are going up: Tata, BMW, and Mercedes-Benz have confirmed FY27 price increases. Fourth, NBFC stress in vehicle loans (Nomura data) means the financing tap that powers Indian auto volume growth — particularly in tier 2 and tier 3 cities — is tightening. Fifth, CNG infrastructure is already showing strain: auto drivers in Mumbai suburbs are flagging low CNG pressure at pumps, a direct consequence of the gas supply disruption from Hormuz. This last point is critical — if CNG vehicles (which dominate the commercial 3-wheeler and taxi segment) become unreliable due to gas pressure issues, those segments could slow sharply in Q1 FY27. Source: ETAuto.</div>
+      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     INDIA — Deep Reads
+══════════════════════════════════════ -->
+<section class="sec" id="sec-india">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Daily Brief (Zerodha) · Finshots · The Ken</div>
+      <h2 class="sec-title">India has two days of LPG reserves and 33 crore cylinder connections to move to piped gas. The WTO just had its worst ministerial meeting in 30 years. Indian banks have a credit stress problem building slowly in the background. And India's sovereign AI chips are sitting unused.</h2>
+    </div>
+    <span class="sec-count">5 reads</span>
+  </div>
+
+  <div class="lead-card">
+    <div>
+      <div class="lead-tag">Lead · Daily Brief (Zerodha) · Wednesday 2 April 2026</div>
+      <h3 class="lead-hl">You have an LPG cylinder at home as a backup, even though you have a piped gas connection. The government has now told you to surrender that cylinder within 90 days — or lose your cooking fuel supply entirely. This is not a gentle nudge. It is an emergency energy reallocation order under the Essential Commodities Act. Well, let's find out why India is doing this now, and why it is harder than it sounds.</h3>
+      <p class="lead-summary">Back in the day, India's cooking fuel policy was simple: Ujjwala for the rural poor (LPG cylinders at subsidised rates), PNG for urban households who could access it, and the rest managed through market mechanisms. The Iran war ended that simplicity. India imports approximately 60% of its LPG, and roughly 90% of those imports transit the Strait of Hormuz. When the strait closed, cylinder booking gaps stretched to 45 days and black market prices hit ₹4,000 per cylinder. The government's response: issue an order under the Essential Commodities Act directing Oil Marketing Companies — Indian Oil, BPCL, HPCL — to digitally map all addresses and automatically block LPG cylinder bookings for any household where PNG is available.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">The scale of the problem is the problem. India has 33 crore LPG connections and just 1.6 crore PNG connections — roughly 5% of households. Even if the 1.6 crore PNG households surrender their cylinders immediately, that frees up a relatively small portion of LPG demand. The bigger structural issue is this: India has essentially zero strategic LPG reserves. Total underground storage holds about 1,40,000 metric tonnes. Daily consumption is roughly 90,000 tonnes. That is less than two days of buffer. Compare that to crude oil, where India holds approximately 72 days of combined strategic and commercial reserves. The reason the government is pushing PNG so hard is not just supply chain diversification — it is about structural reserve buffer. Natural gas is half-domestically produced (from ONGC, Oil India, and the Reliance-BP KG-D6 venture) and has more diversified import contracts (Australia, US). A single chokepoint like Hormuz cannot kill India's gas supply the way it can kill its LPG supply. Source: Daily Brief (Zerodha).</p>
+      <a class="src-btn" href="https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to" target="_blank" rel="noopener">Read full Daily Brief</a>
+    </div>
+    <div class="lead-aside">
+      <div>
+        <div class="pull-quote">"India's total underground LPG storage holds about 1,40,000 metric tonnes. We consume roughly 90,000 tonnes per day. That's less than two days of buffer."</div>
+        <div class="pull-attr">— Daily Brief (Zerodha), 2 April 2026</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
+        <strong style="color:var(--ink)">The LPG crisis numbers:</strong><br>
+        India LPG imports: ~60% of consumption<br>
+        Of those: ~90% through Hormuz<br>
+        Strategic LPG reserve: 1,40,000 MT<br>
+        Daily LPG consumption: ~90,000 MT<br>
+        Buffer: &lt;2 days<br>
+        Crude oil buffer: ~72 days<br>
+        <strong style="color:var(--ink)">The PNG gap:</strong><br>
+        LPG connections: 33 crore<br>
+        PNG connections: 1.6 crore (5%)<br>
+        PNGRB 2034 target: 12.63 crore<br>
+        Progress vs target: 13%<br>
+        <strong style="color:var(--ink)">Why PNG over LPG:</strong><br>
+        ~50% domestic production<br>
+        US + Australia LNG contracts<br>
+        No single Hormuz dependency<br>
+        Unified tariff (Jan 2026) cut costs 50%
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('wto-crisis')">
+      <span class="ctag red">Daily Brief · Global Trade</span>
+      <div class="card-hl">The WTO's 14th ministerial conference ended without a declaration — India blocked the e-commerce moratorium, stood alone on IFD, and the body's Director General publicly asked if the WTO would survive</div>
+      <div class="card-deck">The second major story in today's Daily Brief is the WTO's 14th Ministerial Conference in Yaoundé, Cameroon — which ended in failure. The Director General, Ngozi Okonjo-Iweala, opened the conference by asking delegates whether they wanted the organisation to continue. The four pillars that the WTO was built on are all in various stages of collapse: norm-setting (zero substantive progress in 30 years), dispute settlement (appellate body defunct since 2020 when the US blocked new appointments), predictability (countries routinely ignoring their commitments), and transparency (half of members failed to submit required subsidy notifications by 2023). India's role was pivotal in the failures. The e-commerce moratorium — a 28-year-old rule banning customs duties on cross-border digital flows — was not renewed for the first time since 1998. India had wanted it killed; the US wanted it permanent. India ultimately agreed to a two-year extension, but Brazil then blocked even that compromise. The result: countries are now technically free to impose customs duties on digital trade flows. India also held its position on the Investment Facilitation for Development (IFD) Agreement, blocking it for the ninth consecutive time — this time standing alone against 129 other members. Source: Daily Brief (Zerodha).</div>
+      <div class="card-src">Daily Brief → <a href="https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('finshots-banks')">
+      <span class="ctag amber">Finshots · Banking</span>
+      <div class="card-hl">Finshots: Are Indian banks underestimating the unsecured loan problem? Credit card NPAs surged 73% in FY22 and 28% in FY24 — the 18–36 month lag is arriving now</div>
+      <div class="card-deck">You got a credit card approved in minutes. A personal loan with three taps. A buy-now-pay-later option on every checkout page. That frictionless access to credit that felt like progress — Finshots today asks whether it is quietly building the next wave of banking stress. Active credit cards in India: 100 million as of December 2024, up 5x from FY12. The structural risk is the time lag: unsecured loan stress appears 18–36 months after disbursement. Credit card NPAs jumped 73% in FY22 and another 28% in FY24 — meaning loans originated in 2019–21 are now defaulting. The current wave of easy credit (2022–24) has not yet fully seasoned into its default cycle. Banks are tightening at the margins: IDFC First cut its MFI book from 6.6% to 2.4% of total loans; credit card rewards are being cut, fees adjusted, low-value users being de-prioritised. But the central tension remains: banks are still growing unsecured credit because economic growth supports repayment — as long as incomes keep pace. The risk is not an imminent crisis. It is a structural vulnerability that would amplify any income shock. And the Iran war is an income shock for the segments of the economy most likely to be carrying unsecured debt: daily wage workers, small traders, self-employed professionals. Source: Finshots.</div>
+      <div class="card-src">Finshots → <a href="https://finshots.in" target="_blank" rel="noopener">Read on Finshots</a></div>
+    </div>
+
+    <div class="card" onclick="openM('ken-sovereign-ai')">
+      <span class="ctag teal">The Ken · AI</span>
+      <div class="card-hl">The Ken: India has two sovereign AI programmes — one official, one not. Both have the same problem: 22% of India's GPUs are lying unused</div>
+      <div class="card-deck">Neysa raised $1.2 billion — half equity (Blackstone-backed), half debt ($600 million) — to build sovereign AI compute for India with 20,000 Nvidia GPUs. The pitch: domestic AI companies shouldn't have to route their compute through US hyperscalers. India should own its GPU capacity. The problem that The Ken surfaces is both simple and damning: even the official IndiaAI Mission's GPUs — government-procured, government-funded, theoretically most attractive to Indian AI developers — are 22% unutilised. E2E Networks, India's only listed AI cloud provider, is also seeing GPU utilisation fall sharply in recent quarters. Put simply, India is building supply before demand exists. The Ken's framing of "two sovereign AI programmes" is the interesting insight: Neysa is de facto sovereign (Indian-owned, Indian-operated compute) but private (funded by Blackstone). The IndiaAI Mission is formally sovereign but underutilised. Neither has solved the fundamental problem of building enough Indian AI applications to fill the compute capacity. The comparison The Ken makes — to BSNL, India's state telecom that built towers no one used — is uncomfortable but apt. Source: The Ken.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/story/india-has-two-sovereign-ai-programmes-one-is-official-the-other-isnt/" target="_blank" rel="noopener">Read at The Ken</a></div>
+    </div>
+
+    <div class="card" onclick="openM('finolex-missed')">
+      <span class="ctag neutral">The Ken · Stocks</span>
+      <div class="card-hl">The Ken: Finolex Cables had the money, the brand, and the market — and still missed India's cables boom while Polycab, KEI, and RR Kabel surged</div>
+      <div class="card-deck">India's electrical cables and wires sector has been one of the biggest structural winners of the infrastructure boom — Polycab Industries surged from ₹400 to ₹6,000+ in five years, KEI Industries and RR Kabel followed similar trajectories. Finolex Cables had the oldest brand, the strongest balance sheet, and the earliest market position. It still missed the supercycle. The Ken's Long & Short analysis identifies three compounding factors: margin compression from a project-heavy revenue mix (institutional wiring contracts for construction projects carry thin margins, unlike the B2C retail cables business that competitors focused on), slower operational scaling versus peers who were more aggressively building distribution, and a reluctance to expand aggressively into the higher-margin product categories (flexible cables, specialty cables, communication cables) that drove peers' earnings quality. The cautionary lesson: in a structural sector boom, being the established incumbent is not the same thing as being the best-positioned company. Source: The Ken.</div>
+      <div class="card-src">The Ken → <a href="https://the-ken.com/long_and_short/finolex-cables-had-the-money-the-brand-the-market-and-still-missed-the-boom/" target="_blank" rel="noopener">Read at The Ken</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEEP READ
+══════════════════════════════════════ -->
+<section class="sec" id="sec-deepread">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Daily Brief (Zerodha) · Wednesday 2 April 2026</div>
+      <h2 class="sec-title">The LPG to PNG switch: a crash course in why cooking gas is India's most dangerous supply chain vulnerability — and why fixing it in 90 days is nearly impossible.</h2>
+    </div>
+    <span class="sec-count">Deep Read</span>
+  </div>
+
+  <div class="lead-card" style="grid-template-columns:1fr;padding:1.8rem 2rem;margin-bottom:1.5rem">
+    <div>
+      <div class="lead-tag">Deep Read · Daily Brief (Zerodha) · 2 April 2026</div>
+      <h3 class="lead-hl">To make things easier to grasp, think of LPG and PNG as two completely different fuels that happen to do the same job in your kitchen. LPG is propane and butane — compressed into liquid, delivered in red steel cylinders, produced in the Gulf, transited through Hormuz. PNG is primarily methane — delivered through underground pipes, partly produced domestically, and with more diversified import sources. India has spent 30 years building LPG infrastructure for 33 crore households. It now has 90 days to redirect that demand through 1.6 crore PNG connections.</h3>
+      <p class="lead-summary">The chemistry matters here before the politics. LPG has roughly 2.5 times the energy density per cubic metre compared to natural gas. This creates the hot, intense, instantly adjustable flame that Indian cooking demands — the split-second blast for a tadka, the sustained high heat under a kadhai, the rapid toggle between high and low for a phulka. PNG's flame is gentler and slower to respond. Most Indians who convert from LPG to PNG simply drill out the gas jets on their existing LPG stoves — which drops thermal efficiency and can produce unsafe carbon monoxide levels. A proper conversion costs ₹2,000–5,000. This is not a trivial friction for 1.6 crore households being asked to switch.</p>
+      <p class="lead-summary" style="margin-top:0.6rem">But the government's strategic calculus is sound. India has zero fallback if Hormuz stays closed for LPG — just 1,40,000 metric tonnes of underground storage against 90,000 tonnes daily consumption. Less than two days of buffer. For natural gas, the picture is genuinely different: roughly half is produced domestically, and import contracts are spread across the US, Australia, and Qatar. The PNGRB also completed a critical infrastructure reform in January 2026: a unified tariff structure that collapsed regional pricing disparities, cutting transportation costs for distant areas by nearly 50%. This makes PNG economically viable in cities that were previously priced out. The hard constraint is physical: India has only laid sufficient last-mile pipeline to serve approximately 1.6 crore connections out of a 12.63 crore target. APM gas (domestically produced at capped prices, which subsidises city gas distribution economics) is also declining — legacy fields expected to peak now and fall 20% by 2030. The more PNG connections India adds, the more imported LNG it will need to fill them. That shifts dependency from Hormuz-LPG to LNG-terminals — a better risk profile, but still an import dependency. India isn't eliminating a supply chain vulnerability. It is diversifying from one to another. Source: Daily Brief (Zerodha).</p>
+      <a class="src-btn" href="https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to" target="_blank" rel="noopener">Read the full Daily Brief</a>
+    </div>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('lpg-png-deep')">
+      <span class="ctag blue">Deep Read · Energy</span>
+      <div class="card-hl">The full LPG to PNG story — why the government is right about the direction and wrong about the timeline</div>
+      <div class="card-deck">The government's LPG-to-PNG pivot is strategically correct for three reasons. First, supply chain diversification: LPG has a single chokepoint (Hormuz), no strategic reserve, and a Gulf-concentrated supplier base. PNG has partial domestic production, more diversified LNG contracts, and a physically different supply chain that doesn't depend on cylinder tankers. Second, the unified tariff reform (January 2026): by collapsing the additive regional tariff structure into two flat zones, the PNGRB made PNG economically viable in cities like Bengaluru and Hyderabad that were previously paying 2–3x the tariff of consumers near Gujarat gas sources. Third, the Hormuz crisis created the social permission for a switch that 30 years of policy couldn't. When cylinder booking takes 45 days and black market prices are ₹4,000, consumers are finally willing to spend ₹2,000–5,000 to properly convert their stoves. That said, the direction is right but the timeline is not. India needs to lay last-mile pipelines to cover the gap between 1.6 crore active connections and the 6 crore LPG households who live in areas where PNG pipelines technically exist but don't reach their specific building. That is a 3–5 year infrastructure task, not a 90-day one. The government's order is best read as a demand management tool — freeing up LPG cylinder capacity for households and commercial users who genuinely cannot access PNG — rather than a realistic plan to move 33 crore connections to PNG in three months. Source: Daily Brief (Zerodha).</div>
+      <div class="card-src">Daily Brief → <a href="https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('semiconductor-ecms')">
+      <span class="ctag green">India · Tech · Manufacturing</span>
+      <div class="card-hl">ECMS scheme: 75 projects worth ₹61,671 crore approved — India's first rare earth permanent magnet plant, lithium-ion cells, display modules. Also: Micron's second plant inaugurated.</div>
+      <div class="card-deck">The Daily Brief's tidbits include two significant manufacturing announcements. First, the Electronics Component Manufacturing Scheme (ECMS): the government approved 75 projects totalling ₹61,671 crore in investment — overshooting the scheme's original ₹59,350 crore target. The standout approval: India's first rare earth permanent magnet manufacturing facility, using rare-earth oxides, at ₹700 crore investment. India currently imports 85–90% of its rare earth magnets from China — and these magnets are critical inputs for EV motors, wind turbines, defence systems, and consumer electronics. Other ECMS approvals: ₹1,683 crore for capital goods, ₹1,350 crore for display module sub-assemblies, ₹500 crore for lithium-ion cells. Second, Micron's second semiconductor plant in India was inaugurated on March 31 — just 19 months after groundwork began, and only 49 days after the first plant was inaugurated on February 10. IT Minister Ashwini Vaishnaw called the pace "a demonstration of India's manufacturing capability." Source: Daily Brief (Zerodha).</div>
+      <div class="card-src">Daily Brief → <a href="https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WORLD
+══════════════════════════════════════ -->
+<section class="sec" id="sec-world">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Global context · Wednesday 2 April 2026</div>
+      <h2 class="sec-title">Brent fell 2% on Iran deal signals. Nvidia invested $2bn in Marvell. Oracle cut 30,000 jobs. The Eurozone is manufacturing again. South Korea hit export records. And the WTO is quietly ceasing to function.</h2>
+    </div>
+    <span class="sec-count">4 items</span>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openM('iran-deal-signal')">
+      <span class="ctag amber">Iran · Oil · Diplomacy</span>
+      <div class="card-hl">Brent fell 2% to $102 as Trump signalled a possible Iran deal — but no formal talks have started and the April 6 deadline is still live</div>
+      <div class="card-deck">Brent crude fell approximately 2% to around $102 per barrel on news that Trump is in discussions with what he called a "more reasonable regime" in Iran — a comment that markets interpreted as a possible path to a deal before the April 6 deadline. That said, the statement was characteristically vague: Trump warned of major strikes if the Strait of Hormuz is not reopened, while simultaneously suggesting talks are underway. There are no formal negotiations publicly confirmed. US troop movements in the region continue. Iran's parliament is still drafting the Hormuz transit fee law. The $102 print is significant — it is still above the $63 level that prevailed before the war began, meaning no supply chain relief has actually arrived. Markets are pricing in a probability distribution: some chance of a deal, some chance of strikes, most likely continued ambiguity through April. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('nvidia-marvell')">
+      <span class="ctag teal">Tech · AI · Semiconductors</span>
+      <div class="card-hl">Nvidia invested $2bn in Marvell Technology — Marvell jumped 12%. The AI chip ecosystem consolidation continues as hyperscalers build custom silicon.</div>
+      <div class="card-deck">Nvidia's $2 billion investment in Marvell Technology brings the semiconductor company formally into the Nvidia AI ecosystem for custom infrastructure development. Marvell specialises in custom Application-Specific Integrated Circuits (ASICs) — chips designed for specific workloads rather than the general-purpose GPUs Nvidia is known for. Hyperscalers (Google, Microsoft, Amazon, Meta) have been building custom AI chips to reduce dependence on Nvidia's standard GPU lineup — and Marvell is a key supplier for that custom silicon effort. Nvidia's investment is a strategic hedge: by owning a stake in Marvell, it positions itself to participate in the custom silicon wave even if some hyperscalers reduce their standard GPU purchases. Marvell jumped 12% on the announcement; Nvidia was up 1.5% pre-market. The India angle: Marvell has a significant chip design centre in Pune — one of India's largest semiconductor design operations — that would benefit from any acceleration in custom AI chip demand. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('oracle-layoffs')">
+      <span class="ctag red">Tech · Layoffs</span>
+      <div class="card-hl">Oracle laid off ~30,000 employees globally, ~12,000 in India — another round expected within a month. The enterprise IT restructuring wave reaches scale.</div>
+      <div class="card-deck">Oracle's layoff of approximately 30,000 employees globally — with around 12,000 in India — is one of the largest tech sector job cuts since the wave that began in 2022. Another round is expected within a month. The context: Oracle has been aggressively pivoting toward AI-powered cloud services and database automation. As AI replaces portions of the software development, QA, and database administration workflows that Oracle previously staffed heavily, the company is restructuring its workforce to reflect that shift. India is disproportionately affected because Oracle's Indian operations are concentrated in exactly the roles most susceptible to AI-driven automation: software engineers, QA testers, support engineers, and database administrators. The India angle goes beyond Oracle directly — large-scale layoffs by major IT employers in Bengaluru, Hyderabad, and Pune affect the local service economy (restaurants, real estate, retail) in ways that compound as the announcements accumulate. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+    <div class="card" onclick="openM('global-bright-spots')">
+      <span class="ctag green">Global · Economy</span>
+      <div class="card-hl">Eurozone Manufacturing PMI hits strongest since June 2022. South Korea exports +48.3% YoY to record $86bn. Not all global signals are negative.</div>
+      <div class="card-deck">Two global data points push back against the dominant war-and-stagflation narrative. The S&P Global Eurozone Manufacturing PMI rose to 51.6 in March 2026 from 50.8 in February — the strongest expansion since June 2022. Counterintuitively, the Iran war's supply disruptions are part of the reason: companies are building inventory buffers and accelerating orders ahead of further disruption, which temporarily boosts manufacturing output data even as underlying demand concerns remain. South Korea's exports surged 48.3% YoY in March 2026 to a new record of $86.13 billion — surpassing $80 billion for the first time. Semiconductors led the jump, driven by strong AI chip demand globally. South Korea's semiconductor exports are a reliable leading indicator of global technology infrastructure spend — and the data suggests that hyperscalers and cloud providers are still investing aggressively in AI capacity despite the macro turbulence from the Iran war. Source: Aftermarket Report.</div>
+      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near" target="_blank" rel="noopener">Read more</a></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FEEDBACK FORM
+══════════════════════════════════════ -->
+<section class="sec" id="sec-feedback">
+<div class="wrap">
+
+  <div class="sec-head">
+    <div class="sec-left">
+      <div class="sec-src">Reader Feedback · Issue 011</div>
+      <h2 class="sec-title">Help shape The Brief</h2>
+    </div>
+  </div>
+
+  <div style="max-width:680px">
+    <p style="font-size:15px;color:var(--ink-60);line-height:1.7;margin-bottom:2rem">This newsletter is a work in progress. Your feedback directly determines what gets built next — which sources get more depth, what new sections get added, and how the whole thing gets delivered. Takes about 3 minutes.</p>
+
+    <!-- SUCCESS STATE -->
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">✓</div>
+      <h3>Thanks for the feedback.</h3>
+      <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
+    </div>
+
+    <!-- FORM — powered by Formspree -->
+    <!-- Replace YOUR_FORM_ID below with the ID from formspree.io/forms after you create a free account -->
+    <form id="feedback-form" action="https://formspree.io/f/myknvaaa" method="POST" novalidate>
+
+      <!-- Hidden fields Formspree uses to organise submissions -->
+      <input type="hidden" name="_subject" value="The Brief feedback — 2 Apr 2026">
+      <input type="hidden" name="issue" value="The Brief · 2 Apr 2026 (Wednesday)">
+      <!-- Rating is captured here by JS when a button is clicked -->
+      <input type="hidden" name="rating" id="rating-hidden" value="">
+
+      <!-- ① OVERALL RATING -->
+      <div class="form-section-title">How was today's Brief?</div>
+      <div class="form-section-sub">Your honest reaction to this issue, not what you think I want to hear.</div>
+
+      <div class="form-group">
+        <div class="form-label">Overall rating <span>*</span></div>
+        <div class="rating-row" id="rating-row">
+          <button type="button" class="rating-btn" data-val="1" onclick="setRating(1)" title="Pretty bad">😕</button>
+          <button type="button" class="rating-btn" data-val="2" onclick="setRating(2)" title="Could be better">😐</button>
+          <button type="button" class="rating-btn" data-val="3" onclick="setRating(3)" title="Pretty good">🙂</button>
+          <button type="button" class="rating-btn" data-val="4" onclick="setRating(4)" title="Really good">😊</button>
+          <button type="button" class="rating-btn" data-val="5" onclick="setRating(5)" title="Excellent">🔥</button>
+        </div>
+        <div id="rating-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please pick a rating before submitting.</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ② WHAT WORKED / DIDN'T -->
+      <div class="form-section-title">What's working — and what isn't?</div>
+      <div class="form-section-sub">Be specific if you can. "The auto section is too long" is more useful than "it's fine."</div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-liked">What did you like most about today's issue?</label>
+        <textarea class="form-textarea" id="what-liked" name="what_liked" placeholder="e.g. The market strip at the top, the ETAuto summaries, the pilot shortage story…" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="what-disliked">What felt off, too long, or unnecessary?</label>
+        <textarea class="form-textarea" id="what-disliked" name="what_disliked" placeholder="e.g. Too many world stories, the lead cards are too big on mobile, The Ken section feels thin…" rows="3"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ③ CONTENT PREFERENCES -->
+      <div class="form-section-title">What do you want more of?</div>
+      <div class="form-section-sub">Select everything that applies. These directly set the editorial direction for future issues.</div>
+
+      <div class="form-group">
+        <div class="form-label">Topics you want expanded</div>
+        <div class="check-grid" id="topics-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="markets_depth">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deeper market analysis</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="auto">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Auto industry coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="tech">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Tech & AI news</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="macro">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">India macro & policy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="global">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Global markets & world</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="startups">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Startups & VC</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="personal_finance">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Personal finance</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="commodities">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Commodities & energy</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="banking">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Banking & financials</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="topics" value="ipo">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">IPO & corporate actions</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Sections you want removed or made smaller</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="world">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">World / Economist</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="deepread">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Deep Read section</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="makeuseof">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">MakeUseOf / tech how-tos</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="ticker">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Market ticker bar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="lead_cards">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Lead story cards (too big)</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="remove" value="pull_quotes">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Pull quotes in lead cards</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ④ NEW SOURCES / FEATURES -->
+      <div class="form-section-title">What's missing entirely?</div>
+      <div class="form-section-sub">Sources you'd like added, features you want, things other newsletters do well that this one doesn't yet.</div>
+
+      <div class="form-group">
+        <div class="form-label">New sources or newsletters to include</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="morning_context">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning Context</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="capitalmind">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Capitalmind</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="ars_technica">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Ars Technica</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="economist_full">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">More Economist coverage</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="bloomberg">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Bloomberg India</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="new_sources" value="moneycontrol">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Moneycontrol</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">New features you'd like</div>
+        <div class="check-grid">
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="audio_summary">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Audio / TTS summary</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="portfolio_alerts">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Portfolio stock alerts</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="calendar">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Upcoming events calendar</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="earnings">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Earnings / results tracker</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="chart_of_day">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Chart of the day</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="morning_edition">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Morning edition too</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this);toggleWhatsApp(this)">
+            <input type="checkbox" name="features" value="whatsapp" id="whatsapp-checkbox">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">WhatsApp delivery</span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this)">
+            <input type="checkbox" name="features" value="weekly_digest">
+            <span class="check-box"><span class="check-tick">✓</span></span>
+            <span class="check-text">Weekly digest on Sunday</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="whatsapp-mobile-wrap" style="display:none;margin-top:-0.8rem">
+        <label class="form-label" for="whatsapp-mobile">WhatsApp mobile number <span style="color:var(--red)">*</span></label>
+        <div class="form-hint">Include country code — e.g. +91 98765 43210</div>
+        <input class="form-input" type="tel" id="whatsapp-mobile" name="whatsapp_mobile" placeholder="+91 98765 43210">
+        <div id="whatsapp-mobile-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter your WhatsApp number to enable WhatsApp delivery.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
+        <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑤ PERSONAL (optional) -->
+      <div class="form-section-title">Optionally — who are you?</div>
+      <div class="form-section-sub">Only fill this in if you want a reply. None of this is required.</div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-name">Your name</label>
+          <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="reader-email">Email <span id="email-required-note">(for a reply)</span></label>
+          <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="reader-role">How would you describe yourself?</label>
+        <select class="form-select" id="reader-role" name="reader_role">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="retail_investor">Retail investor</option>
+          <option value="trader">Active trader</option>
+          <option value="finance_professional">Finance professional</option>
+          <option value="business_founder">Business founder / operator</option>
+          <option value="student">Student</option>
+          <option value="just_curious">Just generally curious</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="how-found">How did you find The Brief?</label>
+        <select class="form-select" id="how-found" name="how_found">
+          <option value="" disabled selected>Choose one…</option>
+          <option value="nischay_direct">Nischay shared it directly</option>
+          <option value="friend">A friend shared it</option>
+          <option value="twitter">Twitter / X</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <hr class="form-divider">
+
+      <!-- ⑥ SUBSCRIBE -->
+      <div class="form-section-title">Want The Brief in your inbox every evening?</div>
+      <div class="form-section-sub">The Brief goes out at 9:30 PM on weekdays — a summary of everything that landed in the newsletter pile that day. No ads, no sponsored content.</div>
+
+      <div class="form-group">
+        <div class="subscribe-card" id="subscribe-card">
+          <div class="subscribe-left">
+            <div class="subscribe-icon">✉</div>
+            <div>
+              <div class="subscribe-title">Subscribe to The Brief</div>
+              <div class="subscribe-desc">Daily · 9:30 PM weekdays · Free</div>
+            </div>
+          </div>
+          <label class="toggle-wrap">
+            <input type="checkbox" id="subscribe-toggle" name="subscribe" value="yes" onchange="handleSubscribeToggle(this)">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="subscribe-email-wrap" style="display:none">
+        <label class="form-label" for="subscribe-email">Email address for the newsletter <span>*</span></label>
+        <div class="form-hint">If you already filled this in above, we'll use that — or add a different address here.</div>
+        <input class="form-input" type="email" id="subscribe-email" name="subscribe_email" placeholder="you@example.com">
+        <div id="subscribe-email-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter a valid email address to subscribe.</div>
+      </div>
+
+      <div class="form-group" id="subscribe-freq-wrap" style="display:none">
+        <div class="form-label">Preferred frequency</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <label class="freq-btn" onclick="setFreq(this,'daily')">
+            <input type="radio" name="freq" value="daily" style="display:none" checked>
+            <span>Every weekday</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekends_too')">
+            <input type="radio" name="freq" value="weekends_too" style="display:none">
+            <span>Weekdays + Saturday digest</span>
+          </label>
+          <label class="freq-btn" onclick="setFreq(this,'weekly_only')">
+            <input type="radio" name="freq" value="weekly_only" style="display:none">
+            <span>Weekly digest only</span>
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem">
+        <button type="submit" class="submit-btn" id="submit-btn">Send feedback</button>
+        <span style="font-size:12px;color:var(--ink-30);font-family:var(--mono)" id="submit-note">Your response stays private.</span>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     MODALS — summaries with source links
+══════════════════════════════════════ -->
+<div class="modal-bg" id="mbg" onclick="outsideClose(event)">
+  <div class="modal" id="mbox">
+    <div class="modal-head">
+      <div class="modal-tag" id="mtag"></div>
+      <div class="modal-hl" id="mhl"></div>
+      <button class="modal-close" onclick="closeM()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-summary-note">Summary · Click "Read original" to access the full story</div>
+      <div id="mbody"></div>
+      <div class="modal-source-link">
+        <span id="msrc-label">Source</span>
+        <a id="msrc-link" href="#" target="_blank" rel="noopener">Read original</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const M = {
+  "defence-rally": {
+    tag:"Markets · Defence",
+    hl:"Defence stocks +6% on Trump NATO exit + Rajnath ₹2.38L crore — the structural re-rating explained",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>The Nifty India Defence Index rising nearly 6% in a single session requires two catalysts to land simultaneously — and both did on April 2. First, Trump's NATO statement. When the US President says that pulling out of NATO is "beyond reconsideration" and that he "always knew they were a paper tiger," markets process this as a structural event, not a passing comment. If the US security umbrella over Europe shrinks, European nations need to rearm fast. Germany has already announced defence budget increases. France is accelerating procurement. The UK is debating conscription. All of this creates massive demand for defence equipment, systems, and ammunition — and India's domestic defence manufacturers, which have been expanding export capabilities, suddenly have a much larger addressable market. Second, Rajnath Singh cleared defence proposals worth ₹2.38 lakh crore in a single DAC (Defence Acquisition Council) meeting. This is one of the largest single-day domestic defence clearances in India's history. The combination of a structural global demand signal and a massive domestic order signal sent investors rushing into the sector. HAL, BEL, Bharat Dynamics, Mazagon Dock, and BEML all surged. Not only this — the defence stocks had underperformed in the FY26 second half as the broader market fell. A 6% recovery on strong catalysts suggests the sector is being re-rated on the new geopolitical reality rather than recovering from oversold conditions. Source: Aftermarket Report.</p>`
+  },
+  "gst-record": {
+    tag:"Economy · GST",
+    hl:"GST ₹2.04 lakh crore in March — first time ever, and what it means for FY27 fiscal math",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>March 2026 GST collections of approximately ₹2.04 lakh crore crossed the ₹2 lakh crore threshold for the first time in the history of India's GST system. The YoY growth was +9% from ₹1.83 lakh crore in March 2025. Breaking down the growth: domestic GST grew a more modest +6%, while import-driven collections surged +18%. The import surge is war-related — as India scrambled to front-load critical imports (LNG, alternative LPG sources, defence equipment, semiconductor inputs) ahead of further Hormuz disruption, customs duty and IGST on imports spiked. Put simply, the higher import activity that is hurting India's current account is simultaneously boosting GST revenues. Not only this — the ₹2 lakh crore crossing has significant fiscal implications for FY27. If GST collections sustain above ₹1.8–2 lakh crore per month throughout FY27, the government has considerably more fiscal headroom. This headroom matters because the oil shock is creating competing demands: LPG subsidies need to expand as under-recoveries hit ₹380/cylinder, food inflation from higher logistics costs may require welfare spending, and defence capital expenditure has just been scaled up significantly. A robust GST base makes all of these manageable without blowing out the fiscal deficit. Well, at least that's the optimistic read. The pessimistic read: GST growth was partly driven by one-time import front-loading that will not repeat in April and May. Source: Aftermarket Report.</p>`
+  },
+  "lpg-hike": {
+    tag:"Policy · Fuel Prices",
+    hl:"Commercial LPG ₹195.5 hike, ATF doubles for international flights — the OMC under-recovery math",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>To make things easier to grasp, commercial LPG (the 19kg cylinder used by restaurants, hotels, catering operations, and industrial users) is not subsidised the way household LPG is. Its price is supposed to reflect import parity. With Hormuz disrupted, LPG import costs have roughly doubled in the last five weeks. So the ₹195.5 hike to ₹2,078.5 in Delhi is the government partially — but not fully — passing through that cost increase to commercial users. Oil Marketing Companies (IOC, BPCL, HPCL) are still facing under-recoveries of approximately ₹380 per cylinder even after this hike. That gap is being absorbed partly by OMC balance sheets (hitting their profitability, which is why OMC stocks are under pressure) and partly by government compensation through oil bonds. The Aviation Turbine Fuel picture is cleaner: ATF is priced at full import parity without subsidy. International and chartered flights use ATF priced at international rates — which have more than doubled as jet fuel tracks crude oil and the rupee's depreciation compounds the dollar-denominated cost. Domestic carriers got a cap at +25% to prevent immediate airline operational crises, but this is a partial measure. IndiGo, Air India, and SpiceJet are all managing rapidly rising fuel bills. The appointment of Willie Walsh at IndiGo — a crisis-experienced executive — is directly relevant to this cost environment. Source: Aftermarket Report.</p>`
+  },
+  "indigo-walsh": {
+    tag:"Stocks · IndiGo",
+    hl:"Willie Walsh at IndiGo — who he is and why this appointment matters right now",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Willie Walsh's CV reads like a textbook for managing airlines through crises. He took over Aer Lingus as CEO in 2001 — weeks before 9/11 — and navigated the airline through what was then the worst crisis in commercial aviation history. He moved to British Airways in 2005 and restructured it through multiple fuel price crises, a global financial crisis, Labour union strikes, and the merger with Iberia that created International Airlines Group (IAG). Under Walsh, IAG became one of the most profitable airline holding companies in Europe. He then became Director General of IATA, the global airline trade association, through COVID-19 — the worst crisis aviation has ever faced. Put simply, Walsh has managed through 9/11, the 2008 financial crisis, multiple fuel price shocks, and COVID. IndiGo is facing a fuel cost crisis driven by the Iran war. The match between the executive profile and the operational challenge is almost exact. Back in the day, IndiGo's founder-driven management culture was its strength — the Bhatia family built a relentlessly cost-disciplined, operationally efficient airline. The transition to professional management began with Pieter Elbers and is now deepening with Walsh. What Walsh brings that Elbers didn't is direct experience with crisis-driven cost restructuring and international airline economics (IndiGo is expanding international routes, which are now acutely affected by Middle East disruption). Due to this, the market watched IndiGo shares closely on the announcement. Source: Aftermarket Report.</p>`
+  },
+  "nse-gas-nse": {
+    tag:"Markets · Derivatives",
+    hl:"NSE's first-ever exchange-traded natural gas derivatives — why GIXI matters and who benefits",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Back in the day, natural gas buyers in India had no way to hedge their price risk domestically. A city gas distributor buying natural gas to supply PNG connections couldn't go to a domestic exchange and lock in a price six months forward. A fertilizer company couldn't hedge its gas feedstock costs. A power plant couldn't manage its fuel cost uncertainty. Instead, they bore the full volatility of spot LNG prices — which can swing 50–100% in a single quarter, as we have seen since February. NSE's exchange-traded natural gas futures, priced against GIXI (Gas IndeX of India), changes this. GIXI tracks actual domestic natural gas trades across six regional delivery hubs operated by IGX (Indian Gas Exchange). It is a real domestic price signal — not a foreign benchmark that approximates Indian conditions. Exchange-traded derivatives on GIXI allow: city gas distributors (Indraprastha Gas, Mahanagar Gas, Gujarat Gas) to hedge input costs against PNG consumer price commitments; industrial gas consumers to lock in production costs; financial investors to take views on India's natural gas market without physical delivery. The timing is not accidental — NSE launched this on April 2, the day after the government mandated a rapid PNG expansion, on a day when natural gas supply security is the most urgent energy policy question India faces. Building a liquid gas derivatives market is not optional infrastructure for a country trying to rapidly scale PNG. It is foundational. Source: Aftermarket Report.</p>`
+  },
+  "gaar-maruti": {
+    tag:"Markets · Policy",
+    hl:"GAAR clarification for pre-2017 investments + Maruti March sales +16.72%",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Two quick but meaningful market notes. GAAR — the General Anti-Avoidance Rule — allows the Income Tax Department to disregard transactions it considers to be structured primarily for tax avoidance rather than commercial substance. Since its implementation in 2017, it has created an overhang for foreign PE and VC firms that made investments in India through structures set up before that date — structures that were legal when created but might be scrutinised under GAAR on exit. The government's clarification that GAAR will not apply to exits from pre-April 2017 investments removes this uncertainty cleanly. Well, this matters now because FII sentiment toward India has been negative through the Iran war. A clear, investor-friendly regulatory signal — especially one that affects the PE and VC community directly — is a meaningful relationship maintenance gesture at a sensitive time. Maruti Suzuki's March numbers were strong in the context: 2,25,251 total units (+16.72% YoY), with domestic PV at 1,66,219 (+10.27%). The numbers show that consumer demand for passenger vehicles held firm through the war's first five weeks — the higher-ticket, considered-purchase nature of cars means demand is more resilient to short-term uncertainty than discretionary consumer goods. Maruti's strong sales also validate the premiumisation narrative: the company's SUV lineup (Brezza, Grand Vitara, Jimny) was the primary driver. Source: Aftermarket Report.</p>`
+  },
+  "fy26-auto-review": {
+    tag:"ETAuto · FY26 Review",
+    hl:"FY26 India auto: records despite a war — the full story",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com",
+    body:`<p>FY26's auto story has a very specific shape when you plot it month by month. April through September 2025 were sluggish: a cautious consumer, elevated dealer inventory, patchy rural demand, and no clear demand catalyst. The industry grew, but modestly. Then October 2025 to February 2026 was the acceleration phase: the festive season came with strong pent-up demand, premiumisation continued at pace, and EV penetration picked up gradually. Then the Iran war arrived on February 28 and did something unexpected to the numbers: it turbo-charged EV adoption in the last five weeks of FY26. When petrol prices rose, CNG pumps started running dry, and LPG cylinders became scarce, the total cost of ownership argument for an EV — which had always been theoretically correct — became viscerally obvious to consumers who were already on the fence. The result: March 2026 e2W sales of approximately 1.7 lakh units, up 36% YoY. Passenger vehicle volumes hit all-time annual highs. And the industry entered FY27 at record levels across most segments. The question the industry is now wrestling with: how much of this was structural (premiumisation, income growth) versus accidental (war-driven cost shock accelerating decisions that were going to happen anyway over 18 months)? If the Iran situation resolves in April, does some of the EV demand pull forward to the next 12 months disappear? The honest answer is yes — partially. The structural drivers remain. The accidental acceleration may not. Source: ETAuto.</p>`
+  },
+  "e2w-march-record": {
+    tag:"ETAuto · EV 2W",
+    hl:"Electric 2W sales +36% in March — fuel shortage fears, end-of-fiscal discounts, and a structural shift",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com",
+    body:`<p>To make things easier to grasp, the 36% YoY jump in electric 2-wheeler sales in March 2026 has three distinct drivers that all amplified each other. First: end-of-fiscal inventory push. OEMs always push hard in March to meet annual targets. This year, the incentive was sharper than normal because FY27 brings higher import costs (rupee at ₹95, component prices rising) that will force price hikes on many models. Dealers and consumers who knew prices were going up had strong reason to transact in March. Second: fuel shortage fears. With petrol structurally expensive, CNG pressure low at Mumbai pumps, and LPG cylinders scarce, the immediate operational economics of an electric scooter became unambiguous. Not only this — the government's LPG-to-PNG order (surrender cylinders in 90 days) created psychological urgency: if cooking gas is being rationed, motoring fuel might be next. That psychology — even without actual rationing of petrol — drove some consumers from the consideration phase to the purchase phase for EVs. Third: structural demand. India's EV 2W penetration was already growing before the war. Ola Electric, TVS iQube, Bajaj Chetak, and Ather had all expanded their model ranges and distribution in FY26. The war accelerated a trend that existed, rather than creating one from scratch. Ather's positioning specifically benefits: the oil price shock makes its ₹1 lakh+ premium feel less like a luxury and more like a rational investment in fuel-cost insulation. Source: ETAuto.</p>`
+  },
+  "fy27-auto-headwinds": {
+    tag:"ETAuto · FY27 Headwinds",
+    hl:"West Asia war headwinds for India auto in FY27 — the five pressures OEMs are entering with",
+    src:"ETAuto",
+    url:"https://auto.economictimes.indiatimes.com",
+    body:`<p>ETAuto's FY27 headwinds analysis identifies five compounding pressures that India's auto industry is entering the new financial year with. First, rising fuel costs inflate the entire supply chain. Plastics (petrochemical-derived), rubber (energy-intensive to produce), logistics (diesel-dependent), and components shipped by air all cost more when oil is at $100+. This is before the rupee effect. Second, the rupee at ₹95.22 is a direct margin hit on every imported component. Semiconductors (priced in dollars), display panels (Taiwan), precision electronics (Japan, Germany) — these are core inputs that India's OEMs cannot yet fully source domestically. A 10–12% currency depreciation over FY26 means those imported components are equivalently more expensive. Third, car prices are going up. Tata Motors, BMW India, and Mercedes-Benz India have all announced FY27 price hikes. This creates a short-term pull-forward of demand (consumers buying in March before hikes land) followed by demand softness in Q1 FY27. Fourth, NBFC stress in vehicle loans. Nomura data highlights rising NPA pressure in MSME and vehicle financing portfolios — a direct consequence of income stress in fuel-sensitive segments of the economy. When auto NBFCs tighten underwriting or raise rates, volumes in tier 2/3 markets — which are credit-dependent — slow. Fifth, the CNG infrastructure strain: autorickshaw drivers in Mumbai suburbs are already flagging low CNG pressure at pumps. If CNG vehicles become operationally unreliable in Q1 FY27, the commercial 3-wheeler and taxi segments could face a sharp demand drop, with demand either waiting out the supply issue or converting to EVs. Source: ETAuto.</p>`
+  },
+  "wto-crisis": {
+    tag:"Daily Brief · Trade",
+    hl:"The WTO's 14th ministerial conference failed — India's role, the e-commerce moratorium lapse, and what comes next",
+    src:"Daily Brief (Zerodha)",
+    url:"https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to",
+    body:`<p>Back in the day — 1995 to be precise — the WTO was founded on a specific theory of how global trade should work: that divorcing trade from raw power and establishing rules-based predictability would make everyone better off. For 30 years, this theory delivered modest but real results. Now all four of its pillars are in various stages of failure. The norm-setting pillar: in 30 years, the WTO produced only two multilateral agreements. The Doha Development Agenda, launched in 2001 with promises to developing countries on agriculture and services, is dead in all but name. The dispute settlement pillar: the appellate body has had zero members since 2020, after the US blocked new appointments under both Trump and Biden. Countries can simply appeal adverse panel rulings into an indefinite void. The enforcement pillar: the 2026 US Trade Policy Agenda explicitly called the Most-Favoured Nation principle "not just unsuitable for this era" but actively harmful. The transparency pillar: more than half of WTO members failed to submit required subsidy notifications by 2023. The 14th Ministerial Conference in Yaoundé was supposed to produce a reform roadmap. Instead: the e-commerce moratorium — a 1998 rule banning customs duties on digital trade flows — was not renewed for the first time. India wanted it ended; the US wanted it permanent; they compromised on a two-year extension; Brazil then blocked even that. For the first time since 1998, countries are technically free to tax cross-border digital flows. India stood alone against 129 members on the IFD investment facilitation agreement, blocking it on procedural grounds (old issues must be resolved before new frameworks are added). The DG ended the conference by saying "the world order and multilateral system we used to know has irrevocably changed… we will not get it back." Source: Daily Brief (Zerodha).</p>`
+  },
+  "finshots-banks": {
+    tag:"Finshots · Banking",
+    hl:"The Indian bank credit stress that's building slowly in the background",
+    src:"Finshots",
+    url:"https://finshots.in",
+    body:`<p>You see, unsecured lending has a specific and predictable failure pattern. In the early stages of a credit cycle, defaults are low, confidence is high, and banks expand further. The risk builds quietly — because unsecured loan stress appears 18–36 months after disbursement, not immediately. Credit card NPAs surged 73% in FY22 and then another 28% in FY24 — meaning loans originated during the 2019–21 easy-money period are now defaulting at scale. The current wave of aggressive unsecured lending happened in 2022–24. Its stress cycle hasn't fully matured yet. By 2025–26, we will be in the window where those loans begin defaulting. India's banks are not ignoring this. The RBI increased risk weights on unsecured loans in late 2024, forcing banks to hold more capital against every rupee of unsecured credit. IDFC First Bank has aggressively reduced its microfinance (MFI) book from 6.6% to 2.4% of total loans. Credit card issuers are cutting rewards and de-prioritising high-risk users. But the systemic tension remains: banks continue growing unsecured credit because economic growth supports repayment — as long as incomes keep pace with borrowing. The Iran war creates exactly the kind of income shock that could break this equation for certain segments. Not only this — the recovery rate on unsecured defaults is structurally lower than on secured loans (no collateral to auction). When these loans go bad, more of the loss flows directly to bank P&Ls. The concern Finshots raises is not an imminent crisis — India's banking system is better capitalised than in the 2015–19 NPA crisis era. It is a structural vulnerability that would amplify any further macro deterioration. Source: Finshots.</p>`
+  },
+  "ken-sovereign-ai": {
+    tag:"The Ken · AI · Policy",
+    hl:"India's two sovereign AI programmes — the official one with unused GPUs and the private one with $600mn in debt",
+    src:"The Ken",
+    url:"https://the-ken.com/story/india-has-two-sovereign-ai-programmes-one-is-official-the-other-isnt/",
+    body:`<p>To make things easier to grasp, sovereign AI compute means this: a country's AI applications run on GPUs that the country owns and controls, rather than on data centres owned by US hyperscalers (Amazon AWS, Microsoft Azure, Google Cloud). The argument for sovereign compute: data sovereignty (sensitive Indian data doesn't leave India), strategic autonomy (India isn't dependent on US cloud access for critical AI infrastructure), and economic value capture (the margin from running AI workloads stays in India). Neysa's $1.2 billion raise — $600 million equity from Blackstone-led investors, $600 million in debt — is the private sector's bet on this thesis. They want to procure 20,000 Nvidia GPUs, deploy them in Indian data centres, and sell compute access to Indian AI startups and enterprises at roughly ₹65 per GPU-hour (cheap by global standards). The Ken's critical insight: even the official IndiaAI Mission's GPUs — government-procured, government-subsidised, supposed to be the most attractive option for Indian AI developers — are 22% unutilised. E2E Networks, India's only listed AI cloud provider (backed by Larsen & Toubro), has seen GPU utilisation fall sharply in recent quarters. The demand problem: India's AI startup ecosystem is growing rapidly, but the companies that would use GPU compute at scale are either too early-stage to need it at volume, or they are already using US hyperscaler cloud credits (which come with startup programmes, tooling, and engineering support that Indian domestic cloud providers cannot match). Building supply before demand exists is not a new Indian policy failure. The Ken's uncomfortable comparison: BSNL built towers, Jio had to come and generate the demand. The question is whether India's AI applications ecosystem develops fast enough to fill the compute Neysa and IndiaAI Mission are building. Source: The Ken.</p>`
+  },
+  "finolex-missed": {
+    tag:"The Ken · Stocks",
+    hl:"Finolex Cables missed India's cable boom — thinning margins, project mix, and faster-scaling peers",
+    src:"The Ken",
+    url:"https://the-ken.com/long_and_short/finolex-cables-had-the-money-the-brand-the-market-and-still-missed-the-boom/",
+    body:`<p>Back in the day, if you wanted electrical cables in India, Finolex was the name. Founded in 1958, the Pune-based company built the strongest brand in India's wires and cables industry through decades of presence in retail hardware stores, electrician relationships, and quality reputation. When India's infrastructure and real estate boom created a massive tailwind for cables demand in the early 2020s, Finolex had first-mover advantage in brand, distribution, and balance sheet. Polycab, which listed in 2019, had none of Finolex's brand legacy. KEI Industries was smaller. RR Kabel was newer. And yet: Polycab went from ₹400 to ₹6,000+. KEI surged similarly. RR Kabel IPO'd at a premium in 2023 and has held strong. Finolex has underperformed all three by a significant margin. The Ken's Long & Short analysis identifies three compounding factors. First, revenue mix: Finolex has a higher share of project-based institutional sales (wiring for construction projects, infrastructure contracts) versus retail B2C sales. Project revenues are larger in ticket size but carry structurally thinner margins — the buyer is sophisticated and negotiates hard. Retail cables sold through hardware stores carry much better margins. Competitors focused more on the retail channel. Second, operational pace: peers scaled faster in distribution, dealer management, and capacity expansion. Finolex's more conservative balance sheet management slowed reinvestment. Third, product mix evolution: higher-margin specialty cables (flexible cables, instrumentation cables, communication cables) required faster product development cycles than Finolex moved at. The lesson The Ken draws: being the established leader in a structural boom is not sufficient. The winners were the ones who moved fastest, not the ones who started with the most advantages. Source: The Ken.</p>`
+  },
+  "lpg-png-deep": {
+    tag:"Deep Read · Energy Policy",
+    hl:"The LPG to PNG switch — why the government is right about direction and wrong about timeline",
+    src:"Daily Brief (Zerodha)",
+    url:"https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to",
+    body:`<p>The government's 90-day LPG cylinder surrender order is best understood as three things simultaneously: an emergency demand management measure (freeing up LPG for households and users who genuinely cannot access PNG), a long-overdue policy acceleration (India has been trying to expand PNG for decades and the Hormuz crisis gave it the social permission that 30 years of policy couldn't), and an infrastructure problem that 90 days cannot solve. The fundamental physical constraint: India has only 1.6 crore active PNG connections against 33 crore LPG connections. Even if you focus only on the 6 crore LPG consumers who live in areas where PNG pipelines technically exist (per the Daily Brief), that still requires reaching them through last-mile connections that haven't been laid yet. Laying pipelines in dense urban areas requires permissions, digging through utility corridors packed with water, sewage, electricity, and telecom infrastructure, and in old buildings, structural work. Renters need landlord NOCs. Even once connected, just 63% of existing PNG connections are actually billing and live. The economics are improving: the PNGRB's January 2026 unified tariff reform cut transportation costs for distant areas by nearly 50%, making PNG genuinely price-competitive in markets like Bengaluru and Hyderabad that were previously unviable. And the government's strategic rationale is correct: India's LPG has a single Hormuz dependency with less than two days of strategic reserve. PNG has partial domestic production and diversified import contracts. But the 90-day deadline is a political signal, not an operational plan. The realistic timeline for meaningful PNG expansion is 3–5 years. What the government can do in 90 days is identify the most accessible households (already in PNG-serviced areas, ground-floor access, cooperative landlords) and aggressively connect them. The rest requires the infrastructure to be built first. Source: Daily Brief (Zerodha).</p>`
+  },
+  "semiconductor-ecms": {
+    tag:"India · Semiconductors",
+    hl:"ECMS: 75 projects, ₹61,671 crore, India's first rare earth magnet plant — and Micron's second fab inaugurated",
+    src:"Daily Brief (Zerodha)",
+    url:"https://thedailybrief.zerodha.com/p/india-wants-to-switch-from-lpg-to",
+    body:`<p>The Electronics Component Manufacturing Scheme (ECMS) approvals announced in the Daily Brief's tidbits section deserve more attention than the format allows. 75 projects, ₹61,671 crore in investment — which actually exceeded the scheme's original ₹59,350 crore target. The standout: India's first rare earth permanent magnet manufacturing facility, approved at ₹700 crore. Why does this matter? India currently imports 85–90% of its rare earth permanent magnets from China. These magnets — made from elements like neodymium and dysprosium — are essential for EV motors (every electric vehicle uses them), wind turbine generators, defence guidance systems, industrial robots, and consumer electronics like smartphones and speakers. China controls roughly 85% of global rare earth magnet production and has used this dominance as geopolitical leverage (restricting exports to Japan in 2010, threatening restrictions on the US during trade disputes). India building its first rare earth magnet plant is a strategic supply chain diversification from single-country dependence in a material that sits at the intersection of electrification, decarbonisation, and defence. Not only this — other ECMS approvals fill out important parts of India's electronics manufacturing puzzle: ₹1,683 crore for capital goods (the machines that make the machines), ₹1,350 crore for display module sub-assemblies (screens for phones, monitors, vehicles), ₹500 crore for lithium-ion cells. Micron's second semiconductor plant inauguration on March 31 — 19 months after groundwork began, 49 days after the first plant's inauguration — shows that when India moves fast on semiconductor manufacturing, it can match the fastest timelines globally. Source: Daily Brief (Zerodha).</p>`
+  },
+  "iran-deal-signal": {
+    tag:"Iran · Geopolitics",
+    hl:"Brent -2% on Iran deal signal — what Trump said, what it means, and why markets stayed cautious",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Trump's statement about dealing with a "more reasonable regime" in Iran drove a 2% fall in Brent crude to approximately $102 — and a 568-point Nifty gap-up. But both moves unwound significantly during the session, reflecting markets' ambivalence about how real the deal signal is. The statement was characteristically vague. Trump simultaneously warned of "major strikes" on Iranian energy infrastructure if Hormuz isn't reopened, and suggested productive conversations are happening. There are no confirmed formal talks. US troop movements in the region continue. Iran's parliament is still drafting the Hormuz transit fee law — a law that, if enacted, would institutionalise Iran's control over the strait rather than cede it. The most credible diplomatic channel — Pakistan as intermediary for indirect talks — has produced tangible but limited results: individual Indian tanker passages through the IRGC-controlled corridor, some Gulf shipping exemptions for certain flag states. None of this amounts to a structural resolution. Brent at $102 is still $39 above the pre-war level of $63. No supply chain relief has actually arrived. The market's read seems correct: this was a posture shift, not a policy shift. The April 6 deadline — Trump's explicit ultimatum for Iran to reopen the Strait or face strikes — is now four days away. Source: Aftermarket Report.</p>`
+  },
+  "nvidia-marvell": {
+    tag:"Tech · AI · Semiconductors",
+    hl:"Nvidia's $2bn investment in Marvell — custom AI silicon, India's chip design centres, and the hyperscaler hedge",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>To understand why Nvidia investing $2 billion in Marvell matters, you need to understand what hyperscalers have been doing to Nvidia for the last three years. Google's TPU, Amazon's Trainium and Inferentia, Microsoft's Maia, Meta's MTIA — all are custom AI chips designed to reduce dependence on Nvidia's standard GPU lineup. They don't need to outperform Nvidia's H100 or H200 across all workloads; they just need to be good enough at specific workloads (training large models, running inference at scale) while being cheaper to buy and operate. Marvell specialises in designing these custom ASICs for hyperscalers. If Marvell chips replace some Nvidia GPUs in hyperscaler data centres, that's a direct revenue threat to Nvidia. So Nvidia's $2 billion investment in Marvell is a hedge: by owning a stake, Nvidia participates in the custom silicon wave even if it eats into its own standard GPU market. Marvell jumped 12% on the news. Nvidia was up 1.5% pre-market. The India angle: Marvell has one of its largest chip design centres in Pune — thousands of engineers designing these custom ASICs. Any acceleration in custom AI chip demand from hyperscalers flows directly through Marvell's Pune operations, which means more high-paying engineering jobs, more chip design work, and India's position in the global semiconductor value chain moves up. Source: Aftermarket Report.</p>`
+  },
+  "oracle-layoffs": {
+    tag:"Tech · IT · Layoffs",
+    hl:"Oracle 30,000 layoffs — ~12,000 in India. The enterprise IT restructuring wave and what it means for Bengaluru",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Oracle's layoff of approximately 30,000 employees globally — with around 12,000 in India — is one of the largest tech sector job cut announcements of 2026, following a wave that has included Salesforce, SAP, Intel, and others. Another round is reportedly expected within a month. The strategic context: Oracle has been pivoting aggressively toward AI-powered cloud services, autonomous database management, and generative AI applications. These products automate workflows that Oracle previously staffed with large engineering, QA, and support teams. The company is essentially rebuilding its workforce from a large-labour model (lots of people doing repetitive software engineering and database management tasks) to a smaller-but-higher-skills model (AI running the routine work, humans managing and extending it). India is disproportionately affected because Oracle's Indian operations are concentrated in exactly the roles being automated: software engineers, QA testers, support engineers, database administrators. Oracle's Bengaluru campus in particular is one of the company's largest outside the US. The second-order effects are significant. Bengaluru's apartment rental market, restaurant economy, and retail spending are meaningfully influenced by IT sector employment. Large-scale layoffs by Oracle — combined with layoffs from other IT companies facing similar AI automation pressures — create a local demand shock in Bengaluru that extends beyond the directly affected employees. Not only this — the announcement is a signal to every other enterprise software company: the AI restructuring wave has reached scale, and no function previously considered safe from automation is actually safe. Source: Aftermarket Report.</p>`
+  },
+  "global-bright-spots": {
+    tag:"Global · Economy",
+    hl:"Eurozone PMI 51.6 (strongest since June 2022) + South Korea exports +48.3% — the signals that cut against the doom narrative",
+    src:"Aftermarket Report",
+    url:"https://aftermarketreport.zerodha.com/p/positive-global-cues-lift-nifty-near",
+    body:`<p>Two global data points deserve attention for pushing back against the dominant war-and-stagflation narrative. The S&P Global Eurozone Manufacturing PMI rose to 51.6 in March 2026 from 50.8 in February — the strongest expansion since June 2022. The interpretation is counterintuitive: the Iran war's supply disruptions are part of the reason for this improvement. Companies across Europe are building inventory buffers ahead of anticipated further disruption — front-loading orders, pulling forward purchases, and accelerating procurement. This temporarily boosts manufacturing output data even as underlying demand concerns remain. It is inventory-building activity, not a genuine acceleration in end consumer demand. But for European manufacturers — who were in contraction through 2024 and early 2025 — any expansion reading is meaningful. South Korea's exports surged 48.3% YoY in March 2026 to $86.13 billion — a new monthly record and the first time South Korea has exported more than $80 billion in a single month. Semiconductors led the jump significantly. This is a more straightforwardly positive signal: semiconductor exports track AI infrastructure investment, and the data suggests that despite the macro turbulence, hyperscalers and cloud providers are still investing at pace in AI capacity. Given that South Korea's TSMC-equivalent (Samsung, SK Hynix) produces memory chips that go into AI servers globally, this export data is a leading indicator that the AI build-out continues. Source: Aftermarket Report.</p>`
+  }
+};
+
+
+function openM(id) {
+  const a = M[id]; if (!a) return;
+  document.getElementById('mtag').textContent  = a.tag;
+  document.getElementById('mhl').textContent   = a.hl;
+  document.getElementById('mbody').innerHTML   = a.body;
+  document.getElementById('msrc-label').textContent = a.src;
+  document.getElementById('msrc-link').href    = a.url;
+  document.getElementById('mbg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeM() {
+  document.getElementById('mbg').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function outsideClose(e) {
+  if (e.target === document.getElementById('mbg')) closeM();
+}
+function go(id, btn) {
+  document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
+  document.querySelectorAll('.ntab').forEach(b => b.classList.remove('on'));
+  document.getElementById('sec-' + id).classList.add('on');
+  btn.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeM(); });
+
+// ── FORM FUNCTIONS ──
+let selectedRating = 0;
+let selectedFreq = 'daily';
+
+function setRating(val) {
+  selectedRating = val;
+  // Write value into the hidden input so Formspree receives it
+  document.getElementById('rating-hidden').value = val;
+  document.querySelectorAll('.rating-btn').forEach(btn => {
+    btn.classList.toggle('selected', parseInt(btn.dataset.val) === val);
+  });
+  document.getElementById('rating-error').style.display = 'none';
+}
+
+function toggleCheck(label) {
+  const cb = label.querySelector('input[type="checkbox"]');
+  setTimeout(() => { label.classList.toggle('checked', cb.checked); }, 0);
+}
+
+function handleSubscribeToggle(checkbox) {
+  const card       = document.getElementById('subscribe-card');
+  const emailWrap  = document.getElementById('subscribe-email-wrap');
+  const freqWrap   = document.getElementById('subscribe-freq-wrap');
+  const submitBtn  = document.getElementById('submit-btn');
+  const submitNote = document.getElementById('submit-note');
+  const emailNote  = document.getElementById('email-required-note');
+  if (checkbox.checked) {
+    card.classList.add('active');
+    emailWrap.style.display = 'block';
+    freqWrap.style.display  = 'block';
+    submitBtn.textContent   = 'Send feedback & subscribe →';
+    submitNote.textContent  = "You'll receive The Brief at the address above.";
+    if (emailNote) emailNote.innerHTML = '(required for newsletter) <span style="color:var(--red)">*</span>';
+  } else {
+    card.classList.remove('active');
+    emailWrap.style.display = 'none';
+    freqWrap.style.display  = 'none';
+    document.getElementById('subscribe-email-error').style.display = 'none';
+    submitBtn.textContent   = 'Send feedback →';
+    submitNote.textContent  = 'Your response stays private.';
+    if (emailNote) emailNote.textContent = '(for a reply)';
+  }
+}
+
+function toggleWhatsApp() {
+  setTimeout(() => {
+    const cb    = document.getElementById('whatsapp-checkbox');
+    const wrap  = document.getElementById('whatsapp-mobile-wrap');
+    const input = document.getElementById('whatsapp-mobile');
+    if (cb && cb.checked) {
+      wrap.style.display = 'block';
+      input.focus();
+    } else {
+      wrap.style.display = 'none';
+      document.getElementById('whatsapp-mobile-error').style.display = 'none';
+    }
+  }, 0);
+}
+
+function setFreq(label, val) {
+  selectedFreq = val;
+  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+  label.classList.add('active');
+}
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // ── 1. Rating required ───────────────────────────────────────
+  if (!selectedRating) {
+    document.getElementById('rating-error').style.display = 'block';
+    document.getElementById('rating-row').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  document.getElementById('rating-error').style.display = 'none';
+
+  // ── 2. Gather contact fields ─────────────────────────────────
+  const isSubscribed     = document.getElementById('subscribe-toggle').checked;
+  const subscribeEmailEl = document.getElementById('subscribe-email');
+  const readerEmailEl    = document.getElementById('reader-email');
+  const whatsappCb       = document.getElementById('whatsapp-checkbox');
+  const whatsappMobile   = document.getElementById('whatsapp-mobile');
+
+  const subEmail    = (subscribeEmailEl  ? subscribeEmailEl.value.trim()  : '');
+  const readerEmail = (readerEmailEl     ? readerEmailEl.value.trim()     : '');
+  const mobile      = (whatsappMobile    ? whatsappMobile.value.trim()    : '');
+  const wantWA      = whatsappCb && whatsappCb.checked;
+
+  // ── 3. Subscribe on → email required ────────────────────────
+  if (isSubscribed && !subEmail && !readerEmail) {
+    document.getElementById('subscribe-email-error').style.display = 'block';
+    subscribeEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    subscribeEmailEl.focus();
+    return;
+  }
+  document.getElementById('subscribe-email-error').style.display = 'none';
+
+  // ── 4. WhatsApp ticked → mobile required ────────────────────
+  if (wantWA && !mobile) {
+    document.getElementById('whatsapp-mobile-error').style.display = 'block';
+    whatsappMobile.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    whatsappMobile.focus();
+    return;
+  }
+  if (whatsappMobile) document.getElementById('whatsapp-mobile-error').style.display = 'none';
+
+  // ── 5. Always require at least one contact detail ────────────
+  // User must provide at minimum an email or a mobile number
+  const hasEmail  = !!(subEmail || readerEmail);
+  const hasMobile = !!mobile;
+  if (!hasEmail && !hasMobile) {
+    // Show error on the reader-email field since it's the most visible
+    const errId = 'contact-required-error';
+    let errEl = document.getElementById(errId);
+    if (!errEl) {
+      errEl = document.createElement('div');
+      errEl.id = errId;
+      errEl.style.cssText = 'color:var(--red);font-size:13px;margin-top:0.5rem;padding:0.7rem 1rem;background:#fdf2f2;border-radius:6px;border:1px solid #f0c0c0';
+      errEl.textContent = 'Please provide at least an email address or mobile number so we can follow up.';
+      readerEmailEl.parentNode.insertBefore(errEl, readerEmailEl.nextSibling);
+    }
+    errEl.style.display = 'block';
+    readerEmailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    readerEmailEl.focus();
+    return;
+  }
+  // Hide contact error if it exists
+  const existingErr = document.getElementById('contact-required-error');
+  if (existingErr) existingErr.style.display = 'none';
+
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
+
+  const form = document.getElementById('feedback-form');
+  const formData = new FormData(form);
+
+  // Submit to Formspree via AJAX so we can show our own success screen
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      showSuccess();
+    } else {
+      res.json().then(data => {
+        btn.textContent = 'Send feedback →';
+        btn.disabled    = false;
+        alert('Something went wrong: ' + (data.errors ? data.errors.map(e => e.message).join(', ') : 'please try again.'));
+      });
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Send feedback →';
+    btn.disabled    = false;
+    alert('Network error — please check your connection and try again.');
+  });
+}
+
+function showSuccess() {
+  document.getElementById('feedback-form').style.display = 'none';
+  const successEl = document.getElementById('form-success');
+  successEl.style.display = 'block';
+  successEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Mark first freq button active on load
+window.addEventListener('load', () => {
+  const first = document.querySelector('.freq-btn');
+  if (first) first.classList.add('active');
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">The <span>Brief</span></div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--ink-30);letter-spacing:1px;margin-top:3px">Curated by Nischay · Not a replacement for original journalism</div>
+    </div>
+    <div class="footer-meta">
+      9:30 PM Edition · Wednesday, 2 April 2026<br>
+      Sources: Aftermarket Report · Daily Brief (Zerodha) · Finshots<br>
+      The Ken · ETAuto · AP · Fortune · CNBC · Fox News · Bloomberg
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

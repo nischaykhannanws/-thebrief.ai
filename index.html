@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FELWMQ45KM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FELWMQ45KM');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Brief — Archive</title>
@@ -16,6 +24,8 @@
   --border: #e8e3da;
   --red: #c0292e;
   --red-light: #fdf2f2;
+  --green: #1a6640;
+  --green-light: #f0f8f3;
   --serif: 'Lora', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
   --mono: 'JetBrains Mono', monospace;
@@ -79,12 +89,11 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.55);
 }
 .subscribe-form {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
 }
 .subscribe-input {
   font-family: var(--sans);
@@ -99,103 +108,112 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   transition: border-color 0.15s;
 }
 .subscribe-input::placeholder { color: rgba(255,255,255,0.3); }
-.subscribe-input:focus { border-color: rgba(255,255,255,0.5); }
+.subscribe-input:focus { border-color: var(--red); }
 .subscribe-btn {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 9.5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   background: var(--red);
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 3px;
   cursor: pointer;
   transition: opacity 0.15s;
+  white-space: nowrap;
 }
 .subscribe-btn:hover { opacity: 0.85; }
 
-/* ── MAIN CONTENT ── */
+/* ── MAIN ── */
 .main {
   max-width: 820px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 5rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
-/* ── LATEST ISSUE ── */
+/* ── LATEST CARD ── */
 .latest-label {
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--red);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 .latest-card {
-  background: var(--white);
-  border: 1.5px solid var(--ink);
-  padding: 1.8rem 2rem;
-  margin-bottom: 2.5rem;
-  position: relative;
-  text-decoration: none;
   display: block;
-  transition: box-shadow 0.15s;
+  text-decoration: none;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 1.8rem 2rem;
+  margin-bottom: 3rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
-.latest-card:hover { box-shadow: 4px 4px 0 var(--ink); }
+.latest-card:hover {
+  border-color: var(--red);
+  box-shadow: 0 4px 20px rgba(192,41,46,0.08);
+}
 .latest-date {
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--ink-30);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 .latest-title {
   font-family: var(--serif);
-  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
   font-weight: 700;
-  line-height: 1.2;
   color: var(--ink);
+  line-height: 1.25;
   margin-bottom: 0.6rem;
+  transition: color 0.12s;
 }
+.latest-card:hover .latest-title { color: var(--red); }
 .latest-desc {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--ink-60);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 .latest-tags {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 .tag {
   font-family: var(--mono);
   font-size: 8px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3px 8px;
+  border-radius: 2px;
   background: var(--cream);
   color: var(--ink-60);
-  border-radius: 2px;
 }
 .tag.red { background: var(--red-light); color: var(--red); }
 .read-link {
   font-family: var(--mono);
   font-size: 9.5px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--red);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 .read-link::after { content: ' →'; }
 
-/* ── SECTION DIVIDER ── */
+/* ── SECTION HEAD ── */
 .section-head {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 .section-head::after {
   content: '';
@@ -261,10 +279,10 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   letter-spacing: 1px;
 }
 
-/* ── SUBSCRIBE BOX (bottom) ── */
+/* ── SUBSCRIBE BOX ── */
 .subscribe-box {
   background: var(--ink);
-  padding: 2rem 2rem;
+  padding: 2rem;
   margin-top: 3rem;
   border-radius: 4px;
 }
@@ -318,10 +336,42 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 .subscribe-note {
   font-family: var(--mono);
   font-size: 9px;
-  letter-spacing: 1px;
-  color: rgba(255,255,255,0.3);
-  margin-top: 0.7rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-top: 0.8rem;
+}
+
+/* ── STATS BAR ── */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.stat-cell {
+  background: var(--white);
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+.stat-val {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-30);
 }
 
 /* ── FOOTER ── */
@@ -337,7 +387,7 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 .footer-brand { font-family: var(--serif); font-weight: 700; font-size: 0.95rem; }
 .footer-brand span { color: var(--red); }
@@ -349,6 +399,8 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
   .issue-num { display: none; }
   .subscribe-inner { flex-direction: column; align-items: flex-start; }
   .subscribe-input { width: 100%; }
+  .stats-bar { grid-template-columns: 1fr; }
+  .latest-card { padding: 1.2rem 1.3rem; }
 }
 </style>
 </head>
@@ -379,21 +431,37 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
 <!-- MAIN -->
 <main class="main">
 
-  <!-- LATEST ISSUE — #012 -->
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-cell">
+      <div class="stat-val">013</div>
+      <div class="stat-label">Issues published</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">14+</div>
+      <div class="stat-label">Sources per issue</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-val">9:30</div>
+      <div class="stat-label">PM weekdays</div>
+    </div>
+  </div>
+
+  <!-- LATEST ISSUE -->
   <div class="latest-label">Latest Issue</div>
-  <a class="latest-card" href="issues/02-04-2026.html">
-    <div class="latest-date">Thursday, 2 April 2026 · Issue 012</div>
-    <div class="latest-title">Nifty's dramatic 500-point reversal, the rupee's best day since 2013, $107 oil, FY26 PV record, and 4 lakh missing KitKats</div>
-    <div class="latest-desc">Nifty gapped down 296 points to 22,383, slid to 22,180 by 10 AM, then roared back to 22,713 by close — a full 2%+ intraday recovery. The rupee surged 1.8% to ₹93.10/$, its sharpest single-session gain since September 2013. Oil at $107/bbl. G-Sec yields hit 7.1% — highest since May 2024. FY26 ends as India's best-ever PV year. Upgrad-Unacademy sign a term sheet (again). Finshots on cargo theft and India's ₹12,000 crore logistics blind spot. The Ken on India's two sovereign AI programmes and 22% idle GPUs.</div>
+  <a class="latest-card" href="issues/03-04-2026.html">
+    <div class="latest-date">Friday, 3 April 2026 · Issue 013 · Good Friday Edition</div>
+    <div class="latest-title">Markets closed globally, a US fighter jet downed over Iran, Ola fires the first shot in an EV price war, and India's forex reserves shed $30.5B in March</div>
+    <div class="latest-desc">Good Friday holiday edition: NSE, BSE, NYSE, Nasdaq, LSE all shut. The Economist on the downed US fighter jet — escalation trigger? China quietly positions as the war's beneficiary. Unilever exits food via McCormick merger. IndiGo's Willie Walsh era begins. Ola cuts Roadster X+ by ₹60K as Ather hits a record 35,736 units. Forex reserves at $688B after $30.5B March drain. UPI all-time high: 22.64B transactions. INS Taragiri commissioned. Karnataka reverses 4W EV lifetime tax exemption.</div>
     <div class="latest-tags">
-      <span class="tag red">Aftermarket Report</span>
-      <span class="tag">Daily Brief</span>
+      <span class="tag red">The Economist</span>
       <span class="tag">Finshots</span>
       <span class="tag">The Ken</span>
       <span class="tag">ETAuto</span>
-      <span class="tag">Thursday Edition</span>
+      <span class="tag">Groww Digest</span>
+      <span class="tag">Good Friday Edition</span>
     </div>
-    <div class="read-link">Read Issue 012</div>
+    <div class="read-link">Read Issue 013</div>
   </a>
 
   <!-- ALL ISSUES -->
@@ -415,7 +483,7 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
     <a class="issue-row" href="issues/01-04-2026.html">
       <div class="issue-date-col">Wed<br>1 Apr 2026</div>
       <div>
-        <div class="issue-title">FY27 Day 1 · Nifty 22,679 · Defence +6% · GST ₹2L crore record · LPG hike · IndiGo Walsh · LPG→PNG · WTO collapse · Bank credit stress · Sovereign AI gap</div>
+        <div class="issue-title">FY27 Day 1 · Nifty 22,679 · Defence +6% · GST ₹2L crore record · LPG hike · IndiGo Walsh · WTO collapse · Sovereign AI gap</div>
         <div class="issue-desc">Aftermarket Report · ETAuto · Daily Brief · Finshots · The Ken</div>
       </div>
       <div class="issue-num">#011</div>
@@ -424,10 +492,10 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
     <a class="issue-row" href="issues/31-03-2026.html">
       <div class="issue-date-col">Tue<br>31 Mar 2026</div>
       <div>
-        <div class="issue-title">🏖️ Market Holiday · Bain vs RBI on gold · SEBI algo live · Meta product liability · Ather ₹1L floor · April 6</div>
+        <div class="issue-title">🏖️ Market Holiday · Bain vs RBI on gold · SEBI algo live · Meta product liability · Ather ₹1L floor</div>
         <div class="issue-desc">The Ken · In The Money (Zerodha) · Finshots · Daily Brief · ETAuto</div>
       </div>
-      <div class="issue-num">#009</div>
+      <div class="issue-num">#010</div>
     </a>
 
     <a class="issue-row" href="issues/30-03-2026.html">
@@ -436,7 +504,7 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
         <div class="issue-title">Nifty 22,331 FY26 close · Rupee ₹95.22 record low · Bond yield 7% · RBI NOP cap · Finshots petroyuan · Meta liability</div>
         <div class="issue-desc">Aftermarket Report · Groww Digest · Finshots · Daily Brief · The Ken · ETAuto</div>
       </div>
-      <div class="issue-num">#009↑</div>
+      <div class="issue-num">#009</div>
     </a>
 
     <a class="issue-row" href="issues/27-03-2026.html">
@@ -505,8 +573,8 @@ body { font-family: var(--sans); background: var(--off-white); color: var(--ink)
     <a class="issue-row" href="issues/20-03-2026.html">
       <div class="issue-date-col">Fri<br>20 Mar 2026</div>
       <div>
-        <div class="issue-title">Issue #001 — first edition of The Brief</div>
-        <div class="issue-desc">Multiple sources</div>
+        <div class="issue-title">Nifty ends near 23,100, rupee hits ₹93.49 all-time low, Tata Steel's green steel moment</div>
+        <div class="issue-desc">Aftermarket Report · Daily Brief · Finshots · The Ken · ETAuto</div>
       </div>
       <div class="issue-num">#001</div>
     </a>
@@ -567,13 +635,12 @@ function handleBottomSubscribe(e) {
   }).then(r => {
     if (r.ok) {
       btn.textContent = 'Done ✓';
-      note.textContent = 'You\'re subscribed. First issue tonight at 9:30 PM.';
+      note.textContent = "You're subscribed. First issue tonight at 9:30 PM.";
       note.style.color = '#a8ffcc';
       form.reset();
     } else { btn.textContent = 'Try again'; }
   }).catch(() => { btn.textContent = 'Try again'; });
 }
 </script>
-
 </body>
 </html>

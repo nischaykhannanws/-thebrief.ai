@@ -11,796 +11,372 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Brief · 9:30 PM · 7 April 2026</title>
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="The Brief · 7 Apr 2026 — Nifty holds 23,123, private credit cracks, and India's PSU system can't fix its own failures">
-  <meta property="og:description" content="Tuesday edition: Nifty recovers to 23,123 despite weak global cues. Finshots on the private credit SaaSpocalypse. Zerodha Daily Brief on PSU Ratna reform and GST's self-enforcement failure. The Ken on Adani's policy think tank. FPI outflows hit $12.6B. RBI rate decision tomorrow.">
-  <meta property="og:url" content="https://nischaykhannanws.github.io/-thebrief.ai/issues/07-04-2026.html">
-  <meta property="og:site_name" content="The Brief">
-  <meta property="og:image" content="https://nischaykhannanws.github.io/-thebrief.ai/og-cover.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Brief · 7 Apr 2026 — Nifty 23,123, private credit wobbles, PSU governance fails">
-  <meta name="twitter:description" content="Nifty gaps down then closes at 23,123. Private credit SaaSpocalypse: Blue Owl caps withdrawals. Adani's Delhi think tank. PSU Ratna system and broken GST. FPI outflows $12.6B.">
-  <meta name="description" content="Tuesday edition: Nifty recovers to 23,123 despite gap-down open. Finshots deep dive on private credit boom cracking. Zerodha Daily Brief on India's PSU Ratna system and why GST can't police itself. The Ken on Adani's Chintan Foundation. FY26 auto retail record 2.97 crore units. RBI decision tomorrow.">
-  <meta name="author" content="Nischay Khanna">
-  <meta name="date" content="2026-04-07">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>The Brief — Archive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --white: #ffffff;
   --off-white: #f9f8f5;
   --cream: #f3f0ea;
-  --warm-50: #faf8f4;
   --ink: #1c1a17;
   --ink-60: #5c5852;
   --ink-30: #a8a49e;
   --border: #e8e3da;
-  --border-strong: #ccc8c0;
   --red: #c0292e;
   --red-light: #fdf2f2;
-  --amber: #b86b00;
-  --amber-light: #fdf7ee;
-  --green: #1a6640;
-  --green-light: #f0f8f3;
-  --blue: #1a4a80;
-  --blue-light: #f0f4fb;
-  --teal: #0a6060;
-  --teal-light: #f0f8f8;
   --serif: 'Lora', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
   --mono: 'JetBrains Mono', monospace;
-  --radius: 6px;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 16px; }
 body { font-family: var(--sans); background: var(--off-white); color: var(--ink); line-height: 1.6; }
-.topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 0.65rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
-.topbar-brand { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); letter-spacing: -0.2px; }
-.topbar-brand span { color: var(--red); }
-.topbar-meta { font-family: var(--mono); font-size: 10px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; }
-.hero { background: var(--white); border-bottom: 1px solid var(--border); padding: 3rem 1.5rem 2.5rem; text-align: center; }
-.hero-label { font-family: var(--mono); font-size: 9.5px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--ink-30); margin-bottom: 0.9rem; }
-.hero-title { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 4.5rem); font-weight: 700; line-height: 1; letter-spacing: -1.5px; color: var(--ink); margin-bottom: 0.6rem; }
-.hero-title em { color: var(--red); font-style: normal; }
-.hero-date { font-family: var(--mono); font-size: 10px; letter-spacing: 2px; color: var(--ink-30); text-transform: uppercase; margin-top: 0.8rem; }
-.hero-desc { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--ink-60); margin-top: 0.5rem; }
-.hero-divider { width: 40px; height: 2px; background: var(--red); margin: 1.4rem auto 0; }
-.ticker { background: var(--cream); border-bottom: 1px solid var(--border); height: 34px; display: flex; align-items: center; overflow: hidden; }
-.ticker-pill { background: var(--red); color: #fff; font-family: var(--mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 0 14px; height: 100%; display: flex; align-items: center; flex-shrink: 0; }
-.ticker-track { flex: 1; overflow: hidden; }
-.ticker-inner { display: flex; gap: 2.5rem; animation: run 28s linear infinite; white-space: nowrap; padding: 0 1.5rem; align-items: center; }
-@keyframes run { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-.ti { display: inline-flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 11px; color: var(--ink-60); }
-.ti-n { font-weight: 500; color: var(--ink); }
-.up { color: #1a7a3a; }
-.dn { color: var(--red); }
-.nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
-.nav-inner { max-width: 1080px; margin: 0 auto; padding: 0.25rem 1rem; display: flex; flex-wrap: wrap; gap: 0; overflow-x: auto; scrollbar-width: none; align-items: center; }
-.nav-inner::-webkit-scrollbar { display: none; }
-.ntab { font-family: var(--mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 0.6rem 1rem; margin: 0.4rem 0.25rem; color: var(--ink-60); border: 1.5px solid var(--border); background: var(--white); cursor: pointer; white-space: nowrap; border-radius: 20px; transition: color 0.15s, border-color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s; position: relative; user-select: none; }
-.ntab:hover { color: var(--ink); border-color: var(--border-strong); background: var(--off-white); box-shadow: 0 2px 6px rgba(0,0,0,0.08); transform: translateY(-1px); }
-.ntab:active { transform: translateY(0); box-shadow: none; }
-.ntab.on { color: var(--white); background: var(--red); border-color: var(--red); box-shadow: 0 2px 8px rgba(192,41,46,0.3); }
-.ntab.on:hover { background: var(--red); opacity: 0.9; transform: translateY(-1px); }
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
-.sec { display: none; padding: 2.5rem 0 4rem; }
-.sec.on { display: block; }
-.sec-head { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 0.75rem; border-bottom: 1.5px solid var(--ink); margin-bottom: 2rem; gap: 1rem; }
-.sec-src { font-family: var(--mono); font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ink-30); margin-bottom: 0.35rem; }
-.sec-title { font-family: var(--serif); font-size: clamp(1.4rem, 2.8vw, 2rem); font-weight: 700; line-height: 1.15; color: var(--ink); }
-.sec-count { font-family: var(--mono); font-size: 9px; letter-spacing: 2px; color: var(--ink-30); text-transform: uppercase; white-space: nowrap; padding-bottom: 2px; }
-.mkt-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); border: 1px solid var(--border); background: var(--border); gap: 1px; margin-bottom: 2rem; border-radius: var(--radius); overflow: hidden; }
-.mc { background: var(--white); padding: 0.9rem 1rem; }
-.mc-l { font-family: var(--mono); font-size: 8.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-30); margin-bottom: 4px; }
-.mc-v { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); line-height: 1; }
-.mc-c { font-family: var(--mono); font-size: 11px; margin-top: 3px; }
-.lead-card { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.8rem 2rem; margin-bottom: 1.5rem; }
-@media (max-width: 680px) { .lead-card { grid-template-columns: 1fr; gap: 1.2rem; } }
-.lead-tag { font-family: var(--mono); font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
-.lead-hl { font-family: var(--serif); font-size: clamp(1.2rem, 2.2vw, 1.6rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.7rem; color: var(--ink); }
-.lead-summary { font-size: 14px; line-height: 1.7; color: var(--ink-60); margin-bottom: 1rem; }
-.src-btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); text-decoration: none; border: 1px solid var(--red); padding: 6px 12px; border-radius: 2px; transition: background 0.15s, color 0.15s; }
-.src-btn:hover { background: var(--red); color: #fff; }
-.src-btn::after { content: '↗'; font-size: 11px; }
-.lead-aside { border-left: 1px solid var(--border); padding-left: 2rem; display: flex; flex-direction: column; gap: 1rem; }
-@media (max-width: 680px) { .lead-aside { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 1rem; } }
-.pull-quote { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--ink); line-height: 1.55; padding-left: 0.8rem; border-left: 2px solid var(--red); }
-.pull-attr { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1px; margin-top: 0.3rem; padding-left: 0.8rem; }
-.story-list { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-top: 1rem; }
-.story-row { display: grid; grid-template-columns: 36px 1fr auto; align-items: start; gap: 0.8rem; padding: 1.1rem 1.2rem; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.12s; }
-.story-row:last-child { border-bottom: none; }
-.story-row:hover { background: var(--off-white); }
-.story-num { font-family: var(--mono); font-size: 9.5px; color: var(--ink-30); padding-top: 3px; letter-spacing: 1px; }
-.story-hl { font-family: var(--serif); font-size: 1rem; font-weight: 700; line-height: 1.25; color: var(--ink); margin-bottom: 3px; }
-.story-row:hover .story-hl { color: var(--red); }
-.story-deck { font-size: 13px; color: var(--ink-60); line-height: 1.5; }
-.story-src-badge { font-family: var(--mono); font-size: 8.5px; letter-spacing: 1px; color: var(--red); white-space: nowrap; padding-top: 3px; text-transform: uppercase; }
-.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
-.card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.3rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
-.card:hover { border-color: var(--border-strong); box-shadow: 0 3px 12px rgba(0,0,0,0.06); }
-.ctag { display: inline-block; font-family: var(--mono); font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; margin-bottom: 0.6rem; }
-.ctag.red { background: var(--red-light); color: var(--red); }
-.ctag.green { background: var(--green-light); color: var(--green); }
-.ctag.blue { background: var(--blue-light); color: var(--blue); }
-.ctag.amber { background: var(--amber-light); color: var(--amber); }
-.ctag.teal { background: var(--teal-light); color: var(--teal); }
-.ctag.neutral { background: var(--cream); color: var(--ink-60); }
-.card-hl { font-family: var(--serif); font-size: 1rem; font-weight: 700; line-height: 1.25; color: var(--ink); margin-bottom: 0.4rem; }
-.card:hover .card-hl { color: var(--red); }
-.card-deck { font-size: 13px; color: var(--ink-60); line-height: 1.5; margin-bottom: 0.6rem; }
-.card-src { font-family: var(--mono); font-size: 8.5px; color: var(--ink-30); letter-spacing: 1px; text-transform: uppercase; }
-.form-group { margin-bottom: 1.6rem; }
-.form-label { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-60); margin-bottom: 0.5rem; }
-.form-label span { color: var(--red); margin-left: 2px; }
-.form-hint { font-size: 12.5px; color: var(--ink-30); margin-bottom: 0.55rem; line-height: 1.5; }
-.form-input, .form-textarea, .form-select { width: 100%; font-family: var(--sans); font-size: 14px; color: var(--ink); background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 0.65rem 0.85rem; outline: none; transition: border-color 0.15s, box-shadow 0.15s; appearance: none; -webkit-appearance: none; }
-.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(192,41,46,0.08); }
-.form-textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
-.form-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a8a49e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.85rem center; padding-right: 2.2rem; cursor: pointer; }
-.check-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
-.check-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.8rem; border: 1.5px solid var(--border); border-radius: var(--radius); cursor: pointer; transition: border-color 0.12s, background 0.12s; user-select: none; }
-.check-item:hover { border-color: var(--border-strong); background: var(--off-white); }
-.check-item.checked { border-color: var(--red); background: var(--red-light); }
-.check-item input[type="checkbox"] { display: none; }
-.check-box { width: 16px; height: 16px; border: 1.5px solid var(--border-strong); border-radius: 3px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.12s, border-color 0.12s; }
-.check-item.checked .check-box { background: var(--red); border-color: var(--red); }
-.check-tick { color: #fff; font-size: 10px; display: none; }
-.check-item.checked .check-tick { display: block; }
-.check-text { font-size: 13px; color: var(--ink-60); }
-.check-item.checked .check-text { color: var(--ink); }
-.rating-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.rating-btn { width: 44px; height: 44px; border: 1.5px solid var(--border); border-radius: var(--radius); background: var(--white); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: border-color 0.12s, transform 0.1s; flex-shrink: 0; }
-.rating-btn:hover { border-color: var(--border-strong); transform: scale(1.1); }
-.rating-btn.selected { border-color: var(--red); background: var(--red-light); transform: scale(1.12); }
-.submit-btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; background: var(--ink); color: #fff; border: none; padding: 0.85rem 1.8rem; border-radius: var(--radius); cursor: pointer; transition: background 0.15s, transform 0.1s; }
-.submit-btn:hover { background: var(--red); }
-.submit-btn:active { transform: scale(0.98); }
-.submit-btn::after { content: '→'; font-size: 13px; }
-.form-success { display: none; background: var(--green-light); border: 1.5px solid #a8d5b8; border-radius: var(--radius); padding: 1.5rem 1.8rem; text-align: center; }
-.form-success-icon { font-size: 2rem; margin-bottom: 0.5rem; }
-.form-success h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--green); margin-bottom: 0.4rem; }
-.form-success p { font-size: 13.5px; color: var(--ink-60); line-height: 1.6; }
-.form-divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-.form-section-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 0.3rem; }
-.form-section-sub { font-size: 13px; color: var(--ink-60); margin-bottom: 1.2rem; line-height: 1.5; }
-.subscribe-card { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border: 1.5px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; background: var(--off-white); transition: border-color 0.15s, background 0.15s; }
-.subscribe-card.active { border-color: var(--red); background: var(--red-light); }
-.subscribe-left { display: flex; align-items: center; gap: 0.8rem; }
-.subscribe-icon { font-size: 1.4rem; width: 36px; height: 36px; border-radius: 50%; background: var(--cream); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.subscribe-title { font-weight: 600; font-size: 14px; color: var(--ink); }
-.subscribe-desc { font-size: 12px; color: var(--ink-60); margin-top: 1px; font-family: var(--mono); letter-spacing: 0.5px; }
-.toggle-wrap { display: flex; align-items: center; cursor: pointer; flex-shrink: 0; }
-.toggle-wrap input { display: none; }
-.toggle-track { width: 44px; height: 24px; background: var(--border-strong); border-radius: 12px; position: relative; transition: background 0.2s; display: block; }
-.toggle-wrap input:checked ~ .toggle-track { background: var(--red); }
-.toggle-thumb { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: #fff; border-radius: 50%; transition: transform 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
-.toggle-wrap input:checked ~ .toggle-track .toggle-thumb { transform: translateX(20px); }
-.freq-btn { display: inline-flex; align-items: center; padding: 0.5rem 1rem; border: 1.5px solid var(--border); border-radius: var(--radius); font-size: 13px; cursor: pointer; transition: border-color 0.12s, background 0.12s, color 0.12s; user-select: none; color: var(--ink-60); }
-.freq-btn:hover { border-color: var(--border-strong); }
-.freq-btn.active { border-color: var(--red); background: var(--red-light); color: var(--ink); font-weight: 500; }
-.div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-.modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.25); z-index: 500; align-items: flex-start; justify-content: center; padding: 2rem 1rem; overflow-y: auto; backdrop-filter: blur(2px); }
-.modal-bg.open { display: flex; }
-.modal { background: var(--white); max-width: 620px; width: 100%; margin: auto; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; animation: mup 0.2s ease; position: relative; }
-@keyframes mup { from { transform: translateY(16px); opacity: 0; } }
-.modal-head { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 1.3rem 1.5rem; }
-.modal-tag { font-family: var(--mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
-.modal-hl { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 700; line-height: 1.2; color: var(--ink); padding-right: 2rem; }
-.modal-close { position: absolute; top: 1rem; right: 1rem; width: 28px; height: 28px; border-radius: 50%; background: var(--border); border: none; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-60); transition: background 0.15s; }
-.modal-close:hover { background: var(--border-strong); }
-.modal-body { padding: 1.4rem 1.5rem 1.8rem; }
-.modal-summary-note { font-family: var(--mono); font-size: 9.5px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border); }
-.modal-body p { font-size: 14px; line-height: 1.75; color: var(--ink-60); margin-bottom: 0.85rem; }
-.modal-body p:last-child { margin-bottom: 0; }
-.modal-body strong { color: var(--ink); font-weight: 600; }
-.modal-source-link { display: flex; align-items: center; justify-content: space-between; margin-top: 1.3rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-.modal-source-link span { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; }
-.modal-source-link a { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); text-decoration: none; border: 1px solid var(--red); padding: 5px 11px; border-radius: 2px; transition: background 0.15s, color 0.15s; }
-.modal-source-link a:hover { background: var(--red); color: #fff; }
-.modal-source-link a::after { content: '↗'; }
-.site-footer { border-top: 1px solid var(--border); background: var(--white); padding: 1.8rem 1.5rem; margin-top: 2rem; }
-.footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.footer-brand { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); }
+
+/* ── HEADER ── */
+.site-header { background: var(--white); border-bottom: 1px solid var(--border); }
+.header-inner { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 2rem; }
+.header-label { font-family: var(--mono); font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink-30); margin-bottom: 0.8rem; }
+.header-title { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: -1px; line-height: 1; margin-bottom: 0.5rem; }
+.header-title span { color: var(--red); }
+.header-desc { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--ink-60); margin-bottom: 1.5rem; }
+.header-divider { width: 36px; height: 2px; background: var(--red); }
+
+/* ── STATS STRIP ── */
+.stats-strip { background: var(--cream); border-bottom: 1px solid var(--border); padding: 0.7rem 1.5rem; }
+.stats-inner { max-width: 820px; margin: 0 auto; display: flex; gap: 2.5rem; flex-wrap: wrap; align-items: center; }
+.stat { display: flex; align-items: baseline; gap: 0.4rem; }
+.stat-num { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--ink); }
+.stat-label { font-family: var(--mono); font-size: 8.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-30); }
+
+/* ── SUBSCRIBE STRIP ── */
+.subscribe-strip { background: var(--ink); padding: 0.9rem 1.5rem; }
+.subscribe-inner { max-width: 820px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.subscribe-text { font-family: var(--mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+.subscribe-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.subscribe-input { font-family: var(--sans); font-size: 13px; padding: 0.5rem 0.8rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: #fff; border-radius: 3px; outline: none; width: 220px; transition: border-color 0.15s; }
+.subscribe-input::placeholder { color: rgba(255,255,255,0.3); }
+.subscribe-input:focus { border-color: rgba(255,255,255,0.5); }
+.subscribe-btn { font-family: var(--mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; background: var(--red); color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 3px; cursor: pointer; transition: opacity 0.15s; }
+.subscribe-btn:hover { opacity: 0.85; }
+
+/* ── MAIN ── */
+.main { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+
+/* ── LATEST ISSUE ── */
+.latest-label { font-family: var(--mono); font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 0.8rem; }
+.latest-card { background: var(--white); border: 1.5px solid var(--ink); padding: 1.8rem 2rem; margin-bottom: 2.5rem; position: relative; text-decoration: none; display: block; transition: box-shadow 0.15s; }
+.latest-card:hover { box-shadow: 4px 4px 0 var(--ink); }
+.latest-date { font-family: var(--mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-30); margin-bottom: 0.5rem; }
+.latest-title { font-family: var(--serif); font-size: clamp(1.2rem, 2.5vw, 1.7rem); font-weight: 700; line-height: 1.2; color: var(--ink); margin-bottom: 0.6rem; }
+.latest-desc { font-size: 14px; color: var(--ink-60); line-height: 1.6; margin-bottom: 1rem; }
+.latest-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.tag { font-family: var(--mono); font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; background: var(--cream); color: var(--ink-60); border-radius: 2px; }
+.tag.red { background: var(--red-light); color: var(--red); }
+.read-link { font-family: var(--mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); }
+.read-link::after { content: ' →'; }
+
+/* ── SECTION DIVIDER ── */
+.section-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; }
+.section-head::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.section-head-title { font-family: var(--mono); font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink-30); white-space: nowrap; }
+
+/* ── ISSUE LIST ── */
+.issue-list { display: flex; flex-direction: column; gap: 0; }
+.issue-row { display: grid; grid-template-columns: 120px 1fr auto; align-items: start; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--border); text-decoration: none; transition: background 0.12s; }
+.issue-row:hover { background: var(--cream); margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem; }
+.issue-row:hover .issue-title { color: var(--red); }
+.issue-date-col { font-family: var(--mono); font-size: 9px; letter-spacing: 1px; color: var(--ink-30); text-transform: uppercase; padding-top: 3px; line-height: 1.5; }
+.issue-title { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--ink); line-height: 1.25; margin-bottom: 3px; transition: color 0.12s; }
+.issue-desc { font-size: 12.5px; color: var(--ink-60); line-height: 1.4; }
+.issue-num { font-family: var(--mono); font-size: 9px; color: var(--ink-30); padding-top: 3px; letter-spacing: 1px; }
+
+/* ── SUBSCRIBE BOX ── */
+.subscribe-box { background: var(--ink); padding: 2rem; margin-top: 3rem; border-radius: 4px; }
+.subscribe-box-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
+.subscribe-box-desc { font-size: 13.5px; color: rgba(255,255,255,0.55); margin-bottom: 1.2rem; line-height: 1.6; }
+.subscribe-box-form { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.subscribe-box-form input { font-family: var(--sans); font-size: 14px; padding: 0.65rem 0.9rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: #fff; border-radius: 3px; outline: none; flex: 1; min-width: 200px; transition: border-color 0.15s; }
+.subscribe-box-form input::placeholder { color: rgba(255,255,255,0.3); }
+.subscribe-box-form input:focus { border-color: var(--red); }
+.subscribe-box-form button { font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; background: var(--red); color: #fff; border: none; padding: 0.65rem 1.4rem; border-radius: 3px; cursor: pointer; transition: opacity 0.15s; }
+.subscribe-box-form button:hover { opacity: 0.85; }
+.subscribe-note { font-family: var(--mono); font-size: 9px; letter-spacing: 1px; color: rgba(255,255,255,0.3); margin-top: 0.7rem; text-transform: uppercase; }
+
+/* ── FOOTER ── */
+.site-footer { border-top: 1px solid var(--border); background: var(--white); padding: 1.5rem; }
+.footer-inner { max-width: 820px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; }
+.footer-brand { font-family: var(--serif); font-weight: 700; font-size: 0.95rem; }
 .footer-brand span { color: var(--red); }
-.footer-meta { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; line-height: 1.8; text-align: right; }
-@media (max-width: 600px) { .card-grid { grid-template-columns: 1fr; } .story-row { grid-template-columns: 28px 1fr; } .story-src-badge { display: none; } }
+.footer-meta { font-family: var(--mono); font-size: 9px; color: var(--ink-30); letter-spacing: 1.5px; text-transform: uppercase; text-align: right; line-height: 1.8; }
+
+@media (max-width: 600px) {
+  .issue-row { grid-template-columns: 1fr auto; }
+  .issue-date-col { display: none; }
+  .issue-num { display: none; }
+  .subscribe-inner { flex-direction: column; align-items: flex-start; }
+  .subscribe-input { width: 100%; }
+  .stats-inner { gap: 1.5rem; }
+}
 </style>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="topbar-brand">The <span>Brief</span></div>
-  <div class="topbar-meta">9:30 PM · Tue 7 Apr 2026</div>
-</div>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-label">Newsletter Archive</div>
+    <h1 class="header-title">The <span>Brief</span></h1>
+    <p class="header-desc">Markets, auto, business and the world — summarised from your inbox every evening at 9:30 PM.</p>
+    <div class="header-divider"></div>
+  </div>
+</header>
 
-<div class="hero">
-  <div class="hero-label">Tuesday Edition · Issue 014</div>
-  <div class="hero-title">The <em>Brief</em></div>
-  <div class="hero-desc">Nifty claws back to 23,123. Private credit hits a wall. India's PSU system still can't punish failure — and GST taxes production instead of consumption.</div>
-  <div class="hero-date">Tuesday, 7 April 2026 · 5 newsletters · 9:30 PM</div>
-  <div class="hero-divider"></div>
-</div>
-
-<div class="ticker">
-  <div class="ticker-pill">Today</div>
-  <div class="ticker-track">
-    <div class="ticker-inner">
-      <span class="ti"><span class="ti-n">NIFTY</span><span>23,123.65</span><span class="up">▲ Recovery</span></span>
-      <span class="ti"><span class="ti-n">ADVANCES / DECLINES</span><span>2,082 / 1,149</span></span>
-      <span class="ti"><span class="ti-n">NIFTY IT</span><span class="up">▲ +2.50%</span></span>
-      <span class="ti"><span class="ti-n">PSU BANK</span><span class="dn">▼ −0.71%</span></span>
-      <span class="ti"><span class="ti-n">USD/INR</span><span>₹93+</span><span class="dn">▼ Arbitrage unwind</span></span>
-      <span class="ti"><span class="ti-n">BRENT CRUDE</span><span>~$109/bbl</span><span class="dn">▲ Iran/Hormuz</span></span>
-      <span class="ti"><span class="ti-n">GOLD</span><span>~$4,680/oz</span><span class="up">▲ Safe haven</span></span>
-      <span class="ti"><span class="ti-n">FPI OUTFLOWS</span><span class="dn">$12.6B equity (Mar)</span></span>
-      <span class="ti"><span class="ti-n">RBI DECISION</span><span>Tomorrow</span></span>
-      <!-- duplicate -->
-      <span class="ti"><span class="ti-n">NIFTY</span><span>23,123.65</span><span class="up">▲ Recovery</span></span>
-      <span class="ti"><span class="ti-n">ADVANCES / DECLINES</span><span>2,082 / 1,149</span></span>
-      <span class="ti"><span class="ti-n">NIFTY IT</span><span class="up">▲ +2.50%</span></span>
-      <span class="ti"><span class="ti-n">PSU BANK</span><span class="dn">▼ −0.71%</span></span>
-      <span class="ti"><span class="ti-n">USD/INR</span><span>₹93+</span><span class="dn">▼ Arbitrage unwind</span></span>
-      <span class="ti"><span class="ti-n">BRENT CRUDE</span><span>~$109/bbl</span><span class="dn">▲ Iran/Hormuz</span></span>
-      <span class="ti"><span class="ti-n">GOLD</span><span>~$4,680/oz</span><span class="up">▲ Safe haven</span></span>
-      <span class="ti"><span class="ti-n">FPI OUTFLOWS</span><span class="dn">$12.6B equity (Mar)</span></span>
-      <span class="ti"><span class="ti-n">RBI DECISION</span><span>Tomorrow</span></span>
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">015</div>
+      <div class="stat-label">Issues published</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">14+</div>
+      <div class="stat-label">Sources per issue</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">9:30</div>
+      <div class="stat-label">PM weekdays</div>
     </div>
   </div>
 </div>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <button class="ntab on" onclick="go('mkt',this)">📊 Markets</button>
-    <button class="ntab" onclick="go('world',this)">🌍 World</button>
-    <button class="ntab" onclick="go('longread',this)">🧠 Long Reads</button>
-    <button class="ntab" onclick="go('auto',this)">🚗 Auto</button>
-    <button class="ntab" onclick="go('quickbites',this)">⚡ Quick Bites</button>
-    <button class="ntab" onclick="go('feedback',this)">✏️ Feedback</button>
-  </div>
-</nav>
-
-
-<!-- ══ MARKETS ══ -->
-<section class="sec on" id="sec-mkt">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">Aftermarket Report · Tuesday 7 Apr 2026</div>
-      <h2 class="sec-title">Nifty gaps down at 22,839, then buys all day to close at 23,123 — 10 of 12 sectors green, IT leads</h2>
-    </div>
-    <span class="sec-count">4 items</span>
-  </div>
-
-  <div class="mkt-strip">
-    <div class="mc"><div class="mc-l">Nifty Close</div><div class="mc-v">23,123</div><div class="mc-c up">▲ Strong recovery</div></div>
-    <div class="mc"><div class="mc-l">Advances</div><div class="mc-v">2,082</div><div class="mc-c" style="color:var(--ink-30)">vs 1,149 declines</div></div>
-    <div class="mc"><div class="mc-l">Top Sector</div><div class="mc-v up">IT +2.5%</div><div class="mc-c" style="color:var(--ink-30)">10 of 12 green</div></div>
-    <div class="mc"><div class="mc-l">Laggard</div><div class="mc-v dn">PSU Bank</div><div class="mc-c dn">−0.71%</div></div>
-    <div class="mc"><div class="mc-l">Call OI Resistance</div><div class="mc-v">23,500</div><div class="mc-c" style="color:var(--ink-30)">13 Apr expiry</div></div>
-    <div class="mc"><div class="mc-l">Put OI Support</div><div class="mc-v">23,000</div><div class="mc-c" style="color:var(--ink-30)">22,800–22,900 zone</div></div>
-  </div>
-
-  <div class="lead-card">
-    <div>
-      <div class="lead-tag">Lead · Aftermarket Report · Tuesday 7 Apr</div>
-      <h3 class="lead-hl">A gap-down open at 22,839 on weak global cues — but buyers stepped in all session and pushed Nifty to close near session highs at 23,123. 10 of 12 sectors ended green. IT led the recovery at +2.50%.</h3>
-      <p class="lead-summary">Well, you see, the setup this morning looked nasty. Global cues were soft — yen weakening toward ¥160/$, Chinese FX reserves posting their sharpest monthly drop in a decade, and Brent near $109. Nifty opened gap-down at 22,839. And then something interesting happened: the buyers didn't wait. Steady accumulation through the morning session pushed the index higher all day, closing near session highs in the 23,100–23,150 zone at 23,123.</p>
-      <p class="lead-summary" style="margin-top:0.6rem">Not only this — the breadth was genuinely constructive. 2,082 stocks advanced vs 1,149 declining out of 3,314. Nifty IT's +2.50% was the standout, partly explained by Samsung's 8x profit jump on AI memory chip demand giving the entire tech supply chain a bid. PSU Banks were the lone weak spot (−0.71%), which makes sense: the market is pricing in uncertainty on the RBI's INR management vs. liquidity trade-off ahead of tomorrow's policy decision. Due to this, the single most important event for tomorrow is not a macro number — it is a policy call. Does the RBI prioritise INR stability or ease liquidity? That answer drops tomorrow morning.</p>
-      <a class="src-btn" href="https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global" target="_blank" rel="noopener">Read full Aftermarket Report</a>
-    </div>
-    <div class="lead-aside">
-      <div>
-        <div class="pull-quote">"The RBI is likely to prioritise managing INR volatility over liquidity in the current environment."</div>
-        <div class="pull-attr">— Tanvee Gupta Jain, UBS India Economist</div>
-      </div>
-      <div>
-        <div class="pull-quote">"The Iran war is a bigger threat to the IT sector than AI at this stage. No evidence yet of AI-led deflation in contracts."</div>
-        <div class="pull-attr">— Sumit Jain, CLSA</div>
-      </div>
-      <div style="font-size:13px;color:var(--ink-60);line-height:1.9">
-        <strong style="color:var(--ink)">Options read (13 Apr expiry):</strong><br>
-        Max Call OI: 23,500 → Resistance zone<br>
-        Max Put OI: 23,000 → Support zone<br>
-        <strong style="color:var(--ink)">Watch tomorrow:</strong><br>
-        RBI policy decision<br>
-        US-Iran Hormuz deadline<br>
-        Early April FPI flow data
-      </div>
-    </div>
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card" onclick="openM('fpi-outflows')">
-      <span class="ctag red">FPI Flows · March</span>
-      <div class="card-hl">$6.5B out of financials in March alone — highest since 2012. Total March equity outflow: $12.6B</div>
-      <div class="card-deck">FPIs pulled $6.5 billion out of Indian financial stocks in March — the largest monthly outflow from the sector since 2012. Overall equity outflows for the month hit $12.6 billion. The Hormuz premium on crude plus the yen/yuan currency stress is driving a global risk-off rotation away from EM equities. Watch early April data for signs of reversal.</div>
-      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-    <div class="card" onclick="openM('jubilant-food')">
-      <span class="ctag red">Earnings · Consumer Warning</span>
-      <div class="card-hl">Jubilant FoodWorks falls 10%+ to March 2024 lows — same-store sales growth collapses from 5% to 0.2%</div>
-      <div class="card-deck">Jubilant FoodWorks (Domino's India) saw same-store sales growth drop to 0.2% in the latest quarter — down from 5% prior. The stock fell 10%+ to March 2024 lows. This is the urban discretionary slowdown showing up in earnings: cost-of-living pressures are hitting quick-service restaurants hard. The implications for every urban consumer discretionary name going into Q4 earnings season are significant.</div>
-      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-    <div class="card" onclick="openM('kalyan-tata-steel')">
-      <span class="ctag green">Earnings · Bright Spots</span>
-      <div class="card-hl">Kalyan Jewellers +64% YoY Q4 · Tata Steel record FY26 output · PC Jeweller +32% · Gold above $4,680/oz doing the work</div>
-      <div class="card-deck">Not all earnings are soft. Kalyan Jewellers reported +64% YoY revenue in Q4 FY26, riding the gold price rally. Tata Steel recorded its highest-ever annual crude steel output in India for FY26. PC Jeweller added ~32% YoY Q4 revenue. Gold's sustained run above $4,680/oz — driven by Iran uncertainty — is simultaneously the input cost headache for some and the revenue tailwind for the organised jewellery sector.</div>
-      <div class="card-src">Aftermarket Report → <a href="https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-<!-- ══ WORLD ══ -->
-<section class="sec" id="sec-world">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">Global Context · Tuesday 7 Apr 2026</div>
-      <h2 class="sec-title">Crude near $109, gold at $4,680, China burns $85.7B in reserves, and Samsung's AI memory prints 8x profits</h2>
-    </div>
-    <span class="sec-count">5 items</span>
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card" onclick="openM('brent-hormuz')">
-      <span class="ctag red">Crude · Geopolitics</span>
-      <div class="card-hl">Brent near $109/bbl as markets await the US-Iran Hormuz deadline — two scenarios, very different consequences</div>
-      <div class="card-deck">Markets are pricing two outcomes on the Hormuz deadline: a negotiated off-ramp (Brent falls toward $85–90) or escalation (crude pushes well past $120). For India, which imports 85% of its crude, the gap between those two scenarios is enormous — not just for the current account but for the RBI's ability to ease rates without triggering further capital outflows.</div>
-      <div class="card-src">Aftermarket Report · Zerodha Daily Brief</div>
-    </div>
-
-    <div class="card" onclick="openM('gold-record')">
-      <span class="ctag amber">Gold · Safe Haven</span>
-      <div class="card-hl">Gold near $4,680/oz — Iran tensions, central bank diversification, and retail safe-haven buying sustain the record run</div>
-      <div class="card-deck">Gold's hold near $4,680/oz reflects three simultaneous forces: Iran conflict safe-haven demand, central bank de-dollarisation buying, and retail investor positioning. The consumer economics are clear — Kalyan and PC Jeweller's strong Q4 numbers show Indian consumers are treating gold purchases as wealth preservation, not discretionary spend, which means price-sensitivity has fallen dramatically.</div>
-      <div class="card-src">Aftermarket Report</div>
-    </div>
-
-    <div class="card" onclick="openM('china-fx')">
-      <span class="ctag blue">China · Macro</span>
-      <div class="card-hl">Chinese FX reserves fell $85.7B to $3.34T in March — sharpest single-month drop in a decade</div>
-      <div class="card-deck">China's FX reserves dropped $85.7 billion in March — the largest single-month decline in ten years. Active yuan defense operations plus valuation losses on existing holdings drove the drawdown. When China burns reserves to defend CNY, it is effectively tightening global dollar liquidity — a headwind for every EM borrower, including India. The scale signals more pressure on the PBOC than official communications acknowledge.</div>
-      <div class="card-src">Aftermarket Report / Zerodha Daily Brief</div>
-    </div>
-
-    <div class="card" onclick="openM('yen-intervention')">
-      <span class="ctag neutral">Japan · Yen</span>
-      <div class="card-hl">Yen weakens toward ¥160/$ — nearing the level that triggered BOJ intervention in 2024</div>
-      <div class="card-deck">The yen is testing the ¥160/$ threshold that previously prompted direct Bank of Japan intervention. Japanese institutions hold significant Indian debt positions, and sharp yen moves often trigger portfolio rebalancing that flows through to EM assets. A BOJ intervention that tightens dollar liquidity further would add to existing pressure from China's reserve drawdown and the Fed's rate-hold stance.</div>
-      <div class="card-src">Aftermarket Report</div>
-    </div>
-
-    <div class="card" onclick="openM('samsung-anthropic')">
-      <span class="ctag teal">Tech · AI Hardware</span>
-      <div class="card-hl">Samsung 8x quarterly profit on AI memory demand · Anthropic partners Google and Broadcom to build TPU infrastructure beyond Nvidia</div>
-      <div class="card-deck">Samsung's 8x profit jump is almost entirely an HBM (High Bandwidth Memory) story — the specialist chip AI data centres require. The Nifty IT +2.5% read-through is direct. Separately, Anthropic's TPU partnership with Google and Broadcom signals the AI industry is actively unwinding its Nvidia hardware dependency — building a diversified compute stack across multiple architectures. For Indian IT firms with AI practices, this diversification is broadly positive.</div>
-      <div class="card-src">Aftermarket Report / Zerodha Daily Brief</div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-<!-- ══ LONG READS ══ -->
-<section class="sec" id="sec-longread">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">Finshots · The Ken · Zerodha Daily Brief · Tuesday 7 Apr 2026</div>
-      <h2 class="sec-title">Three deep reads: private credit cracks open, Adani's Delhi think tank, and India's broken GST loop</h2>
-    </div>
-    <span class="sec-count">4 reads</span>
-  </div>
-
-  <div class="lead-card" style="grid-template-columns:1fr;padding:1.8rem 2rem;margin-bottom:1.5rem">
-    <div>
-      <div class="lead-tag">Finshots · Finance Deep Dive</div>
-      <h3 class="lead-hl">$1.8 trillion in private credit — and the first serious crack: Blue Owl capped withdrawals at 5% when investors tried to pull 20%+ out of a $36B fund</h3>
-      <p class="lead-summary">Private credit — lending done by non-bank asset managers like Blue Owl, BlackRock, Ares, Apollo, and KKR — has grown five times since 2008 to approximately $1.8 trillion globally. For a long time this looked like an unambiguously good story: higher yields for investors, flexible credit for companies, and no systemic exposure because it sits outside the regulated banking system.</p>
-      <p class="lead-summary" style="margin-top:0.6rem">Well, you see, the cracks are now visible. Blue Owl Capital (managing $300B+ in assets) capped investor withdrawals at just 5% when redemption requests for its $36B private credit pool hit 20%+. Multiple other major firms are doing the same. The trigger is what Finshots calls the "SaaSpocalypse" — agentic AI fears have spooked investors in mid-sized SaaS companies, which make up about 20% (~$500B) of all private credit lending. Morgan Stanley warns default rates could climb to 8% versus the normal 2–2.5%. Not only this — these are long-duration loans. Fund managers can't demand early repayment, and the secondary market is thin; buyers are demanding heavy discounts. Due to this, what looked like a contained private asset class is starting to show systemic contours. The cracks actually started in September 2025 when Tricolor and First Brands Group first went bust — as Jamie Dimon put it: "When you see one cockroach, there's probably more."</p>
-      <a class="src-btn" href="https://finshots.in" target="_blank" rel="noopener">Read full Finshots story</a>
-    </div>
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card" onclick="openM('adani-chintan')">
-      <span class="ctag neutral">The Ken · Policy &amp; Power</span>
-      <div class="card-hl">Adani's Chintan Research Foundation: 350 publications, 30 events, and one question that Delhi won't answer</div>
-      <div class="card-deck">The Chintan Research Foundation — two years old, Adani-funded — produced ~350 publications and held 30 events in its first year of active operation. Head Shishir Priyadarshi is a former diplomat who attends every relevant policy gathering in Delhi. The Ken's piece surfaces the tension at the heart of every corporate-backed think tank: can it produce genuinely independent research on policy areas where its funder has active regulatory interests?</div>
-      <div class="card-src">The Ken → <a href="https://the-ken.com/story/adanis-think-tank-flexes-its-muscles-in-delhi/" target="_blank" rel="noopener">Read the full story</a></div>
-    </div>
-
-    <div class="card" onclick="openM('psu-ratna')">
-      <span class="ctag blue">Zerodha Daily Brief · PSU Policy</span>
-      <div class="card-hl">India's PSU Ratna system has never downgraded a single PSU — MTNL is still a Navratna despite ₹3,300 Cr losses</div>
-      <div class="card-deck">The Maharatna/Navratna/Miniratna system gives autonomous PSUs real capex freedom — up to ₹5,000 Cr per project for Maharatnas. But it only rewards winners. Not one PSU has ever been downgraded. MTNL retains Navratna status despite massive losses. 441 of 750 independent director slots are vacant. Ministerial overrides are routine. The Somanathan Committee reviewed it, FY27 budget came and went — no changes.</div>
-      <div class="card-src">Zerodha Daily Brief → <a href="https://thedailybrief.zerodha.com/p/how-indias-psus-are-classified" target="_blank" rel="noopener">Read the full story</a></div>
-    </div>
-
-    <div class="card" onclick="openM('gst-broken')">
-      <span class="ctag amber">Zerodha Daily Brief · Tax Policy</span>
-      <div class="card-hl">GST was supposed to self-police through ITC — three design choices broke that mechanism and now India taxes production</div>
-      <div class="card-deck">GST's self-enforcement relies on buyers demanding invoices to claim input tax credits. But blocked credits lists, narrow refund rules, and a supplier-default penalty that hits buyers have broken the loop. The result: India's consumption tax effectively taxes production at every stage, making Indian manufacturers less competitive than importers who pay clean GST at the border. China fixed this between 2009 and 2016. India has the infrastructure. It lacks the political will.</div>
-      <div class="card-src">Zerodha Daily Brief → <a href="https://thedailybrief.zerodha.com/p/how-indias-psus-are-classified" target="_blank" rel="noopener">Read the full story</a></div>
-    </div>
-
-    <div class="card" onclick="openM('maruti-ethanol')">
-      <span class="ctag green">The Ken · Auto &amp; Climate</span>
-      <div class="card-hl">Maruti and Tata, squeezed by war, EV delays, and emission rules, find an unlikely fix — ethanol blending at 19% lower CO₂</div>
-      <div class="card-deck">The triple squeeze — Hormuz-driven fuel costs, EV adoption delays, and tightening emission norms — is pushing both carmakers toward higher ethanol blend mandates. Ethanol emits 19% less CO₂ than petrol, costs less than imported oil, and is domestically produced. It also has political alignment: the sugarcane industry (politically powerful in Maharashtra and UP) benefits from higher offtake. Both OEMs are quietly lobbying to accelerate the E20 mandate and push toward E30.</div>
-      <div class="card-src">The Ken → <a href="https://the-ken.com/story/maruti-tata-caught-between-war-ev-delays-and-emission-rules-find-an-unlikely-fix/" target="_blank" rel="noopener">Read the full story</a></div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-<!-- ══ AUTO ══ -->
-<section class="sec" id="sec-auto">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">ETAuto · Tuesday 7 Apr 2026</div>
-      <h2 class="sec-title">FY26 closes at a record 2.97 crore units — two-wheelers surge 13.4%, Tata nearly triples mid-SUV sales, and the EV story splits</h2>
-    </div>
-    <span class="sec-count">5 items</span>
-  </div>
-
-  <div class="lead-card">
-    <div>
-      <div class="lead-tag">Lead · ETAuto · FY26 Full Year Retail</div>
-      <h3 class="lead-hl">FY26 auto retail hits a record 2.97 crore units. Two-wheelers at 2.14 crore (+13.4%). Passenger vehicles up 13% to 47.1 lakh. FADA: March was the best-ever monthly sale on record.</h3>
-      <p class="lead-summary">Well, you see, FY26 is the year Indian auto retail crossed a threshold nobody was certain it would reach. Total retail hit 2.97 crore units — the highest ever. Two-wheelers drove volume at 2.14 crore units (+13.4% YoY), benefiting from rural demand recovery, strong financing availability, and the shift back to personal mobility. Passenger vehicles rose 13% to 47.1 lakh units — a number that looked aggressive at the start of FY26 but came in just on target.</p>
-      <p class="lead-summary" style="margin-top:0.6rem">Not only this — March itself was FADA's best-ever recorded monthly retail. The end-of-fiscal push, pre-price-hike buying incentive (multiple OEMs announced April increases), and a strong wedding season all converged. Due to this, FY27 now has a high base to beat — particularly in PVs where the mid-cycle slowdown risk is real if West Asia keeps fuel prices elevated through the first two quarters.</p>
-      <a class="src-btn" href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read full ETAuto coverage</a>
-    </div>
-    <div class="lead-aside">
-      <div style="font-size:13px;color:var(--ink-60);line-height:2">
-        <strong style="color:var(--ink)">FY26 Retail Scorecard:</strong><br>
-        Total: 2.97 Cr units (record)<br>
-        Two-wheelers: 2.14 Cr (+13.4%)<br>
-        PV: 47.1 lakh (+13%)<br>
-        March: Best-ever monthly retail<br><br>
-        <strong style="color:var(--ink)">Tata Sierra + Curvv (Q4):</strong><br>
-        28,129 units vs 10,355 yr-ago<br>
-        +172% year-on-year<br><br>
-        <strong style="color:var(--ink)">JSW MG EV FY26:</strong><br>
-        62,591 units (+66% YoY)
-      </div>
-    </div>
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card" onclick="openM('tata-sierra')">
-      <span class="ctag green">Tata Motors · Mid-Size SUV</span>
-      <div class="card-hl">Sierra + Curvv combo nearly triples mid-SUV sales — 28,129 units in Q4 FY26 versus 10,355 a year ago</div>
-      <div class="card-deck">The Sierra-Curvv combination is delivering both volume share gains in the most competitive PV segment and meaningful ASP improvement for Tata. Mid-size SUVs carry materially better realization than entry hatchbacks — so the volume-margin story is improving simultaneously. Tata is genuinely taking share from Hyundai Creta and Maruti Grand Vitara. The FY27 question is whether it can sustain this against incumbents who are not standing still.</div>
-      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-    <div class="card" onclick="openM('ola-ola')">
-      <span class="ctag green">Ola Electric · EV</span>
-      <div class="card-hl">Ola Electric shares surge 33% in three days on strong March sales and PLI scheme confirmation</div>
-      <div class="card-deck">Ola Electric's 33% three-day rally reflects strong March sales data and confirmed PLI benefits that improve per-unit economics directly. The stock had suffered significant drawdowns through FY26 on service quality and delivery reliability concerns. Whether this is a genuine operational inflection or a sentiment-driven bounce ahead of the Q4 results cycle will be answered by April and May monthly data.</div>
-      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-    <div class="card" onclick="openM('vinfast-tesla')">
-      <span class="ctag teal">EV · New Entrants</span>
-      <div class="card-hl">VinFast targets the 7-seater MPV gap · Tesla opens first in-mall EV charging station · JSW MG FY26 EV sales +66%</div>
-      <div class="card-deck">VinFast's 7-seater electric MPV targets the family buyer segment where Kia Carens and Maruti Ertiga dominate. Tesla's in-mall charging strategy — put chargers where affluent consumers spend two hours shopping — is as much brand marketing as infrastructure. JSW MG reached 62,591 EV units for FY26 (+66%). India's premium EV market is entering a multi-brand phase. The conversation has shifted from "will EVs work" to "which EV suits which buyer."</div>
-      <div class="card-src">ETAuto → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-    <div class="card" onclick="openM('auto-supply-fada')">
-      <span class="ctag red">Supply Chain · Risk</span>
-      <div class="card-hl">FADA warns West Asia turmoil may hit auto supply chains — cost inflation for H1 FY27 if Hormuz persists</div>
-      <div class="card-deck">FADA has flagged potential supply chain disruption from the Hormuz closure. Steel, aluminium, and plastics are all energy-intensive inputs, and logistics costs have risen with the energy shock. The concern is not supply chain breakage but cost-of-production inflation flowing through to OEM margins in H1 FY27 — particularly for manufacturers that can't immediately pass on another round of price increases after the April hikes already announced.</div>
-      <div class="card-src">ETAuto / FADA → <a href="https://auto.economictimes.indiatimes.com" target="_blank" rel="noopener">Read more</a></div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-<!-- ══ QUICK BITES ══ -->
-<section class="sec" id="sec-quickbites">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">Zerodha Daily Brief · The Ken · Tuesday 7 Apr 2026</div>
-      <h2 class="sec-title">Wipro's $375M deal, henna trade frozen, banks at 2-year CD highs, and Nykaa eyes Deepika's beauty brand</h2>
-    </div>
-    <span class="sec-count">5 items</span>
-  </div>
-
-  <div class="story-list">
-
-    <div class="story-row" onclick="openM('wipro-mindsprint')">
-      <div class="story-num">01</div>
-      <div>
-        <div class="story-hl">Wipro acquires Mindsprint (Olam's IT arm) for $375M — plus an $1B 8-year managed services contract from Olam</div>
-        <div class="story-deck">The structure is a classic Indian IT M&amp;A playbook: buy the captive, lock in the parent as anchor client, use the existing domain team to cross-sell. The strategic value is Wipro's entry into the agri-commodities and food supply chain vertical — a segment where Infosys and TCS have stronger positions. Olam operates across 60+ countries, which means genuine global delivery complexity and healthy margins on the 8-year contract.</div>
-      </div>
-      <div class="story-src-badge">Zerodha Daily Brief</div>
-    </div>
-
-    <div class="story-row" onclick="openM('henna-hormuz')">
-      <div class="story-num">02</div>
-      <div>
-        <div class="story-hl">Hormuz crisis halts Sojat's ₹4,000–5,000 Cr annual henna trade — ₹250 Cr stuck at ports, production down 80%</div>
-        <div class="story-deck">Sojat in Rajasthan accounts for ~90% of global natural henna exports. The Gulf is its primary market. Hormuz closure has effectively frozen the trade: ₹250 Cr stuck at ports, production down 80%, and tens of thousands of farm households facing acute income disruption. The macroeconomic aggregate misses this — but the household-level impact is severe. Geopolitical events have very uneven distributional consequences within India's economy.</div>
-      </div>
-      <div class="story-src-badge">Zerodha Daily Brief</div>
-    </div>
-
-    <div class="story-row" onclick="openM('cd-rates')">
-      <div class="story-num">03</div>
-      <div>
-        <div class="story-hl">Banks at 2-year CD highs — CSB Bank 8.32% for 91 days, HDFC/IDBI at 7.6% for 33 days</div>
-        <div class="story-deck">Certificate of Deposit rates have hit their highest levels in approximately two years as banks compete aggressively for short-term liquidity amid currency pressure from the West Asia conflict. CSB Bank is offering 8.32% for 91-day CDs; HDFC Bank and IDBI are at 7.6% for 33-day tenors. Elevated CD rates are a leading indicator of credit cost pressure that will filter through to borrowers over the next two quarters if they persist. Tomorrow's RBI decision will either ease this pressure or confirm the tightening environment.</div>
-      </div>
-      <div class="story-src-badge">Zerodha Daily Brief</div>
-    </div>
-
-    <div class="story-row" onclick="openM('nykaa-82e')">
-      <div class="story-num">04</div>
-      <div>
-        <div class="story-hl">Nykaa in talks to acquire majority stake in Deepika Padukone's 82°E as celebrity beauty brand struggles to scale</div>
-        <div class="story-deck">The Ken's trade tricks piece asks what Nykaa actually sees in 82°E — which has struggled to convert celebrity equity into sustained consumer traction. The answer is probably platform economics: owning a premium celebrity-backed brand lets Nykaa anchor its premium skincare category with a proprietary asset rather than depending on third-party brands that could go direct-to-consumer. Deepika's global profile also provides a potential hook for Nykaa's international ambitions. The risk: celebrity-beauty fatigue is a real global pattern. Valuation will be the key detail.</div>
-      </div>
-      <div class="story-src-badge">The Ken</div>
-    </div>
-
-    <div class="story-row" onclick="openM('india-emissions')">
-      <div class="story-num">05</div>
-      <div>
-        <div class="story-hl">India records sharpest emissions drop among major economies in 2025 · Auto CEOs bet on AI for FY27 · ICICIdirect: auto first to recover</div>
-        <div class="story-deck">India posted the largest year-on-year emissions reduction among major economies in 2025, driven by renewable energy additions and efficiency improvements. A KPMG survey of auto CEOs found the sector broadly optimistic on FY27 growth and bullish on AI integration in vehicles, manufacturing, and dealer operations. ICICIdirect flags auto as the sector most likely to recover first, citing strong underlying demand, healthy dealer inventory post-March, and rural income recovery.</div>
-      </div>
-      <div class="story-src-badge">ETAuto · KPMG</div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-<!-- ══ FEEDBACK ══ -->
-<section class="sec" id="sec-feedback">
-<div class="wrap">
-  <div class="sec-head">
-    <div class="sec-left">
-      <div class="sec-src">Reader Feedback · Issue 014</div>
-      <h2 class="sec-title">Help shape The Brief</h2>
-    </div>
-  </div>
-  <div style="max-width:680px">
-    <p style="font-size:15px;color:var(--ink-60);line-height:1.7;margin-bottom:2rem">This newsletter is a work in progress. Your feedback directly determines what gets built next — which sources get more depth, what new sections get added, and how the whole thing gets delivered. Takes about 3 minutes.</p>
-    <div class="form-success" id="form-success">
-      <div class="form-success-icon">✓</div>
-      <h3>Thanks for the feedback.</h3>
-      <p>This goes straight into shaping tomorrow's Brief. If you left your email, expect a reply within 24 hours.</p>
-    </div>
-    <form id="feedback-form" action="https://formspree.io/f/myknvaaa" method="POST" novalidate>
-      <input type="hidden" name="_subject" value="The Brief feedback — 7 Apr 2026">
-      <input type="hidden" name="issue" value="The Brief · 7 Apr 2026 (Tuesday) · Issue 014">
-      <input type="hidden" name="rating" id="rating-hidden" value="">
-      <div class="form-section-title">How was today's Brief?</div>
-      <div class="form-section-sub">Your honest reaction to this issue, not what you think I want to hear.</div>
-      <div class="form-group">
-        <div class="form-label">Overall rating <span>*</span></div>
-        <div class="rating-row" id="rating-row">
-          <button type="button" class="rating-btn" data-val="1" onclick="setRating(1)" title="Pretty bad">😕</button>
-          <button type="button" class="rating-btn" data-val="2" onclick="setRating(2)" title="Could be better">😐</button>
-          <button type="button" class="rating-btn" data-val="3" onclick="setRating(3)" title="Pretty good">🙂</button>
-          <button type="button" class="rating-btn" data-val="4" onclick="setRating(4)" title="Really good">😊</button>
-          <button type="button" class="rating-btn" data-val="5" onclick="setRating(5)" title="Excellent">🔥</button>
-        </div>
-        <div id="rating-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please pick a rating before submitting.</div>
-      </div>
-      <hr class="form-divider">
-      <div class="form-section-title">What's working — and what isn't?</div>
-      <div class="form-section-sub">Be specific if you can. "The auto section is too long" is more useful than "it's fine."</div>
-      <div class="form-group">
-        <label class="form-label" for="what-liked">What did you like most about today's issue?</label>
-        <textarea class="form-textarea" id="what-liked" name="what_liked" placeholder="e.g. The private credit deep dive, the PSU Ratna breakdown, the markets strip…" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="what-disliked">What felt off, too long, or unnecessary?</label>
-        <textarea class="form-textarea" id="what-disliked" name="what_disliked" placeholder="e.g. Too many world items, the GST piece was too dense, the lead card is too long on mobile…" rows="3"></textarea>
-      </div>
-      <hr class="form-divider">
-      <div class="form-section-title">What do you want more of?</div>
-      <div class="form-section-sub">Select everything that applies. These directly set the editorial direction for future issues.</div>
-      <div class="form-group">
-        <div class="form-label">Topics you want expanded</div>
-        <div class="check-grid" id="topics-grid">
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="markets_depth"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Deeper market analysis</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="auto"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Auto industry coverage</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="tech"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Tech &amp; AI news</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="macro"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">India macro &amp; policy</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="global"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Global markets &amp; world</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="startups"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Startups &amp; VC</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="policy"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Policy &amp; governance</span></label>
-          <label class="check-item" onclick="toggleCheck(this)"><input type="checkbox" name="topics" value="fintech"><span class="check-box"><span class="check-tick">✓</span></span><span class="check-text">Fintech &amp; banking</span></label>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="open-feedback">Anything else? Open mic.</label>
-        <div class="form-hint">Complaints, requests, ideas, things you noticed — all welcome.</div>
-        <textarea class="form-textarea" id="open-feedback" name="open_feedback" placeholder="Write anything here…" rows="4"></textarea>
-      </div>
-      <hr class="form-divider">
-      <div class="form-section-title">Optionally — who are you?</div>
-      <div class="form-section-sub">Only fill this in if you want a reply. None of this is required.</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem">
-        <div class="form-group" style="margin-bottom:0">
-          <label class="form-label" for="reader-name">Your name</label>
-          <input class="form-input" type="text" id="reader-name" name="reader_name" placeholder="First name is fine">
-        </div>
-        <div class="form-group" style="margin-bottom:0">
-          <label class="form-label" for="reader-email">Email (for a reply)</label>
-          <input class="form-input" type="email" id="reader-email" name="reader_email" placeholder="you@example.com">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="reader-role">How would you describe yourself?</label>
-        <select class="form-select" id="reader-role" name="reader_role">
-          <option value="" disabled selected>Choose one…</option>
-          <option value="retail_investor">Retail investor</option>
-          <option value="trader">Active trader</option>
-          <option value="finance_professional">Finance professional</option>
-          <option value="business_founder">Business founder / operator</option>
-          <option value="student">Student</option>
-          <option value="just_curious">Just generally curious</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="how-found">How did you find The Brief?</label>
-        <select class="form-select" id="how-found" name="how_found">
-          <option value="" disabled selected>Choose one…</option>
-          <option value="nischay_direct">Nischay shared it directly</option>
-          <option value="friend">A friend shared it</option>
-          <option value="twitter">Twitter / X</option>
-          <option value="linkedin">LinkedIn</option>
-          <option value="whatsapp">WhatsApp</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <hr class="form-divider">
-      <div class="form-section-title">Want The Brief in your inbox every evening?</div>
-      <div class="form-section-sub">The Brief goes out at 9:30 PM on weekdays — a summary of everything that landed in the newsletter pile that day. No ads, no sponsored content.</div>
-      <div class="form-group">
-        <div class="subscribe-card" id="subscribe-card">
-          <div class="subscribe-left">
-            <div class="subscribe-icon">✉</div>
-            <div>
-              <div class="subscribe-title">Subscribe to The Brief</div>
-              <div class="subscribe-desc">Daily · 9:30 PM weekdays · Free</div>
-            </div>
-          </div>
-          <label class="toggle-wrap">
-            <input type="checkbox" id="subscribe-toggle" name="subscribe" value="yes" onchange="handleSubscribeToggle(this)">
-            <span class="toggle-track"><span class="toggle-thumb"></span></span>
-          </label>
-        </div>
-      </div>
-      <div class="form-group" id="subscribe-email-wrap" style="display:none">
-        <label class="form-label" for="subscribe-email">Email address for the newsletter <span>*</span></label>
-        <div class="form-hint">If you already filled this in above, we'll use that — or add a different address here.</div>
-        <input class="form-input" type="email" id="subscribe-email" name="subscribe_email" placeholder="you@example.com">
-        <div id="subscribe-email-error" style="color:var(--red);font-size:12px;margin-top:0.4rem;display:none">Please enter a valid email address to subscribe.</div>
-      </div>
-      <div class="form-group" id="subscribe-freq-wrap" style="display:none">
-        <div class="form-label">Preferred frequency</div>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <label class="freq-btn" onclick="setFreq(this,'daily')"><input type="radio" name="freq" value="daily" style="display:none" checked><span>Every weekday</span></label>
-          <label class="freq-btn" onclick="setFreq(this,'weekends_too')"><input type="radio" name="freq" value="weekends_too" style="display:none"><span>Weekdays + Saturday digest</span></label>
-          <label class="freq-btn" onclick="setFreq(this,'weekly_only')"><input type="radio" name="freq" value="weekly_only" style="display:none"><span>Weekly digest only</span></label>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem">
-        <button type="submit" class="submit-btn" id="submit-btn">Send feedback</button>
-        <span style="font-size:12px;color:var(--ink-30);font-family:var(--mono)" id="submit-note">Your response stays private.</span>
-      </div>
+<!-- SUBSCRIBE STRIP -->
+<div class="subscribe-strip">
+  <div class="subscribe-inner">
+    <div class="subscribe-text">Get The Brief in your inbox every evening →</div>
+    <form class="subscribe-form" action="https://formspree.io/f/myknvaaa" method="POST" onsubmit="handleStripSubscribe(event)">
+      <input type="hidden" name="_subject" value="New subscription — The Brief archive page">
+      <input class="subscribe-input" type="email" name="email" placeholder="your@email.com" required>
+      <button class="subscribe-btn" type="submit">Subscribe</button>
     </form>
   </div>
 </div>
-</section>
 
+<!-- MAIN -->
+<main class="main">
 
-<!-- ══ MODALS ══ -->
-<div class="modal-bg" id="mbg" onclick="outsideClose(event)">
-  <div class="modal" id="mbox">
-    <div class="modal-head">
-      <div class="modal-tag" id="mtag"></div>
-      <div class="modal-hl" id="mhl"></div>
-      <button class="modal-close" onclick="closeM()">×</button>
+  <!-- LATEST ISSUE -->
+  <div class="latest-label">Latest Issue</div>
+  <a class="latest-card" href="issues/07-04-2026.html">
+    <div class="latest-date">Tuesday, 7 April 2026 · Issue 015 · Tuesday Edition</div>
+    <div class="latest-title">Nifty reclaims 23,123 on strong breadth, private credit's $1.8T crack, and Adani's think tank quietly reshapes Delhi</div>
+    <div class="latest-desc">Tuesday edition: Nifty opens gap-down at 22,839 then grinds to 23,123 — IT leads (+2.50%), 10 of 12 sectors green. FPIs pulled $12.6B in March, worst financial sector outflow since 2012. Finshots on private credit's SaaSpocalypse: Blue Owl capped withdrawals at 5% when investors tried to pull 20% of a $36B fund. Zerodha on PSU Ratna's broken downgrade mechanism and GST's three design failures. The Ken on Adani's Chintan Research Foundation — 350 publications, 30 events, two years old. FY26 auto retail record: 2.97 crore units. Tata Sierra nearly triples mid-SUV sales. RBI policy decision tomorrow.</div>
+    <div class="latest-tags">
+      <span class="tag red">Aftermarket Report</span>
+      <span class="tag">Finshots</span>
+      <span class="tag">The Ken</span>
+      <span class="tag">Zerodha Daily Brief</span>
+      <span class="tag">ETAuto</span>
+      <span class="tag">Tuesday Edition</span>
     </div>
-    <div class="modal-body">
-      <div class="modal-summary-note">Summary · Click "Read original" to access the full story</div>
-      <div id="mbody"></div>
-      <div class="modal-source-link">
-        <span id="msrc-label">Source</span>
-        <a id="msrc-link" href="#" target="_blank" rel="noopener">Read original</a>
+    <div class="read-link">Read Issue 015</div>
+  </a>
+
+  <!-- ALL ISSUES -->
+  <div class="section-head">
+    <span class="section-head-title">All Issues</span>
+  </div>
+
+  <div class="issue-list">
+
+    <a class="issue-row" href="issues/06-04-2026.html">
+      <div class="issue-date-col">Mon<br>6 Apr 2026</div>
+      <div>
+        <div class="issue-title">Nifty near 23,000 on RBI rate cut hope, clean mobility hits 30%, and SIP penalties are a hidden tax</div>
+        <div class="issue-desc">Aftermarket Report · Zerodha Daily Brief · Finshots · The Ken · ETAuto</div>
       </div>
+      <div class="issue-num">#014</div>
+    </a>
+
+    <a class="issue-row" href="issues/03-04-2026.html">
+      <div class="issue-date-col">Fri<br>3 Apr 2026</div>
+      <div>
+        <div class="issue-title">Markets closed globally, a US fighter jet downed over Iran, Ola fires the first shot in an EV price war, and India's forex reserves shed $30.5B in March</div>
+        <div class="issue-desc">The Economist · Finshots · The Ken · ETAuto · Groww Digest · Good Friday Edition</div>
+      </div>
+      <div class="issue-num">#013</div>
+    </a>
+
+    <a class="issue-row" href="issues/02-04-2026.html">
+      <div class="issue-date-col">Thu<br>2 Apr 2026</div>
+      <div>
+        <div class="issue-title">Nifty's 500-pt reversal, rupee's best day since 2013, $107 oil, FY26 PV record, Upgrad-Unacademy, KitKat cargo theft</div>
+        <div class="issue-desc">Aftermarket Report · Zerodha Daily Brief · Finshots · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#012</div>
+    </a>
+
+    <a class="issue-row" href="issues/01-04-2026.html">
+      <div class="issue-date-col">Wed<br>1 Apr 2026</div>
+      <div>
+        <div class="issue-title">FY27 Day 1 · Nifty 22,679 · Defence +6% · GST ₹2L crore record · LPG hike · IndiGo Walsh · WTO collapse · Sovereign AI gap</div>
+        <div class="issue-desc">Aftermarket Report · ETAuto · Daily Brief · Finshots · The Ken</div>
+      </div>
+      <div class="issue-num">#011</div>
+    </a>
+
+    <a class="issue-row" href="issues/31-03-2026.html">
+      <div class="issue-date-col">Tue<br>31 Mar 2026</div>
+      <div>
+        <div class="issue-title">🏖️ Market Holiday · Bain vs RBI on gold · SEBI algo live · Meta product liability · Ather ₹1L floor</div>
+        <div class="issue-desc">The Ken · In The Money (Zerodha) · Finshots · Daily Brief · ETAuto</div>
+      </div>
+      <div class="issue-num">#010</div>
+    </a>
+
+    <a class="issue-row" href="issues/30-03-2026.html">
+      <div class="issue-date-col">Mon<br>30 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty 22,331 FY26 close · Rupee ₹95.22 record low · Bond yield 7% · RBI NOP cap · Finshots petroyuan · Meta liability</div>
+        <div class="issue-desc">Aftermarket Report · Groww Digest · Finshots · Daily Brief · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#009</div>
+    </a>
+
+    <a class="issue-row" href="issues/27-03-2026.html">
+      <div class="issue-date-col">Fri<br>27 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty 22,819 crash · Rupee record low · Hormuz toll question · Rapido vs Swiggy-Zomato · Platform enshittification</div>
+        <div class="issue-desc">Aftermarket Report · Groww Digest · Daily Brief · Finshots · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#008</div>
+    </a>
+
+    <a class="issue-row" href="issues/26-03-2026.html">
+      <div class="issue-date-col">Thu<br>26 Mar 2026</div>
+      <div>
+        <div class="issue-title">🎉 Holiday Edition — Market recap, GLP-1 race, airline seat fees, Iran Day 27, Honda vs Hero</div>
+        <div class="issue-desc">Finshots · The Ken · ETAuto · ICICI Direct</div>
+      </div>
+      <div class="issue-num">#007</div>
+    </a>
+
+    <a class="issue-row" href="issues/25-03-2026.html">
+      <div class="issue-date-col">Wed<br>25 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty 23,306, Jaypee collapse story, MasterCard stablecoins, Microsoft-OpenAI API war, Iran 15-pt plan, Russia oil pivot</div>
+        <div class="issue-desc">Aftermarket Report · Groww Digest · Daily Brief · Finshots · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#006</div>
+    </a>
+
+    <a class="issue-row" href="issues/24-03-2026.html">
+      <div class="issue-date-col">Tue<br>24 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty bounces to 22,912 (expiry day), petrodollar fades, HDFC Bank three threads, LPG 10kg rationing</div>
+        <div class="issue-desc">Aftermarket Report · Groww Digest · The Chatter · In The Money · Daily Brief · Finshots · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#005</div>
+    </a>
+
+    <a class="issue-row" href="issues/23-03-2026.html">
+      <div class="issue-date-col">Mon<br>23 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty crashes to 22,512, Trump pauses Iran strikes, RBI injects ₹79,256 crore</div>
+        <div class="issue-desc">Aftermarket Report · Groww Digest · The Ken · Daily Brief · ETAuto · Finshots · The Economist</div>
+      </div>
+      <div class="issue-num">#004</div>
+    </a>
+
+    <a class="issue-row" href="issues/22-03-2026.html">
+      <div class="issue-date-col">Sun<br>22 Mar 2026</div>
+      <div>
+        <div class="issue-title">The 1973 oil crisis vs today, Urban Company vs Snabbit, Week 12 market metrics</div>
+        <div class="issue-desc">Groww Digest · In The Money (Zerodha) · The Ken · Finshots · ETAuto · The Economist · MakeUseOf</div>
+      </div>
+      <div class="issue-num">#003</div>
+    </a>
+
+    <a class="issue-row" href="issues/21-03-2026.html">
+      <div class="issue-date-col">Sat<br>21 Mar 2026</div>
+      <div>
+        <div class="issue-title">Rare earth magnets, AI layoffs, and the Hormuz shock</div>
+        <div class="issue-desc">ETAuto · The Ken Zero Shot · Finshots Weekly Wrap · MakeUseOf · Screener</div>
+      </div>
+      <div class="issue-num">#002</div>
+    </a>
+
+    <a class="issue-row" href="issues/20-03-2026.html">
+      <div class="issue-date-col">Fri<br>20 Mar 2026</div>
+      <div>
+        <div class="issue-title">Nifty ends near 23,100, rupee hits ₹93.49 all-time low, Tata Steel's green steel moment</div>
+        <div class="issue-desc">Aftermarket Report · Daily Brief · Finshots · The Ken · ETAuto</div>
+      </div>
+      <div class="issue-num">#001</div>
+    </a>
+
+  </div>
+
+  <!-- SUBSCRIBE BOX -->
+  <div class="subscribe-box">
+    <div class="subscribe-box-title">Never miss an issue.</div>
+    <div class="subscribe-box-desc">The Brief lands at 9:30 PM on weekdays. No ads, no fluff — just what happened and why it matters, sourced from 14 newsletters so you don't have to read them all.</div>
+    <form class="subscribe-box-form" action="https://formspree.io/f/myknvaaa" method="POST" onsubmit="handleBottomSubscribe(event)">
+      <input type="hidden" name="_subject" value="New subscription — The Brief bottom CTA">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe free</button>
+    </form>
+    <div class="subscribe-note" id="sub-note">Daily · 9:30 PM weekdays · Free forever</div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">The <span>Brief</span></div>
+    <div class="footer-meta">
+      By Nischay Khanna<br>
+      Not a replacement for original journalism
     </div>
   </div>
-</div>
+</footer>
 
 <script>
-const M = {
-  "fpi-outflows": {
-    tag:"Aftermarket Report · FPI Flows",
-    hl:"$6.5B out of financials in March — highest since 2012. Total March equity outflow: $12.6B",
-    src:"Aftermarket Report",
-    url:"https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global",
-    body:`<p>Foreign Portfolio Investors pulled $6.5 billion out of Indian financial stocks in March — the single largest monthly sector-level outflow since 2012. The financial services sector carries the most direct exposure to currency volatility, rising borrowing costs, and RBI policy uncertainty — making it the primary target of FPI selling in a risk-off environment.</p><p>Overall equity outflows for March hit $12.6 billion, reflecting a combination of genuine risk-off sentiment and technical rebalancing as global EM funds adjusted India weights. Not only this — the concentration in financials means that even if FPIs reverse their India sell stance in April, the recovery will be uneven. Well-run private sector banks with clean balance sheets may recover faster than PSU banks that face both governance questions and political pressure on lending mandates. Watch early April flow data as the first signal of whether March was a one-off or the beginning of sustained repositioning.</p>`
-  },
-  "jubilant-food": {
-    tag:"Aftermarket Report · Consumer Earnings",
-    hl:"Jubilant FoodWorks: same-store sales growth collapses to 0.2% from 5%. Stock hits March 2024 lows.",
-    src:"Aftermarket Report",
-    url:"https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global",
-    body:`<p>Jubilant FoodWorks — India's Domino's franchisee — reported same-store sales growth of just 0.2% in its latest quarter, down sharply from 5% the prior period. The stock fell more than 10% to levels not seen since March 2024. Same-store sales growth (SSSG) is the purest measure of a restaurant chain's underlying health because it strips out new store openings and shows whether existing locations are actually getting more business.</p><p>A collapse from 5% to 0.2% in a single quarter is a serious signal. The read-through is clear: urban discretionary spending is under pressure from cost-of-living increases, the wealth effect of a weaker equity market through much of Q4, and general consumer caution in an uncertain macro environment. Not only this — Jubilant's results will set the tone for the entire urban consumer discretionary sector going into Q4 earnings season. Due to this, investors in names like Zomato, Nykaa, and similar urban consumption plays should watch for similar deceleration signals in the weeks ahead.</p>`
-  },
-  "kalyan-tata-steel": {
-    tag:"Aftermarket Report · Earnings Bright Spots",
-    hl:"Kalyan Jewellers +64% YoY · Tata Steel record output · PC Jeweller +32%",
-    src:"Aftermarket Report",
-    url:"https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global",
-    body:`<p>Kalyan Jewellers reported +64% year-on-year revenue in Q4 FY26 — a stunning number driven by the combined effect of gold price appreciation and strong underlying demand for organised jewellery. When gold rises toward $4,680/oz, consumers who were sitting on the fence about large purchases often accelerate decisions, fearing further price increases. Kalyan has also been executing well on its franchise expansion, which amplifies the revenue effect.</p><p>Tata Steel recorded its highest-ever annual crude steel output in India for FY26 — a production milestone that reflects both capacity addition and improved operating efficiency at its India plants. PC Jeweller reported approximately +32% YoY revenue in Q4, again riding the gold cycle. Due to this, the FY26 earnings story is bifurcated: gold/jewellery and steel outperforming, urban discretionary struggling. The jewellery sector's outperformance is partly a wealth preservation story — Indian consumers are moving savings into physical gold through jewellery when equities look uncertain. This will reverse sharply if/when geopolitical tensions ease and gold gives back its war premium.</p>`
-  },
-  "brent-hormuz": {
-    tag:"Global · Crude Oil",
-    hl:"Brent near $109/bbl — US-Iran Hormuz deadline, two scenarios, very different consequences for India",
-    src:"Aftermarket Report / Zerodha Daily Brief",
-    url:"https://thedailybrief.zerodha.com/p/how-indias-psus-are-classified",
-    body:`<p>Brent crude is holding near $109/bbl as the market prices in two scenarios for the US-Iran Strait of Hormuz deadline. In the first scenario, a negotiated off-ramp materialises — the Hormuz premium evaporates, crude falls toward $85–90, and the supply shock narrative reverses quickly. In the second scenario, the deadline passes without resolution — Hormuz stays blocked or partially restricted, crude pushes well past $120, and India's import bill calculus changes fundamentally.</p><p>For India, the stakes are direct. India imports approximately 85% of its crude oil. At $109/bbl, the import bill is already meaningfully elevated versus the $75–80 baseline the Union Budget FY27 assumed. At $120+, the current account deficit widens materially, the rupee faces renewed pressure, and the RBI's room to ease rates without triggering capital outflows narrows further. Due to this, the Hormuz deadline is not just a geopolitics story — it is the most important single variable for India's macro outlook in Q1 FY27.</p>`
-  },
-  "gold-record": {
-    tag:"Global · Gold",
-    hl:"Gold near $4,680/oz — three simultaneous forces sustaining the bid",
-    src:"Aftermarket Report",
-    url:"https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global",
-    body:`<p>Gold's hold near $4,680/oz represents a structural shift, not just a tactical trade. Three forces are sustaining the bid simultaneously: the safe-haven demand from the Iran-Hormuz conflict (buyers want gold as insurance against further escalation), global central bank diversification away from US dollar assets (China, Russia, and several emerging markets have been consistent buyers), and retail investor positioning in India and elsewhere where equities have underperformed.</p><p>The consumer economics are playing out in real time: Kalyan Jewellers' +64% revenue and PC Jeweller's +32% growth are the clearest proof that Indian consumers are spending on gold jewellery even at these price levels. Well, you see, this is unusual — high gold prices typically dampen volume. But when investors treat gold as wealth preservation rather than a discretionary purchase, price-sensitivity falls dramatically. Due to this, the jewellery sector is benefiting from both the volume effect and the price effect simultaneously. This combination will reverse sharply if the Iran situation resolves and gold gives back its war premium.</p>`
-  },
-  "china-fx": {
-    tag:"Global · China Macro",
-    hl:"Chinese FX reserves fell $85.7B to $3.34T in March — largest single-month drop in a decade",
-    src:"Aftermarket Report / Zerodha Daily Brief",
-    url:"https://thedailybrief.zerodha.com/p/how-indias-psus-are-classified",
-    body:`<p>China's foreign exchange reserves fell by $85.7 billion in March to $3.34 trillion — the largest single-month decline in ten years. The drop reflects two overlapping forces: active yuan defense operations (the PBOC selling dollars to support CNY as pressure built from capital outflows and trade uncertainty) and valuation losses on existing reserve holdings as the US dollar strengthened.</p><p>For India, the China FX story matters in two ways. First, when China tightens its dollar reserves by selling USD, it is effectively removing liquidity from global dollar markets — which tightens conditions for every EM borrower and increases the cost of India's external financing. Second, a weaker yuan makes Chinese exports more competitive, with downstream implications for Indian manufacturers competing in third markets. Not only this — the scale of the reserve drawdown signals that the PBOC is under more pressure than its official communications have acknowledged. Due to this, the China macro story is becoming a direct input into India's current account and FPI flow calculations.</p>`
-  },
-  "yen-intervention": {
-    tag:"Global · Japan / Yen",
-    hl:"Yen weakens toward ¥160/$, nearing prior BOJ intervention levels",
-    src:"Aftermarket Report",
-    url:"https://aftermarketreport.zerodha.com/p/nifty-tops-23100-brushing-aside-global",
-    body:`<p>The yen is sliding toward the ¥160/$ level that triggered direct Bank of Japan intervention in 2024. Japanese officials have made increasingly pointed verbal warnings about "excessive" yen moves but have not yet deployed reserves. The ¥160 level is widely understood to be the line where the BOJ has historically acted — and markets are testing whether that threshold still holds.</p><p>For India, yen dynamics have a less obvious but real transmission mechanism. Japanese institutional investors — notably the Government Pension Investment Fund and major insurance companies — hold significant positions in Indian debt and some equity. When the yen moves sharply, Japanese institutions often rebalance portfolios, and in some scenarios this means reducing EM positions to cover domestic hedging costs. Not only this — a BOJ intervention that tightens global dollar liquidity further would add to the pressure already coming from China's reserve drawdown and the Fed's reluctance to cut rates while oil is above $90. The sequence matters: yen to ¥160 → BOJ intervenes → dollar tightens globally → EM assets face outflow pressure.</p>`
-  },
-  "samsung-anthropic": {
-    tag:"Global · Tech / AI Hardware",
-    hl:"Samsung 8x quarterly profit on AI memory · Anthropic-Google-Broadcom TPU partnership diversifies beyond Nvidia",
-    src:"Aftermarket Report / Zerodha Daily Brief",
-    url:"https://thedailybrief.zerodha.com/p/how-indias-psus-are-classified",
-    body:`<p>Samsung's 8x quarterly operating profit jump is almost entirely a story about HBM (High Bandwidth Memory) — the specialist memory architecture that AI data centres require to run large language models at scale. HBM is a Samsung and SK Hynix duopoly. Demand has exploded as hyperscalers race to build out AI compute capacity. The read-through for Nifty IT's +2.5% today is direct: when the AI hardware layer is profitable at these levels, the software and services layer where Indian IT sits gets re-rated as a beneficiary.</p><p>Separately, Anthropic has announced a large-scale partnership with Google and Broadcom to develop custom TPU (Tensor Processing Unit) infrastructure. Rather than relying on Nvidia's supply-constrained H100 GPUs, Anthropic is building a custom chip stack with its major investor and a leading custom chip designer. Not only this — the move signals that the AI industry's hardware dependence on a single supplier is being actively unwound. Due to this, the AI compute landscape in 2027 will look meaningfully different from 2024's Nvidia-dominated picture. For Indian IT firms with AI practice investments, this diversification is broadly positive — they can build capabilities across multiple infrastructure stacks rather than betting on one vendor.</p>`
-  },
-  "adani-chintan": {
-    tag:"The Ken · Policy / Corporate Power",
-    hl:"Adani's Chintan Research
+function handleStripSubscribe(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button');
+  btn.textContent = 'Subscribing…';
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(r => {
+    if (r.ok) { btn.textContent = 'Done ✓'; form.reset(); }
+    else { btn.textContent = 'Try again'; }
+  }).catch(() => { btn.textContent = 'Try again'; });
+}
+
+function handleBottomSubscribe(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button');
+  const note = document.getElementById('sub-note');
+  btn.textContent = 'Subscribing…';
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(r => {
+    if (r.ok) {
+      btn.textContent = 'Done ✓';
+      note.textContent = 'You\'re subscribed. First issue tonight at 9:30 PM.';
+      note.style.color = '#a8ffcc';
+      form.reset();
+    } else { btn.textContent = 'Try again'; }
+  }).catch(() => { btn.textContent = 'Try again'; });
+}
+</script>
+
+</body>
+</html>
